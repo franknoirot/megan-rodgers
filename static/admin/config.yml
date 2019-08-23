@@ -21,6 +21,18 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
 
+ - name: "projects"
+    label: "Projects"
+    folder: "src/pages/projects"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "project"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Completion Date", name: "date", widget: "datetime"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Process Steps", name: "process", widget: "list", fields: [{label: "Title", name: "title", widget: "string"}, {label: "Gallery", name: "galleryImages", widget: "list", field: {label: "Image", name: "image", widget: "image"}}]}
+
   - name: "pages"
     label: "Pages"
     files:
