@@ -29,6 +29,7 @@ collections:
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "project"}
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Theme Color", name: "color", widget: "color"}
       - {label: "Completion Date", name: "date", widget: "datetime"}
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Process Steps", name: "process", widget: "list", fields: [{label: "Title", name: "title", widget: "string"}, {label: "Gallery", name: "galleryImages", widget: "list", field: {label: "Image", name: "image", widget: "image", media-library: {config: {multiple: true}}}}]}
