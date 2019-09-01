@@ -13,6 +13,9 @@ module.exports = {
       externalLinksTarget: '_blank',
       externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
       anchorClassName: 'icon icon-link',
+      plugins: [
+        // ...global plugins
+      ]
     }
   },
   plugins: [
@@ -22,7 +25,17 @@ module.exports = {
         path: './projects/**/*.md',
         route: '/projects/:slug',
         typeName: 'Project',
-        remark: {}
+        remark: {
+          plugins: [
+            // ...local plugins
+          ]
+        }
+      }
+    },
+    {
+      use: 'gridsome-plugin-netlify-cms',
+      options: {
+        publicPath: '/admin'
       }
     }
   ]

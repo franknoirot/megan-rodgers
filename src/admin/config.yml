@@ -1,0 +1,20 @@
+backend:
+  name: github
+  repo: franknoirot/megan-rodgers
+
+media_folder: "static/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "projects"
+    label: "Projects"
+    folder: "projects"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "id", name: "ID", widget: "number"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Featured Image", name: "featuredImage", widget: "image"}
+      - {label: "Is Featured", name: "isFeatured", widget: "boolean"}
+      - {label: "Featured Position", name: "featuredPosition", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
