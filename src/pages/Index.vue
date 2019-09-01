@@ -1,25 +1,35 @@
 <template>
   <Layout>
     <section class="featured-projects">
-      <g-link class="project" to="/projects">
-        <g-image alt="Some naturally-dyed textiles surrounded by the ingredients." src="../../static/uploads/natural-dyes_1.jpg" width="700" fit="contain"/>
-      </g-link>
-      <g-link class="project" to="/projects">
-        <g-image alt="A lineup of drawn men on a runway in grunge and protest-inspired fashion." src="../../static/uploads/projects_beautiful-predator_line-ups_1.jpg" width="700" fit="contain"/>
-      </g-link>
-      <g-link class="project" to="/projects">
-        <g-image alt="A collection of illustrated gender-neutral, earth-toned tops." src="../../static/uploads/projects_ghost-ranch_tech-apps_3.jpg" width="700" fit="contain"/>
+      <g-link class="project" v-for="project in $page.projects.edges" :key="project.node.id" :to="project.node.path">
+        <g-image :src="project.node.featuredImage" alt="project.node.title" />
       </g-link>
     </section>
+    
     <p class="site-motto drop-cap">Edgy genderfluid design aesthetic with a focus on functionality, sustainability and comfort.</p>
   </Layout>
 </template>
 
+<page-query>
+query Projects {
+  projects: allProject(filter: { isFeatured: { eq: true }}) {
+    edges {
+      node {
+        path
+        title
+        id
+        featuredImage(width:720, quality:90)
+      }
+    }
+  }
+}
+</page-query>
+
 <script>
 export default {
   metaInfo: {
-    title: 'Hello, world!'
-  }
+    title: 'Home'
+  },
 }
 </script>
 
