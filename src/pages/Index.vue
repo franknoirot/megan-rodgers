@@ -1,29 +1,29 @@
 <template>
   <Layout>
     <section class="featured-projects">
-      <g-link class="project" v-for="project in $page.projects.edges" :key="project.node.id" :to="project.node.path">
+      <!-- <g-link class="project" v-for="project in $page.projects.edges" :key="project.node.id" :to="project.node.path">
         <g-image :src="project.node.featuredImage" alt="project.node.title" />
-      </g-link>
+      </g-link> -->
     </section>
     
     <p class="site-motto drop-cap">Edgy genderfluid design aesthetic with a focus on functionality, sustainability and comfort.</p>
   </Layout>
 </template>
 
-<page-query>
-query Projects {
-  projects: allProject(filter: { isFeatured: { eq: true }}) {
-    edges {
-      node {
-        path
-        title
-        id
-        featuredImage(width:720, quality:90)
-      }
-    }
-  }
-}
-</page-query>
+// <page-query>
+// query Projects {
+//   projects: allProject(filter: { isFeatured: { eq: true }}) {
+//     edges {
+//       node {
+//         path
+//         title
+//         id
+//         featuredImage(width:720, quality:90)
+//       }
+//     }
+//   }
+// }
+// </page-query>
 
 <script>
 export default {
