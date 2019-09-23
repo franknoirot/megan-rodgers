@@ -8,16 +8,6 @@ module.exports = {
   siteName,
   siteDescription: 'Fashion designs by Megan Rodgers',
   titleTemplate: '%s | '+siteName,
-  transformers: {
-    remark: {
-      externalLinksTarget: '_blank',
-      externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
-      anchorClassName: 'icon icon-link',
-      plugins: [
-        // ...global plugins
-      ]
-    }
-  },
   plugins: [
     {
       use: '@gridsome/source-filesystem',
@@ -38,5 +28,15 @@ module.exports = {
         publicPath: '/admin'
       }
     }
-  ]
+  ],
+  transformers: {
+    remark: {
+      externalLinksTarget: '_blank',
+      externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
+      anchorClassName: 'icon icon-link',
+      plugins: [
+        // ...global plugins
+      ]
+    }
+  }
 }
