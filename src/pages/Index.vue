@@ -3,7 +3,6 @@
     <section class="featured-projects">
       <h2>Index</h2>
     </section>
-    
     <p class="site-motto drop-cap">Edgy genderfluid design aesthetic with a focus on functionality, sustainability and comfort.</p>
   </Layout>
 </template>

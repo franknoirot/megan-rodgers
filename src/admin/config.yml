@@ -37,5 +37,11 @@ collections:
           - label: Featured Projects
             name: featuredProjects
             widget: list
-            field:
-              - {label: "Project", name: "project", widget: "relation", collection: "projects", searchFields: ["title"], valueField: "featuredImage", displayFields: ["title"]}
+            fields:
+              - label: "Projects"
+                name: "projects"
+                widget: "relation"
+                collection: "projects"
+                searchFields: ["title"]
+                valueField: "title"
+                displayFields: ["title"]
