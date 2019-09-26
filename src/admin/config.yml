@@ -40,3 +40,4 @@ collections:
             collection: "projects"
             searchFields: ["title"]
             valueField: "title"
+            multiple: true
