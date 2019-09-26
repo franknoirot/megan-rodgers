@@ -34,3 +34,9 @@ collections:
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Tagline, name: tagline, widget: string}
+          - label: "Featured Projects"
+            name: featuredProjects
+            widget: "relation"
+            collection: "projects"
+            searchFields: ["title"]
+            valueField: "title"
