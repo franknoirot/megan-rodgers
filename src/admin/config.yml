@@ -30,18 +30,7 @@ collections:
     files:
       - label: "Home Page"
         name: "index"
-        file: "/content/index.yml"
+        file: "pages/index.yml"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Tagline, name: tagline, widget: string}
-          - label: Featured Projects
-            name: featuredProjects
-            widget: list
-            fields:
-              - label: "Projects"
-                name: "projects"
-                widget: "relation"
-                collection: "projects"
-                searchFields: ["title"]
-                valueField: "title"
-                displayFields: ["title"]
