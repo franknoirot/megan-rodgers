@@ -30,7 +30,7 @@ collections:
     files:
       - label: "Home Page"
         name: "index"
-        file: "src/content/index.yml"
+        file: "/content/index.yml"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Tagline, name: tagline, widget: string}
