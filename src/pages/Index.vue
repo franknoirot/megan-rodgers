@@ -29,11 +29,6 @@ export default {
   },
   components: {
     FeaturedProject
-  },
-  data() {
-    return {
-      $
-    }
   }
 }
 </script>
