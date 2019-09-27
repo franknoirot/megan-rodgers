@@ -1,7 +1,6 @@
 ---
-ID: 11
 title: Ghost Ranch
-featuredImage: /uploads/projects_ghost-ranch_tech-apps_3.jpg
+featuredImage: /uploads/ghost-ranch-1.jpg
 processSteps:
   - images:
       - /uploads/project-3-final-draft_page_16.jpg

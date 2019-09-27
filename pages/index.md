@@ -1,8 +1,10 @@
-title: X
+---
+title: home
 tagline: >-
   Edgy genderfluid design aesthetic with a focus on functionality,
   sustainability and comfort.
 featuredProjects:
-  - Beautiful Predator
-  - Ghost Ranch
-  - Natural Dyes
+  - beautiful-predator
+  - ghost-ranch
+  - natural-dyes
+---

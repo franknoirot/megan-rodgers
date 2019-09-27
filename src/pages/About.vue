@@ -1,9 +1,23 @@
 <template>
   <Layout>
-    <h1>About us</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error doloremque omnis animi, eligendi magni a voluptatum, vitae, consequuntur rerum illum odit fugit assumenda rem dolores inventore iste reprehenderit maxime! Iusto.</p>
+    <h1>{{ $page.data.title }}</h1>
+    <div class="content" v-html="$page.data.content"></div>
+    <div class="img-grid">
+      <g-image v-for="(img, i) in $page.data.images" :key="i"
+     :src="img"  />
+    </div>
   </Layout>
 </template>
+
+<page-query>
+  query NetlifyPage {
+    data: netlifyPage(path: "/netlify-about") {
+      title
+      content
+      images
+    }
+  }
+</page-query>
 
 <script>
 export default {
@@ -12,3 +26,16 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+  .img-grid {
+    max-width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .img-grid img {
+    object-fit: scale-down;
+    max-width: 100%;
+  }
+</style>

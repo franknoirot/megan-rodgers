@@ -1,7 +1,6 @@
 ---
-ID: 9
 title: Natural Dyes
-featuredImage: /uploads/natural-dyes_1.jpg
+featuredImage: /uploads/natural-dyes-1.jpg
 processSteps:
   - images:
       - /uploads/project-3-final-draft_page_07.jpg

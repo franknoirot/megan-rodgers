@@ -8,11 +8,11 @@ public_folder: "/uploads"
 collections:
   - name: "projects"
     label: "Projects"
+    label_singular: "Project"
     folder: "projects"
     create: true
     slug: "{{slug}}"
     fields:
-      - {label: "id", name: "ID", widget: "number"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Featured Image", name: "featuredImage", widget: "image"}
       - {label: "Body", name: "body", widget: "markdown"}
@@ -30,14 +30,24 @@ collections:
     files:
       - label: "Home Page"
         name: "index"
-        file: "pages/index.yml"
+        file: "pages/index.md"
         fields:
-          - {label: Title, name: title, widget: string}
+          - {label: Title, name: title, widget: hidden, default: Home}
           - {label: Tagline, name: tagline, widget: string}
           - label: "Featured Projects"
             name: featuredProjects
             widget: "relation"
             collection: "projects"
             searchFields: ["title"]
-            valueField: "title"
+            valueField: "slug"
             multiple: true
+      - label: "About Page"
+        name: "about"
+        file: "pages/about.md"
+        fields:
+          - {label: Title, name: title, widget: hidden, default: About}
+          - {label: "Body", name: "body", widget: "markdown"}
+          - label: Images
+            name: images
+            widget: list
+            field: {label: Image, name: image, widget: image}

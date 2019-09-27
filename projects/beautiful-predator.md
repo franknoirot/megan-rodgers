@@ -1,5 +1,4 @@
 ---
-ID: 7
 title: Beautiful Predator
 featuredImage: /uploads/img_3171.jpg
 processSteps:
