@@ -1,12 +1,13 @@
 <template>
-  <Layout>
-    <section class="featured-projects">
-      <featured-project v-for="(proj, index) in $page.data.featuredProjects"
-       :key="index" :href="proj" :index="index" />
-    </section>
-    <p class="site-motto drop-cap">
-      {{$page.data.tagline}}
-    </p>
+  <Layout navbar=false>
+    <div class="grid">
+      <g-image class="main-logo" :src="$page.data.logo"></g-image>
+      <nav>
+        <g-link to="/about">About</g-link>
+        <g-link to="/about">Projects</g-link>
+        <a class="link_contact" href="mailto:frank@franknoirot.co">Contact</a>
+      </nav>
+    </div>
   </Layout>
 </template>
 
@@ -14,8 +15,8 @@
   query NetlifyPage {
     data: netlifyPage(path: "/netlify-home") {
       title
-      featuredProjects
-      tagline
+      featuredProject
+      logo
     }
   }
 </page-query>
@@ -33,60 +34,82 @@ export default {
 }
 </script>
 
-<style>
-  .site-motto {
-    z-index: 5;
-    width: 70vmin;
-    color: var(--color);
-    font-size: calc(1.3em + (1.5 - 1.3) * ((100vw - 21em)/(35 - 21)));
-    line-height: calc(1.3em + (1.5 - 1.3) * ((100vw - 21em)/(35 - 21))); 
-    transition: all .12s ease-in-out;
-  }
+<style scoped>
 
-  .drop-cap::first-letter {
-    color: var(--bg);
-    margin: 0 .1em;
-    margin-left: 0;
-    padding: 0 calc(.4em + (1.5 - 1.1) * ((100vw - 21em)/(35 - 21)));
-    background: var(--color);
-    font-size: calc(2em + (1.5 - 1.3) * ((100vw - 21em)/(35 - 21)));
-    border-radius: 0 0 3vw 0;
-  }
-
-  .featured-projects {
-    --w: 94;
-    --h: 70;
-    width: calc(var(--w)* 1vw);
-    height: calc(var(--h)*1vh);
-    position: absolute;
-    top: calc((100 - var(--h)) * .5vh);
-    left: calc((100 - var(--w)) * .5vw);
+  .grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    flex-direction: unset;
+    align-items: unset;
+    justify-content: unset;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 1fr 4fr;
   }
 
-  .featured-projects:focus-within ~ .site-motto,
-  .featured-projects:hover ~ .site-motto {
-    filter: blur(3vmin);
-    opacity: 0;
-    pointer-events: none;
-    transform: scale(1.2);
+  .main-logo {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    grid-row: 1 / 3;
+    grid-column: 1 / 2;
+    align-self: flex-end;
+    justify-self: flex-end;
   }
 
-  .featured-projects:hover .project,
-  .featured-projects:focus-within .project {
-    transition: all .12s ease-in-out;
-    /* remove transition delay when focus is already within the projects area */
+  nav {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    font-size: calc(1em + 1.2vmin);
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    width: max-content;
+    margin-bottom: 22vmin;
+    margin-left: 20vmin;
+    padding: 2.5em 0;
+    border-left: solid .3vmin;
   }
 
-  .featured-projects > .project:nth-child(1) { --nth-child: 1; }
-  .featured-projects > .project:nth-child(2) { --nth-child: 2; }
-  .featured-projects > .project:nth-child(3) { --nth-child: 3; }
+  nav a {
+    text-decoration: none;
+    margin: .75em 0;
+    padding: .2em .8em;
+    display: inline-block;
+    width: fit-content;
+  }
+
+  a.link_contact {
+    outline: solid var(--mauve) .2em;
+    filter: drop-shadow(-4px 5px 3px rgba(0,0,0,0.2));
+  }
 
   @media(orientation: portrait) {
-    .featured-projects {
+    .grid {
       grid-template-columns: 1fr;
-      grid-template-rows: repeat(3,1fr);
+      grid-template-rows: 1fr 1fr;
+      align-self: flex-start;
+      justify-self: flex-start;
+      height: 100%;
+      width: 100%;
+    }
+
+    .main-logo {
+      grid-row: 1 / 2;
+      grid-column: 1 / 2;
+      max-height: 50vh;
+      justify-self: center;
+      align-self: center;
+    }
+
+    nav {
+      grid-row: 2 / 3;
+      grid-column: 1 / 2;
+      border-left: none;
+      border-right: solid .3vmin;
+      padding: 1em 0;
+      margin: 0;
+      justify-self: center;
+      align-items: flex-end;
+      margin-left: -25vmin;
     }
   }
 </style>

@@ -33,14 +33,14 @@ collections:
         file: "pages/index.md"
         fields:
           - {label: Title, name: title, widget: hidden, default: Home}
-          - {label: Tagline, name: tagline, widget: string}
-          - label: "Featured Projects"
-            name: featuredProjects
+          - {label: Main Logo, name: logo, widget: image}
+          - label: "Featured Project"
+            name: featuredProject
             widget: "relation"
             collection: "projects"
             searchFields: ["title"]
             valueField: "slug"
-            multiple: true
+            multiple: false
       - label: "About Page"
         name: "about"
         file: "pages/about.md"
@@ -51,3 +51,4 @@ collections:
             name: images
             widget: list
             field: {label: Image, name: image, widget: image}
+          - {label: Resume, name: resume, widget: file}

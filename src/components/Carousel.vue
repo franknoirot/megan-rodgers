@@ -8,8 +8,9 @@
       @keyup.enter="toggleLightbox()"
       @click="toggleLightbox()"
       @keyup.esc="() => lightboxActive = false">
-      <li class="carousel__slide" v-for="(url, i) in images">
-        <img class="carousel__item" :src="url"/>
+      <li class="carousel__slide" v-for="(url, i) in images" :key="i"
+       >
+        <g-image class="carousel__item" :src="url"/>
       </li>
     </ul>
   </div>
@@ -20,7 +21,7 @@
           class="carousel__button carousel__button-right" name="Next Image"><img src="https://franknoirot.co/assets/img/carousel-arrow-right.svg"
           alt="Next"/></button>
   <div class="carousel__nav">
-    <button v-for="(img, i) in images" class="carousel__indicator"
+    <button v-for="(img, i) in images" class="carousel__indicator" :key="i"
         :class="(i == 0) ? 'active' : ''"
         @click="setSlide(i)"></button>
   </div>
@@ -35,7 +36,15 @@ export default {
   data() {
     return {
       currSlide: 0,
-      lightboxActive: false
+      lightboxActive: false,
+    }
+  },
+  watch: {
+    images: function(newImgs, oldImgs) {
+      console.log('IMAGES HAVE CHANGED')
+      this.currSlide = 0
+      this.lightboxActive = false
+      this.setSlide(this.currSlide)
     }
   },
   computed: {
@@ -64,8 +73,14 @@ export default {
       return this.navDOM[this.currSlide]
     }
   },
-  mounted() {
-    window.addEventListener('load', () => this.imagesDOM.forEach((img, i) => img.style.left = this.slideWidth * i + 'px'))
+  mounted: function () {
+    this.$nextTick(function () {
+      console.log('IMAGESDOM = ', this.imagesDOM)
+      this.imagesDOM.forEach((img, i) => {
+        console.log('hihihihihihihihih', img, i)
+        img.style.left = this.slideWidth * i
+      })
+    })
   },
   methods: {
     setSlide: function(val) {
@@ -103,6 +118,7 @@ export default {
 
   .carousel__item {
       height: 100%;
+      width: 100%;
       object-fit: contain;
   }
 
