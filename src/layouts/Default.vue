@@ -74,11 +74,9 @@ main {
   width: 100vw;
   box-sizing: border-box;
   margin: 0;
-  padding: 8vh 0 0 0;
+  padding: 8vh 5vw 5vw 3vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   overflow: hidden;
 }
 

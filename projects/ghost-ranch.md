@@ -1,6 +1,7 @@
 ---
 title: Ghost Ranch
 featuredImage: /uploads/ghost-ranch-1.jpg
+season: Spring 19
 processSteps:
   - images:
       - /uploads/project-3-final-draft_page_16.jpg

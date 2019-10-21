@@ -1,6 +1,7 @@
 ---
 title: Natural Dyes
 featuredImage: /uploads/natural-dyes-1.jpg
+season: Spring 18
 processSteps:
   - images:
       - /uploads/project-3-final-draft_page_07.jpg
