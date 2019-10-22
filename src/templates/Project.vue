@@ -116,6 +116,7 @@ export default {
   methods: {
     activateStep(step) {
       this.currStep = step
+      this.currImg = this.images.map(img => img.step).indexOf(this.processSteps[this.currStep].toLowerCase())
     },
     moveImg(n) {
       if (this.currImg + n >= this.images.length) {
