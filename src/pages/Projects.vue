@@ -4,13 +4,14 @@
     <div class="grid">
       <a class='project_item'
       v-for="(proj, i) in $page.allProjects.edges" :key="i"
-        :href="proj.node.path">
+        :href="proj.node.path" :style="{ '--theme': cssProps[i] }">
         <h2>{{proj.node.title}}</h2>
         <span>{{ proj.node.season }}</span>
         <div class='img-wrap'>
           <img :src="proj.node.featuredImage">
         </div>
       </a>
+      <div class="scroll-grad"></div>
     </div>
   </Layout>
 </template>
@@ -23,6 +24,11 @@
         path
         title
         season
+        color {
+          r
+          g
+          b
+        }
         featuredImage
       }
     }
@@ -34,6 +40,22 @@
 export default {
   metaInfo: {
     title: 'Projects'
+  },
+  computed: {
+    rgb() {
+      return this.$page.allProjects.edges.map(proj => {
+        return {
+          r: proj.node.color[0].r,
+          g: proj.node.color[1].g,
+          b: proj.node.color[2].b
+        }
+      })
+    },
+    cssProps() {
+      return this.rgb.map((color, i) => `${color.r},${color.g},${color.b}`)
+    }
+  },
+  methods: {
   }
 }
 </script>
@@ -47,15 +69,27 @@ export default {
 
 
   .grid {
+    margin: 3vh 0;
     box-sizing: border-box;
     width: 100%;
     height: 80vh;
+    overflow-y: auto;
     padding: 2vh 5vw;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10vmin;
     justify-content: stretch;
     align-items: stretch;
+    position: relative;
+  }
+  .scroll-grad {
+    content: '';
+    position: fixed;
+    bottom: 5vw;
+    height: 7vw;
+    width: 100%;
+    background: linear-gradient(to bottom, transparent, var(--bg));
+    pointer-events: none;
   }
 
   .project_item {
@@ -74,6 +108,7 @@ export default {
   }
 
   .project_item h2 {
+    color: rgb(var(--theme));
     margin: 0;
     grid-row: 2 / 3;
     grid-column: 1 / 3;
@@ -84,14 +119,15 @@ export default {
   }
 
   .project_item > span {
+    color: rgb(var(--theme));
     text-align: right;
     transform-origin: bottom right;
     position: absolute;
     top: 0;
-    left: 0;
+    right: 100%;
     width: max-content;
     height: fit-content;
-    transform: rotate(-90deg) translate(1vh, -3vw);
+    transform: rotate(-90deg) translate(1vh, 2vw);
   }
 
   .project_item .img-wrap {
@@ -100,6 +136,20 @@ export default {
     border-radius: 1vmax;
     box-shadow: var(--shadows);
     overflow: hidden;
+    position: relative;
+  }
+  .img-wrap::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(var(--theme), .3);
+    transition: background-color .3s ease-in-out;
+  }
+  .img-wrap:hover::after {
+    background-color: rgba(var(--theme), .1);
   }
 
   .img-wrap img {

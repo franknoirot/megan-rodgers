@@ -2,6 +2,10 @@
 title: Beautiful Predator
 featuredImage: /uploads/img_3171.jpg
 season: Fall 18
+color:
+  - r: 77
+  - g: 125
+  - b: 94
 processSteps:
   - images:
       - /uploads/project-3-final-draft_page_07.jpg

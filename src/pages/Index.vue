@@ -4,7 +4,7 @@
       <g-image class="main-logo" :src="$page.data.logo"></g-image>
       <nav>
         <g-link to="/about">About</g-link>
-        <g-link to="/about">Projects</g-link>
+        <g-link to="/projects">Projects</g-link>
         <a class="link_contact" href="mailto:frank@franknoirot.co">Contact</a>
       </nav>
     </div>

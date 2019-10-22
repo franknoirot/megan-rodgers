@@ -2,6 +2,10 @@
 title: Natural Dyes
 featuredImage: /uploads/natural-dyes-1.jpg
 season: Spring 18
+color:
+  - r: 123
+  - g: 63
+  - b: 133
 processSteps:
   - images:
       - /uploads/project-3-final-draft_page_07.jpg

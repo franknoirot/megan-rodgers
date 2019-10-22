@@ -17,6 +17,31 @@ collections:
       - {label: Season, name: season, widget: string}
       - {label: "Featured Image", name: "featuredImage", widget: "image"}
       - {label: "Body", name: "body", widget: "markdown"}
+      - label: Main Color
+        name: color
+        widget: object
+        fields:
+          - label: "R"
+            name: "r"
+            widget: "number"
+            default: 125
+            valueType: "int"
+            min: 1
+            max: 255
+          - label: "G"
+            name: "g"
+            widget: "number"
+            default: 125
+            valueType: "int"
+            min: 1
+            max: 255
+          - label: "B"
+            name: "b"
+            widget: "number"
+            default: 125
+            valueType: "int"
+            min: 1
+            max: 255
       - label: "Process Steps"
         name: "processSteps"
         widget: "list"
