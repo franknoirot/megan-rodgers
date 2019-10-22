@@ -6,7 +6,9 @@
         <p class="season">{{ $page.project.season }}</p>
       </section>
       <div class="carousel">
-        <div class='stage'></div>
+        <div class='stage'>
+          <g-image :src="images[currImg].img"></g-image>
+        </div>
         <button class="arrow left" v-on:click="() => moveImg(-1)"></button>
         <button class="arrow right" v-on:click="() => moveImg(1)"></button>
         <div class="tabs">
@@ -185,7 +187,14 @@ export default {
     border-radius: 3vmin;
     background: linear-gradient(to bottom, var(--bg), white);
     box-shadow: var(--shadows);
+    display: flex;
+    justify-content: center;
+    align-content: center;
     z-index: 5;
+  }
+  .stage img {
+    max-height: 100%;
+    object-fit: contain;
   }
   .arrow {
     grid-row: 1 / 2;
@@ -242,13 +251,19 @@ export default {
     color: rgb(var(--primary-rgb));
     justify-self: stretch;
     border: none;
-    background: transparent;
+    background: var(--bg);
+    box-shadow: 0 0 0 rgba(0,0,.9vmin,0.2),
+                0 0 0 rgba(0,0,0.3vmin,0.1);
     border-radius: 0 0 2vmin 2vmin;
     width: 100%;
     justify-self: stretch;
     align-self: stretch;
     padding-top: 10vh;
     margin-top: -10vh;
+    transition: all .11s ease-in-out;
+  }
+  .step:hover {
+    box-shadow: var(--shadows);
   }
   .active {
     background: rgba(var(--primary-rgb), .6);
@@ -272,6 +287,9 @@ export default {
     border: solid 1px rgb(var(--primary-rgb));
     transform: scale(1);
     transition: transform .13s ease-in-out;
+  }
+  .dot:hover {
+    transform: scale(1.3);
   }
   .stepActive {
     transform: scale(2);
