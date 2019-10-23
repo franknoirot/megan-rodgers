@@ -1,11 +1,11 @@
 ---
 title: Beautiful Predator
-featuredImage: /uploads/img_3171.jpg
 season: Fall 18
+featuredImage: /uploads/img_3171.jpg
 color:
-  r: 77
-  g: 125
   b: 94
+  g: 125
+  r: 77
 processSteps:
   - images:
       - /uploads/project-3-final-draft_page_07.jpg
@@ -17,8 +17,4 @@ processSteps:
       - /uploads/project-3-final-draft_page_12.jpg
     name: Muslins
 ---
-Now this is some mother freaking content right here! Wow!
-
-## Big 'Ol Headings Too?
-
-Man, what else could ya ask for? Oh how about a [link to Instagram??](https://instagram.com/franknoirot)
+Womenswear collections inspired by the orchid mantis, mantids that use orchid camouflage to ambush prey. Their disguise is so effective that flying insects are more attracted to the mantis than the flowers they6 imitate. It inspired me to make a collection that plays with this beautiful predator’s ability to disguise itself and attract its prey. I used pleats and gathers to imitate the shapes of the orchid mantis body and cochineal natural dyes to ombre pieces to mimic the pink color of the mantis.
