@@ -6,11 +6,12 @@
         <p class="season">{{ $page.project.season }}</p>
       </section>
       <div class="carousel">
-        <div class='stage'>
+        <div class='stage' tabindex=0 @keydown.left="() => moveImg(-1)" @keydown.right="() => moveImg(1)"
+          @click="handleStageClick">
           <g-image :src="images[currImg].img"></g-image>
         </div>
-        <button class="arrow left" v-on:click="() => moveImg(-1)"></button>
-        <button class="arrow right" v-on:click="() => moveImg(1)"></button>
+        <button class="arrow left" v-on:click="() => moveImg(-1)" tabindex=-1></button>
+        <button class="arrow right" v-on:click="() => moveImg(1)" tabindex=-1></button>
         <div class="tabs">
           <button class="step" v-for="(step, j) in processSteps" :key="j"
             v-on:click="() => activateStep(j)"
@@ -38,6 +39,7 @@
       title
       season
       content
+      featuredImage
       color {
         r
         g
@@ -101,11 +103,7 @@ export default {
       )), false)
     },
     primaryRGB: function() {
-      return {
-        r: this.$page.project.color[0].r,
-        g: this.$page.project.color[1].g,
-        b: this.$page.project.color[2].b
-      }
+      return this.$page.project.color
     },
     cssProps: function() {
       return {
@@ -131,6 +129,11 @@ export default {
     setImg(n) {
       this.currImg = n
       this.currStep = this.processSteps.map(step => step.toLowerCase()).indexOf(this.images[this.currImg].step)
+    },
+    handleStageClick(e) {
+      let rect = e.target.getBoundingClientRect()
+      if (e.offsetX > rect.width / 2) this.moveImg(1)
+      else this.moveImg(-1)
     }
   }
 }
@@ -143,13 +146,13 @@ export default {
     grid-template-columns: 1fr 70%;
     grid-template-rows: auto 1fr;
     grid-column-gap: 3vw;
-    padding: 3vh 5vw;
+    padding: 3vh 0 0 0;
     box-sizing: border-box;
   }
 
   .heading {
     grid-row: 1 / 2;
-    grid-column: 1 / 3;
+    grid-column: 1 / 2;
     align-items: center;
     margin: 2vh 0;
   }
@@ -172,7 +175,7 @@ export default {
   }
 
   .carousel {
-    grid-row: 2 / 3;
+    grid-row: 1 / 3;
     grid-column: 2 / 3;
     align-self: stretch;
     justify-self: stretch;
@@ -185,13 +188,17 @@ export default {
     grid-column: 2 / 3;
     align-self: stretch;
     justify-self: stretch;
-    border-radius: 3vmin;
-    background: linear-gradient(to bottom, var(--bg), white);
-    box-shadow: var(--shadows);
-    display: flex;
-    justify-content: center;
-    align-content: center;
+    background: var(--bg);
     z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadows);
+    max-height: 100%;
+    user-select: none;
+  }
+  .stage, .stage img {
+    border-radius: 3vmin;
   }
   .stage img {
     max-height: 100%;
@@ -274,28 +281,45 @@ export default {
     grid-row: 3 / 4;
     grid-column: 2 / 3;
     width: 100%;
+    height: 100%;
     display: flex;
-    justify-content: space-around;
     align-self: center;
   }
   .dot {
-    width: .75vmin;
-    height: .75vmin;
+    position: relative;
     padding: 0;
     background: transparent;
+    border: none;
+    align-self: stretch;
+    justify-self: stretch;
+    width: 100%;
+    height: 100%;
+  }
+  .dot::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: .75vmin;
+    height: .75vmin;
     border-radius: 50%;
-    margin: 1vmin auto;
     border: solid 1px rgb(var(--primary-rgb));
-    transform: scale(1);
+    --init-trans: translate(-50%, -50%);
+    transform: var(--init-trans) scale(1);
     transition: transform .13s ease-in-out;
   }
-  .dot:hover {
-    transform: scale(1.3);
+  .dot:hover::after {
+    transform: var(--init-trans) scale(1.6);
   }
-  .stepActive {
-    transform: scale(2);
+  .stepActive::after {
+    transform: var(--init-trans) scale(2);
   }
-  .imgActive {
+  .imgActive::after {
     background: rgb(var(--primary-rgb));
   }
+
+  *:focus {
+    outline-color: rgba(var(--primary-rgb), 1);
+
+  } 
 </style>

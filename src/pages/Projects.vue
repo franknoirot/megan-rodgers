@@ -43,16 +43,10 @@ export default {
   },
   computed: {
     rgb() {
-      return this.$page.allProjects.edges.map(proj => {
-        return {
-          r: proj.node.color[0].r,
-          g: proj.node.color[1].g,
-          b: proj.node.color[2].b
-        }
-      })
+      return this.$page.allProjects.edges.map(proj => proj.node.color)
     },
     cssProps() {
-      return this.rgb.map((color, i) => `${color.r},${color.g},${color.b}`)
+      return this.rgb.map(color => `${color.r},${color.g},${color.b}`)
     }
   },
   methods: {
@@ -72,7 +66,6 @@ export default {
     margin: 3vh 0;
     box-sizing: border-box;
     width: 100%;
-    height: 80vh;
     overflow-y: auto;
     padding: 2vh 5vw;
     display: grid;
@@ -85,8 +78,8 @@ export default {
   .scroll-grad {
     content: '';
     position: fixed;
-    bottom: 5vw;
-    height: 7vw;
+    bottom: 7.75vh;
+    height: 7vh;
     width: 100%;
     background: linear-gradient(to bottom, transparent, var(--bg));
     pointer-events: none;
@@ -104,7 +97,11 @@ export default {
   }
   .project_item:hover,
   .project_item:focus {
-    transform: scale(1.03);
+    transform: scale(1.04);
+    outline: none;
+  }
+  .project_item:last-of-type {
+    margin-bottom: 10vh;
   }
 
   .project_item h2 {

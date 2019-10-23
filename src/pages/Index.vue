@@ -5,8 +5,13 @@
       <nav>
         <g-link to="/about">About</g-link>
         <g-link to="/projects">Projects</g-link>
-        <a class="link_contact" href="mailto:frank@franknoirot.co">Contact</a>
+        <a class="link_contact" href="mailto:frank@franknoirot.co"
+          @mouseleave="setHover" @mouseenter="setHover" :style="hover">Contact</a>
       </nav>
+      <g-link class='featured_project' :to="featuredHref" :style="featuredStyle">
+        <g-image :src="featuredProject.featuredImage"></g-image>
+        <span>featured project: {{ featuredProject.title }}</span>
+      </g-link>
     </div>
   </Layout>
 </template>
@@ -15,7 +20,7 @@
   query NetlifyPage {
     data: netlifyPage(path: "/netlify-home") {
       title
-      featuredProject
+      featured: featuredProject
       logo
     }
   }
@@ -25,18 +30,60 @@
 import FeaturedProject from '../components/FeaturedProject.vue'
 
 export default {
+  data() {
+    return {
+      featuredProject: {
+        title: '',
+        featuredImage: '',
+        color: {
+          r: 0,
+          g: 0,
+          b: 0
+        }
+      },
+      hover: {
+        '--hov-x': '70%',
+        '--hov-y': '80%',
+      }
+    }
+  },
   metaInfo: {
     title: 'Home'
   },
   components: {
     FeaturedProject
+  },
+  computed: {
+    featuredHref() {
+      return '/projects/'+this.$page.data.featured
+    },
+    featuredStyle() {
+      return { '--theme': this.featuredProject.color.r+','+this.featuredProject.color.g+','+this.featuredProject.color.b }
+    }
+  },
+  async mounted () {
+    try {
+      const results = await this.$fetch(this.featuredHref)
+      this.featuredProject = results.data.project
+    } catch (error) {
+      console.error(error)
+    }
+  },
+  methods: {
+    setHover(e) {
+      console.log('hovering, it = ', this.hover)
+      let rect = e.target.getBoundingClientRect()
+      this.hover['--hov-x'] = (e.offsetX / rect.width *100).toFixed(1) + '%'
+      this.hover['--hov-y'] = (e.offsetY / rect.height *100).toFixed(1) + '%'
+      console.log('finished hovering, it = ', this.hover)
+    } 
   }
 }
 </script>
 
 <style scoped>
-
   .grid {
+    height: 100%;
     display: grid;
     flex-direction: unset;
     align-items: unset;
@@ -75,11 +122,113 @@ export default {
     padding: .2em .8em;
     display: inline-block;
     width: fit-content;
+    position: relative;
   }
-
+  nav a:not(.link_contact)::after {
+    content: '';
+    position: absolute;
+    top: calc(100% + .1em);
+    left: -.2vmin;
+    width: 0;
+    height: .3vmin;
+    background: black;
+    transition: width .11s ease-in-out;
+  }
+  nav a:hover::after {
+    width: calc(100% + .4vmin);
+  }
   a.link_contact {
     outline: solid var(--mauve) .2em;
     filter: drop-shadow(-4px 5px 3px rgba(0,0,0,0.2));
+    color: inherit;
+    transition: all .11s ease-in-out;
+    position: relative;
+  }
+  a.link_contact::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: hsl(330deg, 55%, 30%);
+    background-image: radial-gradient(circle at 30% 50%, transparent 20%, var(--mauve) 110%),
+                      linear-gradient(-36deg, hsla(46deg, 90%, 70%, 0.7), hsla(260deg, 80%, 30%, 1));
+    z-index: -1;
+    clip-path: circle(0% at var(--hov-x) var(--hov-y));
+    transition: clip-path .13s ease-in-out;
+  }
+  a.link_contact:hover {
+    color: var(--bg);
+  }
+  a.link_contact:hover::before {
+    clip-path: circle(200% at var(--hov-x) var(--hov-y));
+  }
+
+  .featured_project {
+    display: inline-block;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    height: 100%;
+    width: 100%;
+    align-self: flex-end;
+    justify-self: flex-start;
+    position: relative;
+    overflow: hidden;
+    border-radius: 3vmin;
+    box-shadow: var(--shadow);
+    transform: translate(0, 0) scale(1);
+    transition: all .12s ease-in-out;
+  }
+  .featured_project:hover {
+    transform: translate(0, -.4vh) scale(1.03);
+  }
+  .featured_project::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(var(--theme), .6);
+    transition: all .15s ease-in-out;
+  }
+  .featured_project:hover::after {
+    background: rgba(var(--theme), .3);
+  }
+  .featured_project img {
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+  }
+  .featured_project span {
+    position: absolute;
+    bottom: 1em;
+    right: 20%;
+    color: var(--bg);
+    z-index: 5;
+  }
+  .featured_project span::before,
+  .featured_project span::after {
+    position: absolute;
+    content: '';
+    background: var(--bg);
+  }
+  .featured_project span::before {
+    width: 25%;
+    height: .1vmax;
+    top: 40%;
+    left: calc(100% + 1vmax);
+    transform: translate(0, -50%);
+  }
+  .featured_project span::after {
+    width: .5vmax;
+    height: .5vmax;
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+    left: calc(125% + .5vmax);
+    top: 50%;
+    transform: translate(0, -72%) rotate(135deg);
   }
 
   @media(orientation: portrait) {

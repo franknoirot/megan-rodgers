@@ -3,9 +3,9 @@ title: Fortunate Son
 featuredImage: /uploads/beautiful-predator-1.jpg
 season: Spring 19
 color:
-  - r: 155
-  - g: 76
-  - b: 76
+  r: 155
+  g: 76
+  b: 76
 processSteps:
   - images:
       - /uploads/project-3-final-draft_page_07.jpg

@@ -1,6 +1,6 @@
 <template>
   <div class="layout">
-    <Navbar v-if="navbar===true"></Navbar>
+    <Navbar v-if="navbar==='true'"></Navbar>
     <main>
       <slot/>
     </main>
@@ -25,9 +25,8 @@ query {
     },
     props: {
       navbar: {
-        type: Boolean,
-        default: true,
-        required: false
+        type: String,
+        default: 'true',
       }
     }
   }
@@ -65,16 +64,24 @@ p {
   line-height: 1.5;
 }
 
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+}
+
 main {
   position: absolute;
   top: 0;
   left: 0;
   background: var(--bg);
-  height: 100vh;
+  height: 100%;
+  min-height: 100vh;
   width: 100vw;
   box-sizing: border-box;
   margin: 0;
-  padding: 8vh 5vw 5vw 3vh;
+  padding: 8vh 5vw 5vh 5vw;
   display: flex;
   flex-direction: column;
   overflow: hidden;
