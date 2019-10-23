@@ -1,21 +1,51 @@
 ---
 title: Fortunate Son
-featuredImage: /uploads/beautiful-predator-1.jpg
 season: Spring 19
+featuredImage: /uploads/fortunate-son_garment_6.jpg
 color:
-  r: 155
-  g: 76
   b: 76
+  g: 76
+  r: 155
 processSteps:
   - images:
-      - /uploads/project-3-final-draft_page_07.jpg
-      - /uploads/project-3-final-draft_page_08.jpg
-      - /uploads/project-3-final-draft_page_09.jpg
+      - /uploads/fortunate-son_inspo_1.jpg
+      - /uploads/fortunate-son_inspo_2.jpg
+      - /uploads/fortunate-son_inspo_3.jpg
+      - /uploads/fortunate-son_inspo_4.jpg
+      - /uploads/fortunate-son_inspo_5.jpg
     name: Inspiration
   - images:
-      - /uploads/project-3-final-draft_page_11.jpg
-      - /uploads/project-3-final-draft_page_12.jpg
-    name: Muslins
+      - /uploads/fortunate-son_sketch_1.jpg
+      - /uploads/fortunate-son_sketch_2.jpg
+      - /uploads/fortunate-son_sketch_3.jpg
+      - /uploads/fortunate-son_sketch_4.jpg
+      - /uploads/fortunate-son_sketch_5.jpg
+    name: Sketches
+  - images:
+      - /uploads/fortunate-son_muslin_1.jpg
+      - /uploads/fortunate-son_muslin_2.jpg
+      - /uploads/fortunate-son_muslin_3.jpg
+      - /uploads/fortunate-son_muslin_4.jpg
+      - /uploads/fortunate-son_muslin_5.jpg
+      - /uploads/fortunate-son_muslin_6.jpg
+      - /uploads/fortunate-son_muslin_7.jpg
+      - /uploads/fortunate-son_muslin_8.jpg
+    name: Muslin
+  - images:
+      - /uploads/fortunate-son_collection_3.jpg
+      - /uploads/fortunate-son_collection_1.jpg
+      - /uploads/fortunate-son_collection_2.jpg
+      - /uploads/fortunate-son_collection_4.jpg
+      - /uploads/fortunate-son_collection_5.jpg
+    name: Collection
+  - images:
+      - /uploads/fortunate-son_garment_1.jpg
+      - /uploads/fortunate-son_garment_2.jpg
+      - /uploads/fortunate-son_garment_3.jpg
+      - /uploads/fortunate-son_garment_4.jpg
+      - /uploads/fortunate-son_garment_5.jpg
+      - /uploads/fortunate-son_garment_6.jpg
+    name: Garment
 ---
 Menswear collection inspired by the 50th anniversary of the Kent State May 4th
 shooting. I was inspired by an image I found in the May 4th Visitors Center of Kent State. It is a photograph of fraternity brothers holding up their draft
