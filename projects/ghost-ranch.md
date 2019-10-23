@@ -1,11 +1,11 @@
 ---
 title: Ghost Ranch
-featuredImage: /uploads/ghost-ranch-1.jpg
 season: Spring 19
+featuredImage: /uploads/ghost-ranch-1.jpg
 color:
-  r: 61
-  g: 60
   b: 123
+  g: 60
+  r: 61
 processSteps:
   - images:
       - /uploads/project-3-final-draft_page_16.jpg
@@ -18,4 +18,4 @@ processSteps:
       - /uploads/project-3-final-draft_page_11.jpg
     name: Making
 ---
-Tumblr hammock raclette edison bulb lomo, shoreditch banh mi pabst skateboard literally. Hexagon hoodie affogato, palo santo brooklyn single-origin coffee blog plaid. Umami helvetica selfies vape. DIY portland cray, iPhone la croix franzen leggings authentic mustache chicharrones distillery 90's.
+Womenswear collection inspired by the Georgia O’Keeffe: Living Modern exhibit at the Cleveland Museum of Art. O’Keefe was an accomplished seamstress as well as a talented artist. I was inspired by the detailing of her personally designed pieces and the androgynous aesthetic of her personal style. O’Keefe loved challenging and confounding society’s conventional dress codes.
