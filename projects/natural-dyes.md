@@ -1,11 +1,11 @@
 ---
-title: Natural Dyes
-featuredImage: /uploads/natural-dyes-1.jpg
+title: Personal Space Invader
 season: Spring 18
+featuredImage: /uploads/natural-dyes-1.jpg
 color:
-  r: 123
-  g: 63
   b: 133
+  g: 63
+  r: 123
 processSteps:
   - images:
       - /uploads/project-3-final-draft_page_07.jpg
@@ -17,4 +17,4 @@ processSteps:
       - /uploads/project-3-final-draft_page_14.jpg
     name: Something Else
 ---
-This is some intro text. It'll go on the left of the page when on a desktop, and at the beginning of the page when on mobile. Quinoa hammock sartorial coloring book. Kogi vaporware bicycle rights air plant chia. Kale chips tbh meggings paleo. Slow-carb master cleanse coloring book ethical chartreuse, vegan trust fund banh mi brunch vape hoodie waistcoat ugh tacos artisan. Tofu activated charcoal yr kitsch tousled banh mi 8-bit yuccie lo-fi. Fingerstache cornhole jean shorts seitan food truck humblebrag.
+Womenswear collection inspired by public transportation and specifically my years taking the subway in New York City. I was inspired by how we interact with people in these intimate proximities but still place significant distance between ourselves and strangers. Prints and graphics were inspired by crowds, need for personal space and subway staples such as rats.
