@@ -218,6 +218,9 @@ export default {
   .arrow:hover {
     transform: scale(1.05);
   }
+  .arrow:focus {
+    outline: none;
+  }
   .arrow, .arrow::before, .arrow::after {
     height: var(--thick);
     background: rgb(var(--primary-rgb));

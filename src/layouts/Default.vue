@@ -94,4 +94,9 @@ footer {
   font-size: .75rem;
 }
 
+@media(max-width: 450px) {
+  footer {
+    display: none;
+  }
+}
 </style>

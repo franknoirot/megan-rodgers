@@ -10,7 +10,7 @@
       </nav>
       <g-link class='featured_project' :to="featuredHref" :style="featuredStyle">
         <g-image :src="featuredProject.featuredImage"></g-image>
-        <span>featured project: {{ featuredProject.title }}</span>
+        <span >featured project:{{ (isMobile) ? ' '+featuredProject.title : '' }}</span>
       </g-link>
     </div>
   </Layout>
@@ -59,7 +59,10 @@ export default {
     },
     featuredStyle() {
       return { '--theme': this.featuredProject.color.r+','+this.featuredProject.color.g+','+this.featuredProject.color.b }
-    }
+    },
+    isMobile() {
+      return window.innerWidth < 450
+    },
   },
   async mounted () {
     try {
@@ -76,7 +79,7 @@ export default {
       this.hover['--hov-x'] = (e.offsetX / rect.width *100).toFixed(1) + '%'
       this.hover['--hov-y'] = (e.offsetY / rect.height *100).toFixed(1) + '%'
       console.log('finished hovering, it = ', this.hover)
-    } 
+    },
   }
 }
 </script>
@@ -233,17 +236,16 @@ export default {
 
   @media(orientation: portrait) {
     .grid {
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr;
-      align-self: flex-start;
-      justify-self: flex-start;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 50% 50%;
+      grid-gap: 2vmax;
       height: 100%;
       width: 100%;
     }
 
     .main-logo {
       grid-row: 1 / 2;
-      grid-column: 1 / 2;
+      grid-column: 1 / 3;
       max-height: 50vh;
       justify-self: center;
       align-self: center;
@@ -256,9 +258,37 @@ export default {
       border-right: solid .3vmin;
       padding: 1em 0;
       margin: 0;
-      justify-self: center;
+      margin-right: 5vw;
+      justify-self: flex-end;
+      align-self: center;
       align-items: flex-end;
-      margin-left: -25vmin;
+    }
+
+    .featured_project {
+      grid-row: 2 / 3;
+      grid-column: 2 / 3;
+      align-self: center;
+      height: 80%;
+      transform: translate(50%);
+    }
+    .featured_project img {
+      object-fit: cover;
+      width: unset;
+    }
+    .featured_project span {
+      font-size: calc(.5em + 1vmax);
+      width: fit-content;
+      height: fit-content;
+      left: unset;
+      right: calc(95% - .5em - 1vmax);
+      transform-origin: bottom right;
+      top: 0;
+      transform: rotate(-90deg);
+      opacity: .9;
+    }
+    .featured_project span::before,
+    .featured_project span::after {
+      display: none;
     }
   }
 </style>
