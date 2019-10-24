@@ -93,7 +93,11 @@ footer {
   bottom: 3vh;
   font-size: .75rem;
 }
-
+@media(orientation: portrait) {
+  main {
+    padding: 15vh 5vw 8vh 5vw;
+  }
+}
 @media(max-width: 450px) {
   footer {
     display: none;

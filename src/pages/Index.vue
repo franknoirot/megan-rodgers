@@ -248,7 +248,7 @@ export default {
       grid-column: 1 / 3;
       max-height: 50vh;
       justify-self: center;
-      align-self: center;
+      align-self: flex-end;
     }
 
     nav {
@@ -285,6 +285,7 @@ export default {
       top: 0;
       transform: rotate(-90deg);
       opacity: .9;
+      text-align: right;
     }
     .featured_project span::before,
     .featured_project span::after {

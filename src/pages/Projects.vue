@@ -165,6 +165,9 @@ export default {
   }
 
   @media (max-width: 450px) {
+    h1 {
+      margin-top: 0;
+    }
     .grid {
       display: flex;
       flex-direction: column;

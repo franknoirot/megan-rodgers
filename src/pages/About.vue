@@ -1,13 +1,13 @@
 <template>
   <Layout>
     <div class='grid'>
+      <g-image v-for="(img, i) in $page.data.images" :key="i" :id="'img-'+i" :src="img"  />
+      <div id='color-bar-1' class='color-bar'></div>
       <section>
         <h1>{{ $page.data.title }}</h1>
         <div class="content" v-html="$page.data.content"></div>
+        <a class="resume-download" :href='$page.data.resume' download>Download Resumé</a>
       </section>
-      <g-image v-for="(img, i) in $page.data.images" :key="i" :id="'img-'+i" :src="img"  />
-      <div id='color-bar-1' class='color-bar'></div>
-      <a class="resume-download" :href='$page.data.resume' download>Download Resumé</a>
     </div>
   </Layout>
 </template>
@@ -34,30 +34,33 @@ export default {
 <style scoped>
   .grid {
     width: 100%;
-    height: 100vh;
-    max-height: 100vh;
+    height: 100%;
     display: grid;
-    grid-template-columns: 33.5vw 66.5vw;
-    grid-column-gap: 3vw;
-    grid-template-rows: 35vh 65vh;
+    grid-template-columns: 35vw 1fr;
+    grid-template-rows: 35vh 1fr;
     box-sizing: border-box;
     padding: 0 5vw;
+    overflow-y: auto;
+    overflow-x: hidden;
   }
   
   section {
     grid-row: 2 / 3;
     width: fit-content;
-    justify-self: flex-end;
     max-height: 100%;
   }
 
   h1 {
     color: var(--mauve);
     font-size: calc(1.5em + 2vh);
+    margin: 1.5vw 0;
   }
 
   p {
     line-height: 2;
+  }
+  .content {
+    margin-block-end: 1.5vw;
   }
 
   .resume-download {
@@ -171,5 +174,49 @@ export default {
     margin-left: 2vw;
     z-index: 7;
     background-color: #3D3C7B;
+  }
+
+  @media(orientation: portrait) {
+    #img-1, #img-4, #color-bar-1 {
+      display: none;
+    }
+    #img-0, #img-2, #img-3 {
+      grid-row: 1 / 2;
+      grid-column: 1 / 2;
+      margin: 0;
+      height: 50vh;
+      width: auto;
+      max-width: 100%;
+    }
+    .grid {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto;
+      grid-gap: 2vh;
+    }
+
+    section {
+      margin-bottom: 10vh;
+    }
+
+    #img-0 {
+      margin-left: 20vw;
+      z-index:5;
+    }
+    #img-2 {
+      width: 50%;
+      height: 30%;
+      align-self: flex-end;
+      margin-bottom: 7vh;
+      z-index: 0;
+    }
+    #img-3 {
+      height: 32%;
+      width: 100%;
+      max-width: 100%;
+      object-fit: cover;
+      z-index: 10;
+      transform: translate(-60%, 15%);
+    }
+
   }
 </style>
