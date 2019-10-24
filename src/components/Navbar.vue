@@ -50,7 +50,7 @@ export default {
     justify-content: flex-start;
   }
 
-  header img.g-image {
+  .site-logomark img {
     height: 6vh;
     min-height: 40px;
     max-height: 100%;
@@ -139,18 +139,16 @@ export default {
     
     .site-logomark {
       position: fixed;
-      top: 1.5vh;
+      top: 3vh;
       left: 50%;
-      height: min-content;
-      display: flex;
-      align-items: center;
-      padding: .5vh 1vw;
       transform: translate(-50%);
     }
-    
-    .site-logomark svg {
-      display: inline-block;
-      height: 5vh;
+    .site-logomark img {
+      height: 10vh;
+      width: 10vh;
+    }
+    .nav-title {
+      display: none;
     }
     
     header nav {

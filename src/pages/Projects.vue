@@ -154,4 +154,24 @@ export default {
     object-fit: cover;
     object-position: center;
   }
+
+  @media(max-width:960px) {
+    .grid {
+      grid-template-columns: 1fr 1fr;
+    }
+    .scroll-grad {
+      display: none;
+    }
+  }
+
+  @media (max-width: 450px) {
+    .grid {
+      display: flex;
+      flex-direction: column;
+    }
+    .project_item {
+      grid-template-rows: 1fr auto;
+      margin-bottom: 4vh;
+    }
+  }
 </style>
