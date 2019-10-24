@@ -10,7 +10,7 @@
       </nav>
       <g-link class='featured_project' :to="featuredHref" :style="featuredStyle">
         <g-image :src="featuredProject.featuredImage"></g-image>
-        <span class="span_proj">featured project:</span><span class='span_proj-name'>{{ featuredProject.title }}</span>
+        <p>featured project:<span>{{ featuredProject.title }}</span></p>
       </g-link>
     </div>
   </Layout>
@@ -59,6 +59,9 @@ export default {
     },
     featuredStyle() {
       return { '--theme': this.featuredProject.color.r+','+this.featuredProject.color.g+','+this.featuredProject.color.b }
+    },
+    isMobile() {
+      return window.innerWidth < 450
     },
   },
   async mounted () {
@@ -202,33 +205,34 @@ export default {
     object-fit: cover;
     overflow: hidden;
   }
-  .featured_project .span_proj {
+  .featured_project p {
+    margin: 0;
     position: absolute;
     bottom: 1em;
     right: 20%;
     color: var(--bg);
     z-index: 5;
   }
-  .span_proj::before,
-  .span_proj::after {
+  .featured_project p::before,
+  .featured_project p::after {
     position: absolute;
     content: '';
     background: var(--bg);
   }
-  .span_proj::before {
+  .featured_project p::before {
     width: 25%;
     height: .1vmax;
     top: 40%;
     left: calc(100% + 1vmax);
     transform: translate(0, -50%);
   }
-  .span_proj::after {
+  .featured_project p::after {
     width: .5vmax;
     height: .5vmax;
     clip-path: polygon(0 0, 100% 0, 0 100%);
     left: calc(125% + .5vmax);
     top: 50%;
-    transform: translate(0, -72%) rotate(135deg);
+    transform: translate(0, -.69vh) rotate(135deg);
   }
 
   @media(orientation: portrait) {
@@ -272,7 +276,7 @@ export default {
       object-fit: cover;
       width: unset;
     }
-    .span_proj {
+    .featured_project p {
       font-size: calc(.5em + 1vmax);
       width: fit-content;
       height: fit-content;
@@ -284,11 +288,9 @@ export default {
       opacity: .9;
       text-align: right;
     }
-    .span_proj::before,
-    .span_proj::after {
-      display: none;
-    }
-    .span_proj-name {
+    .featured_project p::before,
+    .featured_project p::after,
+    .featured_project span {
       display: none;
     }
   }

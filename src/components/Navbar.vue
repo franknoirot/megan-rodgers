@@ -5,8 +5,8 @@
       <span class="nav-title">Megan Rodgers</span>
     </g-link>
     <nav>
-      <g-link to="/projects">Projects</g-link>
-      <g-link to="/about">About</g-link>
+      <g-link :class="{ active: ($page == '/projects') ? true : false }" to="/projects">Projects</g-link>
+      <g-link :class="{ active: ($page == '/about') ? true : false }" to="/about">About</g-link>
       <a class="contact" href="mailto:frank@franknoirot.co">Contact</a>
     </nav>
   </header>
@@ -57,12 +57,12 @@ export default {
     object-fit: scale-down;
   }
 
-  header a {
+  a {
     text-decoration: none;
     color: inherit;
   }
 
-  header nav {
+  nav {
     width: 30vw;
     min-width: 300px;
     max-width: 400px;
@@ -71,11 +71,11 @@ export default {
     align-items: center;
   }
 
-  header nav a {
+  nav a {
     position: relative;
   }
 
-  header nav a:not(.contact)::after {
+  nav a:not(.contact)::after {
     content: '';
     position: absolute;
     bottom: 0%;
@@ -87,12 +87,15 @@ export default {
     transition: height .12s ease-in-out;
   }
 
-  header nav a:not(.contact):focus {
+  nav a:not(.contact):focus {
     outline: none;
   }
 
-  header nav a:hover::after,
-  header nav a:focus::after {
+  nav a.active::after {
+    height: 15%;
+  }
+  nav a:hover::after,
+  nav a:focus::after {
     height: 30%;
   }
 
