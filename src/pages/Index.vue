@@ -10,7 +10,7 @@
       </nav>
       <g-link class='featured_project' :to="featuredHref" :style="featuredStyle">
         <g-image :src="featuredProject.featuredImage"></g-image>
-        <span >featured project:{{ (isMobile) ? ' '+featuredProject.title : '' }}</span>
+        <span class="span_proj">featured project:</span><span class='span_proj-name'>{{ featuredProject.title }}</span>
       </g-link>
     </div>
   </Layout>
@@ -59,9 +59,6 @@ export default {
     },
     featuredStyle() {
       return { '--theme': this.featuredProject.color.r+','+this.featuredProject.color.g+','+this.featuredProject.color.b }
-    },
-    isMobile() {
-      return window.innerWidth < 450
     },
   },
   async mounted () {
@@ -205,27 +202,27 @@ export default {
     object-fit: cover;
     overflow: hidden;
   }
-  .featured_project span {
+  .featured_project .span_proj {
     position: absolute;
     bottom: 1em;
     right: 20%;
     color: var(--bg);
     z-index: 5;
   }
-  .featured_project span::before,
-  .featured_project span::after {
+  .span_proj::before,
+  .span_proj::after {
     position: absolute;
     content: '';
     background: var(--bg);
   }
-  .featured_project span::before {
+  .span_proj::before {
     width: 25%;
     height: .1vmax;
     top: 40%;
     left: calc(100% + 1vmax);
     transform: translate(0, -50%);
   }
-  .featured_project span::after {
+  .span_proj::after {
     width: .5vmax;
     height: .5vmax;
     clip-path: polygon(0 0, 100% 0, 0 100%);
@@ -275,7 +272,7 @@ export default {
       object-fit: cover;
       width: unset;
     }
-    .featured_project span {
+    .span_proj {
       font-size: calc(.5em + 1vmax);
       width: fit-content;
       height: fit-content;
@@ -287,8 +284,11 @@ export default {
       opacity: .9;
       text-align: right;
     }
-    .featured_project span::before,
-    .featured_project span::after {
+    .span_proj::before,
+    .span_proj::after {
+      display: none;
+    }
+    .span_proj-name {
       display: none;
     }
   }
