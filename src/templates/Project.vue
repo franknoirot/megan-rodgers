@@ -59,7 +59,11 @@ import Carousel from "../components/Carousel.vue"
 export default {
   metaInfo() {
    return {
-     title: this.$page.project.title
+     title: this.$page.project.title,
+     drag: {
+       start: { x: 0, y: 0 },
+       end: { x: 0, y: 0 },
+     }
    }
   },
   components: {
@@ -134,6 +138,10 @@ export default {
       let rect = e.target.getBoundingClientRect()
       if (e.offsetX > rect.width / 2) this.moveImg(1)
       else this.moveImg(-1)
+    },
+    handleDragStart(e) {
+      drag.start.x = e.touches[0].x
+      drag.start.y = e.touches[0].y
     }
   }
 }
@@ -325,4 +333,29 @@ export default {
     outline-color: rgba(var(--primary-rgb), 1);
 
   } 
+
+  @media(orientation: portrait) {
+    .grid {
+      display: flex;
+      flex-direction: column;
+      overflow-y: auto;
+      padding-bottom: 5vh;
+    }
+    .carousel {
+
+      grid-template-columns: 1fr;
+    }
+    .stage {
+      height: 30vh;
+    }
+    .stage,
+    .tabs,
+    .dots,
+    .arrow {
+      grid-column: 1;
+    }
+    .arrow {
+      display: none;
+    }
+  }
 </style>
