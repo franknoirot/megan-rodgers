@@ -5,7 +5,8 @@
         <h1>{{$page.project.title}}</h1>
         <p class="season">{{ $page.project.season }}</p>
       </section>
-      <div class="carousel">
+      <div class="carousel" @dragstart="imgDragStart" @dragend="imgDragEnd"
+            @touchstart="imgTouchStart" @touchend="imgTouchEnd">
         <div class='stage' tabindex=0 @keydown.left="() => moveImg(-1)" @keydown.right="() => moveImg(1)"
           @click="handleStageClick">
           <g-image :src="images[currImg].img"></g-image>
@@ -15,7 +16,9 @@
         <div class="tabs">
           <button class="step" v-for="(step, j) in processSteps" :key="j"
             v-on:click="() => activateStep(j)"
-            :class="{active: (currStep === j) ? true: false}" >
+            :class="{ 
+              active: (currStep === j) ? true: false,
+              }" >
             {{ step }}
           </button>
         </div>
@@ -25,7 +28,6 @@
               stepActive: (processSteps[currStep].toLowerCase() === image.step) ? true : false,
               imgActive: (currImg === i) ? true : false}"
               :data-to="image.img" v-on:click="() => setImg(i)"></button>
-          </div>
         </div>
       </div>
       <section class="body" v-html="$page.project.content"></section>
@@ -61,8 +63,8 @@ export default {
    return {
      title: this.$page.project.title,
      drag: {
-       start: { x: 0, y: 0 },
-       end: { x: 0, y: 0 },
+       start: 0,
+       end: 0,
      }
    }
   },
@@ -86,7 +88,6 @@ export default {
         if (shallow) {
         return r.concat.apply(r,a);
         }
-          console.log(a, r)
           for(var i=0; i<a.length; i++){
               if(a[i].constructor == Array){
                   flatten(a[i],shallow,r);
@@ -96,7 +97,6 @@ export default {
           }
           return r;
         }
-
       return flatten(this.$page.project.processSteps.map(step => 
         step.images.map(img => {
           return {
@@ -114,6 +114,19 @@ export default {
         '--primary-rgb': this.primaryRGB.r+","+this.primaryRGB.g+","+this.primaryRGB.b
       }
     },
+    mobileTabs() {
+      let tabs = []
+      let stp = this.processSteps
+      if (this.currStep == 0) {
+        tabs = [stp[stp.length-1], ...stp.slice(0, 2)]
+      } else if (this.currStep === stp.length-1) {
+        tabs = [...stp.slice(-2), stp[0]]
+      }
+      else {
+        tabs = stp.slice(this.currStep-1, this.currStep+2)
+      }
+      return tabs
+    }
   },
   methods: {
     activateStep(step) {
@@ -139,9 +152,24 @@ export default {
       if (e.offsetX > rect.width / 2) this.moveImg(1)
       else this.moveImg(-1)
     },
-    handleDragStart(e) {
-      drag.start.x = e.touches[0].x
-      drag.start.y = e.touches[0].y
+    imgDragStart(e) {
+      // console.log("STARTING DRAG", e)
+    },
+    imgDragEnd(e) {
+      // console.log("ENDING DRAG", e)
+    },
+    imgTouchStart(e) {
+      // console.log("STARTING TOUCH", e)
+      // this.drag.start = e.touches[0].screenX
+    },
+    imgTouchEnd(e) {
+      // console.log("ENDING TOUCH", e)
+      // this.drag.end = e.changedTouches[0].screenX
+      // if (this.drag.end - this.drag.start > 0) moveImg(1)
+      // else moveImg(-1)
+    },
+    isActiveMobileTab(t) {
+      return this.mobileTabs.indexOf(t) > 0
     }
   }
 }
@@ -210,7 +238,7 @@ export default {
   }
   .stage img {
     max-height: 100%;
-    object-fit: contain;
+    max-width: 100%;
   }
   .arrow {
     grid-row: 1 / 2;
@@ -340,13 +368,20 @@ export default {
       flex-direction: column;
       overflow-y: auto;
       padding-bottom: 5vh;
+      padding-top: 0;
+    }
+    .heading {
+      margin-top: 0;
+    }
+    h1 {
+      margin-top: 0;
     }
     .carousel {
-
       grid-template-columns: 1fr;
     }
     .stage {
-      height: 30vh;
+      min-height: 35vh;
+      max-width: 100%;
     }
     .stage,
     .tabs,
@@ -355,6 +390,9 @@ export default {
       grid-column: 1;
     }
     .arrow {
+      display: none;
+    }
+    .dot:not(.stepActive) {
       display: none;
     }
   }
