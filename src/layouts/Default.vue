@@ -4,7 +4,10 @@
     <main>
       <slot/>
     </main>
-    <footer>Site by <a href="https://franknoirot.co" rel="noopener" target="_blank">Frank Noirot</a></footer>
+    <footer>
+      Site by&nbsp;<a href="https://franknoirot.co" rel="noopener" target="_blank">Frank Noirot</a>
+      <Bee />
+    </footer>
   </div>
 </template>
 
@@ -17,11 +20,13 @@ query {
 </static-query>
 
 <script>
-  import Navbar from "../components/Navbar.vue"
+  import Navbar from "~/components/Navbar.vue"
+  import Bee from "~/components/Bee.vue"
 
   export default {
     components: {
-      Navbar
+      Navbar,
+      Bee
     },
     props: {
       navbar: {
@@ -91,11 +96,16 @@ footer {
   position: fixed;
   right: 3vw;
   bottom: 3vh;
-  font-size: .75rem;
+  font-size: .65rem;
+  z-index: 9;
 }
 @media(orientation: portrait) {
   main {
     padding: 15vh 5vw 8vh 5vw;
+  }
+  footer {
+    bottom: unset;
+    top: 2vh;
   }
 }
 @media(max-width: 450px) {

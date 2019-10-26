@@ -74,11 +74,9 @@ export default {
   },
   methods: {
     setHover(e) {
-      console.log('hovering, it = ', this.hover)
       let rect = e.target.getBoundingClientRect()
       this.hover['--hov-x'] = (e.offsetX / rect.width *100).toFixed(1) + '%'
       this.hover['--hov-y'] = (e.offsetY / rect.height *100).toFixed(1) + '%'
-      console.log('finished hovering, it = ', this.hover)
     },
   }
 }
@@ -137,7 +135,7 @@ export default {
     background: black;
     transition: width .11s ease-in-out;
   }
-  nav a:hover::after {
+  nav a:not(.link_contact):hover::after {
     width: calc(100% + .4vmin);
   }
   a.link_contact {

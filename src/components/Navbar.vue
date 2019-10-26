@@ -18,7 +18,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
   header {
     z-index: 5;
     box-sizing: border-box;
