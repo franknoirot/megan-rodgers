@@ -5,10 +5,10 @@
         <h1>{{$page.project.title}}</h1>
         <p class="season">{{ $page.project.season }}</p>
       </section>
-      <div class="carousel" @dragstart="imgDragStart" @dragend="imgDragEnd"
-            @touchstart="imgTouchStart" @touchend="imgTouchEnd">
-        <div class='stage' tabindex=0 @keydown.left="() => moveImg(-1)" @keydown.right="() => moveImg(1)"
-          @click="handleStageClick">
+      <div class="carousel">
+        <div class='stage' tabindex=0 @click="handleStageClick"
+        @keydown.left="() => moveImg(-1)" @keydown.right="() => moveImg(1)"
+        @touchstart="imgTouchStart" @touchend="imgTouchEnd">
           <g-image :src="images[currImg].img"></g-image>
         </div>
         <button class="arrow left" v-on:click="() => moveImg(-1)" tabindex=-1></button>
@@ -147,32 +147,29 @@ export default {
       this.currImg = n
       this.currStep = this.processSteps.map(step => step.toLowerCase()).indexOf(this.images[this.currImg].step)
     },
-    handleStageClick(e) {
+    handleStageClick(e, isTouch=false) {
       let rect = e.target.getBoundingClientRect()
-      if (e.offsetX > rect.width / 2) this.moveImg(1)
-      else this.moveImg(-1)
-    },
-    imgDragStart(e) {
-      console.log("STARTING DRAG", e)
-      this.drag.start = e.screenX
-    },
-    imgDragEnd(e) {
-      console.log("ENDING DRAG", e)
-      e.preventDefault()
-      this.drag.end = e.changedTouches[0].screenX
-      if (this.drag.end - this.drag.start < 0) this.moveImg(1)
-      else this.moveImg(-1)
+      if (isTouch) {
+        if (e.changedTouches[0].clientX > rect.width / 2) this.moveImg(1)
+        else this.moveImg(-1)
+      } else {
+        if (e.offsetX > rect.width / 2) this.moveImg(1)
+        else this.moveImg(-1)
+      }
     },
     imgTouchStart(e) {
-      console.log("STARTING TOUCH", e)
       this.drag.start = e.touches[0].screenX
+      this.drag.end = e.touches[0].screenX
     },
     imgTouchEnd(e) {
-      console.log("ENDING TOUCH", e)
       e.preventDefault()
       this.drag.end = e.changedTouches[0].screenX
-      if (this.drag.end - this.drag.start < 0) this.moveImg(1)
-      else this.moveImg(-1)
+      if (Math.abs(this.drag.end - this.drag.start) > 10) {
+        if (this.drag.end - this.drag.start < 0) this.moveImg(1)
+        else this.moveImg(-1)
+      } else {
+        this.handleStageClick(e, true)
+      }
     },
     isActiveMobileTab(t) {
       return this.mobileTabs.indexOf(t) > 0
