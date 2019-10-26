@@ -103,19 +103,21 @@ export default {
       }
     },
     touchMove(e) {
-      this.mouse.x = e.touches[0].pageX
-      this.mouse.y = e.touches[0].pageY
+      let pos = { x: e.touches[0].pageX, y: e.touches[0].pageY }
+      this.mouse.x = pos.x
+      this.mouse.y = pos.y
       this.$bee.mouse = {
-        x: e.touches[0].pageX,
-        y: e.touches[0].pageY,
+        x: pos.x,
+        y: pos.y,
       }
     },
     mouseMove(e) {
-      this.mouse.x = e.pageX
-      this.mouse.y = e.pageY
+      let pos = { x: e.pageX, y: e.pageY }
+      this.mouse.x = pos.x
+      this.mouse.y = pos.y
       this.$bee.mouse = {
-        x: e.pageX,
-        y: e.pageY,
+        x: pos.x,
+        y: pos.y,
       }
     }
   }

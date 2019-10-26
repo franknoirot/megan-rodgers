@@ -186,6 +186,7 @@ export default {
     grid-template-rows: auto 1fr;
     grid-column-gap: 3vw;
     padding: 3vh 0 0 0;
+    overflow-x: hidden;
     box-sizing: border-box;
   }
 
@@ -387,6 +388,19 @@ export default {
       min-height: 35vh;
       max-width: 100%;
     }
+    .tabs {
+      grid-row: 3 / 4;
+    }
+    .tabs .active {
+      background: rgb(var(--primary-rgb));
+    }
+    .dots {
+      height: 150%;
+      align-self: flex-end;
+      grid-row: 2 / 3;
+      background: rgb(var(--primary-rgb));
+      border-radius: 0 0 3vmin 3vmin;
+    }
     .stage,
     .tabs,
     .dots,
@@ -395,6 +409,13 @@ export default {
     }
     .arrow {
       display: none;
+    }
+    .dot::after {
+      top: 65%;
+      border-color: white;
+    }
+    .imgActive::after {
+      background: white;
     }
     .dot:not(.stepActive) {
       display: none;
