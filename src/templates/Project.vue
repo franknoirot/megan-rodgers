@@ -62,10 +62,6 @@ export default {
   metaInfo() {
    return {
      title: this.$page.project.title,
-     drag: {
-       start: 0,
-       end: 0,
-     }
    }
   },
   components: {
@@ -74,7 +70,11 @@ export default {
   data: function() {
     return {
       currStep: 0,
-      currImg: 0
+      currImg: 0,
+      drag: {
+        start: 0,
+        end: 0,
+      }
     }
   },
   computed: {
@@ -153,20 +153,26 @@ export default {
       else this.moveImg(-1)
     },
     imgDragStart(e) {
-      // console.log("STARTING DRAG", e)
+      console.log("STARTING DRAG", e)
+      this.drag.start = e.screenX
     },
     imgDragEnd(e) {
-      // console.log("ENDING DRAG", e)
+      console.log("ENDING DRAG", e)
+      e.preventDefault()
+      this.drag.end = e.changedTouches[0].screenX
+      if (this.drag.end - this.drag.start < 0) this.moveImg(1)
+      else this.moveImg(-1)
     },
     imgTouchStart(e) {
-      // console.log("STARTING TOUCH", e)
-      // this.drag.start = e.touches[0].screenX
+      console.log("STARTING TOUCH", e)
+      this.drag.start = e.touches[0].screenX
     },
     imgTouchEnd(e) {
-      // console.log("ENDING TOUCH", e)
-      // this.drag.end = e.changedTouches[0].screenX
-      // if (this.drag.end - this.drag.start > 0) moveImg(1)
-      // else moveImg(-1)
+      console.log("ENDING TOUCH", e)
+      e.preventDefault()
+      this.drag.end = e.changedTouches[0].screenX
+      if (this.drag.end - this.drag.start < 0) this.moveImg(1)
+      else this.moveImg(-1)
     },
     isActiveMobileTab(t) {
       return this.mobileTabs.indexOf(t) > 0
@@ -239,6 +245,7 @@ export default {
   .stage img {
     max-height: 100%;
     max-width: 100%;
+    pointer-events: none;
   }
   .arrow {
     grid-row: 1 / 2;
