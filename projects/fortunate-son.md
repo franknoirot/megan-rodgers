@@ -1,50 +1,140 @@
 ---
 title: Fortunate Son
 season: Spring 19
-featuredImage: /uploads/fortunate-son_garment_6.jpg
+featuredImage:
+  src: /uploads/fortunate-son_garment_6.jpg
+  title: title text
+  alt: alt text
 color:
   b: 76
   g: 76
   r: 155
 processSteps:
   - images:
-      - /uploads/fortunate-son_inspo_1.jpg
-      - /uploads/fortunate-son_inspo_2.jpg
-      - /uploads/fortunate-son_inspo_3.jpg
-      - /uploads/fortunate-son_inspo_4.jpg
-      - /uploads/fortunate-son_inspo_5.jpg
+      - image:
+          src: /uploads/fortunate-son_inspo_1.jpg
+          title: title text
+          alt: alt text
+      - image:
+          src: /uploads/fortunate-son_inspo_2.jpg
+          title: title text
+          alt: alt text
+      - image:
+          src: /uploads/fortunate-son_inspo_3.jpg
+          title: title text
+          alt: alt text
+      - image:
+          src: /uploads/fortunate-son_inspo_4.jpg
+          title: title text
+          alt: alt text
+      - image:
+          src: /uploads/fortunate-son_inspo_5.jpg
+          title: title text
+          alt: alt text
     name: Inspiration
   - images:
-      - /uploads/fortunate-son_sketch_1.jpg
-      - /uploads/fortunate-son_sketch_2.jpg
-      - /uploads/fortunate-son_sketch_3.jpg
-      - /uploads/fortunate-son_sketch_4.jpg
-      - /uploads/fortunate-son_sketch_5.jpg
+      - image:
+          src: /uploads/fortunate-son_sketch_1.jpg
+          title: title text
+          alt: alt text
+      - image:
+          src: /uploads/fortunate-son_sketch_2.jpg
+          title: title text
+          alt: alt text
+      - image:
+          src: /uploads/fortunate-son_sketch_3.jpg
+          title: title text
+          alt: alt text
+      - image:
+          src: /uploads/fortunate-son_sketch_4.jpg
+          title: title text
+          alt: alt text
+      - image:
+          src: /uploads/fortunate-son_sketch_5.jpg
+          title: title text
+          alt: alt text
     name: Sketches
   - images:
-      - /uploads/fortunate-son_muslin_1.jpg
-      - /uploads/fortunate-son_muslin_2.jpg
-      - /uploads/fortunate-son_muslin_3.jpg
-      - /uploads/fortunate-son_muslin_4.jpg
-      - /uploads/fortunate-son_muslin_5.jpg
-      - /uploads/fortunate-son_muslin_6.jpg
-      - /uploads/fortunate-son_muslin_7.jpg
-      - /uploads/fortunate-son_muslin_8.jpg
+      - image:
+          src: /uploads/fortunate-son_muslin_1.jpg
+          title: title text
+          alt: alt text
+      - image:
+          src: /uploads/fortunate-son_muslin_2.jpg
+          title: title text
+          alt: alt text
+      - image:
+          src: /uploads/fortunate-son_muslin_3.jpg
+          title: title text
+          alt: alt text
+      - image:
+          src: /uploads/fortunate-son_muslin_4.jpg
+          title: title text
+          alt: alt text
+      - image:
+          src: /uploads/fortunate-son_muslin_5.jpg
+          title: title text
+          alt: alt text
+      - image:
+          src: /uploads/fortunate-son_muslin_6.jpg
+          title: title text
+          alt: alt text
+      - image:
+          src: /uploads/fortunate-son_muslin_7.jpg
+          title: title text
+          alt: alt text
+      - image:
+          src: /uploads/fortunate-son_muslin_8.jpg
+          title: title text
+          alt: alt text
     name: Muslin
   - images:
-      - /uploads/fortunate-son_collection_3.jpg
-      - /uploads/fortunate-son_collection_1.jpg
-      - /uploads/fortunate-son_collection_2.jpg
-      - /uploads/fortunate-son_collection_4.jpg
-      - /uploads/fortunate-son_collection_5.jpg
+      - image:
+          src: /uploads/fortunate-son_collection_3.jpg
+          title: title text
+          alt: alt text
+      - image:
+          src: /uploads/fortunate-son_collection_1.jpg
+          title: title text
+          alt: alt text
+      - image:
+          src: /uploads/fortunate-son_collection_2.jpg
+          title: title text
+          alt: alt text
+      - image:
+          src: /uploads/fortunate-son_collection_4.jpg
+          title: title text
+          alt: alt text
+      - image:
+          src: /uploads/fortunate-son_collection_5.jpg
+          title: title text
+          alt: alt text
     name: Collection
   - images:
-      - /uploads/fortunate-son_garment_1.jpg
-      - /uploads/fortunate-son_garment_2.jpg
-      - /uploads/fortunate-son_garment_3.jpg
-      - /uploads/fortunate-son_garment_4.jpg
-      - /uploads/fortunate-son_garment_5.jpg
-      - /uploads/fortunate-son_garment_6.jpg
+      - image:
+          src: /uploads/fortunate-son_garment_1.jpg
+          title: title text
+          alt: alt text
+      - image:
+          src: /uploads/fortunate-son_garment_2.jpg
+          title: title text
+          alt: alt text
+      - image:
+          src: /uploads/fortunate-son_garment_3.jpg
+          title: title text
+          alt: alt text
+      - image:
+          src: /uploads/fortunate-son_garment_4.jpg
+          title: title text
+          alt: alt text
+      - image:
+          src: /uploads/fortunate-son_garment_5.jpg
+          title: title text
+          alt: alt text
+      - image:
+          src: /uploads/fortunate-son_garment_6.jpg
+          title: title text
+          alt: alt text
     name: Garment
 ---
 Menswear collection inspired by the 50th anniversary of the Kent State May 4th

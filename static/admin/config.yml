@@ -19,7 +19,7 @@ collections:
         name: featuredImage
         widget: object
         fields:
-          - {label: Image, name: img, widget: image}
+          - {label: Image, name: src, widget: image}
           - {label: Title, name: title, widget: string}
           - {label: Alt Text, name: alt, widget: string}
       - {label: "Body", name: "body", widget: "markdown"}
@@ -61,7 +61,7 @@ collections:
               name: image
               widget: object
               fields:
-                - {label: Image, name: img, widget: image}
+                - {label: Image, name: src, widget: image}
                 - {label: Title, name: title, widget: string}
                 - {label: Alt Text, name: alt, widget: string}
   - label: "Pages"

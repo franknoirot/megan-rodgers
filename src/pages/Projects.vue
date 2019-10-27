@@ -8,7 +8,8 @@
         <h2>{{proj.node.title}}</h2>
         <span>{{ proj.node.season }}</span>
         <div class='img-wrap'>
-          <img :src="proj.node.featuredImage">
+          <img :src="proj.node.featuredImage.src" :alt="proj.node.featuredImage.alt"
+               :title="proj.node.featuredImage.title">
         </div>
       </a>
       <div class="scroll-grad"></div>
@@ -29,7 +30,11 @@
           g
           b
         }
-        featuredImage
+        featuredImage {
+          src
+          title
+          alt
+        }
       }
     }
   }

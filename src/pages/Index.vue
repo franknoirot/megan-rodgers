@@ -9,7 +9,8 @@
           @mouseleave="setHover" @mouseenter="setHover" :style="hover">Contact</a>
       </nav>
       <g-link class='featured_project' :to="featuredHref" :style="featuredStyle">
-        <g-image :src="featuredProject.featuredImage"></g-image>
+        <g-image :src="featuredProject.featuredImage.src" :alt="featuredProject.featuredImage.alt"
+          :title="featuredProject.featuredImage.title"></g-image>
         <p>featured project:<span>{{ featuredProject.title }}</span></p>
       </g-link>
     </div>
@@ -27,8 +28,6 @@
 </page-query>
 
 <script>
-import FeaturedProject from '../components/FeaturedProject.vue'
-
 export default {
   data() {
     return {
@@ -49,9 +48,6 @@ export default {
   },
   metaInfo: {
     title: 'Home'
-  },
-  components: {
-    FeaturedProject
   },
   computed: {
     featuredHref() {

@@ -9,7 +9,8 @@
         <div class='stage' tabindex=0 @click="handleStageClick"
         @keydown.left="() => moveImg(-1)" @keydown.right="() => moveImg(1)"
         @touchstart="imgTouchStart" @touchend="imgTouchEnd">
-          <g-image v-for="(image, i) in images" :key="i" :src="images[i].img"
+          <g-image v-for="(image, i) in images" :key="i"
+          :src="images[i].img.src" :alt="images[i].img.alt" :title="images[i].img.title"
           :class="{ active: (i===currImg), left: isLeft(i), right: isRight(i) }"></g-image>
         </div>
         <button class="arrow left" v-on:click="() => moveImg(-1)" tabindex=-1></button>
@@ -42,7 +43,11 @@
       title
       season
       content
-      featuredImage
+      featuredImage {
+        src
+        alt
+        title
+      }
       color {
         r
         g
@@ -50,7 +55,13 @@
       }
       processSteps {
         name
-        images
+        images {
+          image {
+            src
+            title
+            alt
+          }
+        }
       }
    }
  }
@@ -101,7 +112,7 @@ export default {
       return flatten(this.$page.project.processSteps.map(step => 
         step.images.map(img => {
           return {
-            img,
+            img: img.image,
             step: step.name.toLowerCase()
           }
         }
