@@ -235,6 +235,7 @@ export default {
   }
 
   .carousel {
+    max-height: 90vh;
     grid-row: 1 / 3;
     grid-column: 2 / 3;
     align-self: stretch;

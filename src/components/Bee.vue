@@ -226,5 +226,8 @@ export default {
       left: unset;
       right: 2vw;
     }
+    .bee__guide-text {
+      display: none;
+    }
   }
 </style>

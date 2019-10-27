@@ -1,7 +1,7 @@
 <template>
   <div class="layout">
     <Navbar v-if="navbar==='true'"></Navbar>
-    <main>
+    <main :class="{navbar: (navbar==='true')}">
       <slot/>
     </main>
     <footer>
@@ -108,7 +108,12 @@ footer {
     top: 2vh;
   }
 }
-@media(max-width: 450px) {
+@media (max-device-height: 400px) {
+  main.navbar {
+    padding: 15vh 5vw 0 5vw;
+  }
+}
+@media (max-width: 450px), (max-height: 400px) {
   footer {
     display: none;
   }

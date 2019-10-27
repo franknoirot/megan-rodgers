@@ -288,4 +288,10 @@ export default {
       display: none;
     }
   }
+
+  @media (max-height: 400px) {
+    .main-logo {
+      align-self: flex-start;
+    }
+  }
 </style>
