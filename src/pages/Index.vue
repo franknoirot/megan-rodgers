@@ -8,10 +8,11 @@
         <a class="link_contact" href="mailto:frank@franknoirot.co"
           @mouseleave="setHover" @mouseenter="setHover" :style="hover">Contact</a>
       </nav>
-      <g-link class='featured_project' :to="featuredHref" :style="featuredStyle">
+      <g-link class='featured_project' :to="featuredHref" :style="featuredStyle"
+      itemscope itemtype="http://schema.org/CreativeWork">
         <g-image :src="featuredProject.featuredImage.src" :alt="featuredProject.featuredImage.alt"
-          :title="featuredProject.featuredImage.title"></g-image>
-        <p>featured project:<span>{{ featuredProject.title }}</span></p>
+          :title="featuredProject.featuredImage.title" itemprop="mainEntity"></g-image>
+        <p>featured project:<span itemprop="name">{{ featuredProject.title }}</span></p>
       </g-link>
     </div>
   </Layout>
@@ -29,6 +30,12 @@
 
 <script>
 export default {
+  metaInfo: {
+    title: 'Home',
+    meta: [
+      { name: 'description', content: 'Fashion designs by Megan Rodgers, combining gender-neutral and sustainable practices into a punchy aesthetic.' }
+    ]
+  },
   data() {
     return {
       featuredProject: {
@@ -45,9 +52,6 @@ export default {
         '--hov-y': '80%',
       }
     }
-  },
-  metaInfo: {
-    title: 'Home'
   },
   computed: {
     featuredHref() {

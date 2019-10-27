@@ -103,7 +103,7 @@ processSteps:
           alt: alt text
     name: Collection
 ---
-Womenswear collection inspired by public transportation and specifically my
+Womenswear collection inspired by public transportation and my
  years taking the subway in New York City. I was inspired by how we interact
  with people in these intimate proximities but still place significant distance
  between ourselves and strangers. Prints and graphics were inspired by crowds,

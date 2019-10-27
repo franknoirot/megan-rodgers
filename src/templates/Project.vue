@@ -1,11 +1,11 @@
 <template>
   <Layout>
-    <article class="grid" :style="cssProps">    
+    <article class="grid" :style="cssProps" itemscope itemtype="http://schema.org/CreativeWork">    
       <section class='heading'>
-        <h1>{{$page.project.title}}</h1>
-        <p class="season">{{ $page.project.season }}</p>
+        <h1 itemprop="name">{{$page.project.title}}</h1>
+        <p class="season" itemprop="dateCreated">{{ $page.project.season }}</p>
       </section>
-      <div class="carousel">
+      <div class="carousel" itemprop="mainEntity">
         <div class='stage' tabindex=0 @click="handleStageClick"
         @keydown.left="() => moveImg(-1)" @keydown.right="() => moveImg(1)"
         @touchstart="imgTouchStart" @touchend="imgTouchEnd">
@@ -32,7 +32,7 @@
               :data-to="image.img" v-on:click="() => setImg(i)"></button>
         </div>
       </div>
-      <section class="body" v-html="$page.project.content"></section>
+      <section class="body" v-html="$page.project.content" itemprop="text"></section>
     </article>
   </Layout>
 </template>
@@ -74,6 +74,14 @@ export default {
   metaInfo() {
    return {
      title: this.$page.project.title,
+     meta: [
+       { key: 'description', name: 'description', content: `${this.$page.project.title}, a fashion design project by Megan Rodgers of Kent State University.` },
+       { property: "og:url", content: this.$el.baseURI },
+       { property: "og:type", content:"article" },
+       { property: "og:title", content: this.$page.project.title + "| Megan Rodgers" },
+       { property: "og:description", content: `${this.$page.project.title}, a fashion design project by Megan Rodgers of Kent State University.` },
+       { property: "og:image", content: this.$page.project.featuredImage.src }
+     ]
    }
   },
   components: {
@@ -193,7 +201,7 @@ export default {
     },
     isActiveMobileTab(t) {
       return this.mobileTabs.indexOf(t) > 0
-    }
+    },
   }
 }
 </script>

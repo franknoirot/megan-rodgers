@@ -1,15 +1,16 @@
 <template>
   <Layout>
     <h1>Projects</h1>
-    <div class="grid">
+    <div class="grid" itemscope itemtype="http://schema.org/ItemList">
       <a class='project_item'
       v-for="(proj, i) in $page.allProjects.edges" :key="i"
-        :href="proj.node.path" :style="{ '--theme': cssProps[i] }">
-        <h2>{{proj.node.title}}</h2>
-        <span>{{ proj.node.season }}</span>
+      :href="proj.node.path" :style="{ '--theme': cssProps[i] }"
+      itemprop="itemListElement" itemscope itemtype="http://schema.org/CreativeWork">
+        <h2 itemprop="name">{{proj.node.title}}</h2>
+        <span itemprop="dateCreated">{{ proj.node.season }}</span>
         <div class='img-wrap'>
           <img :src="proj.node.featuredImage.src" :alt="proj.node.featuredImage.alt"
-               :title="proj.node.featuredImage.title">
+               :title="proj.node.featuredImage.title" itemprop="mainEntity">
         </div>
       </a>
       <div class="scroll-grad"></div>
@@ -44,7 +45,10 @@
 <script>
 export default {
   metaInfo: {
-    title: 'Projects'
+    title: 'Projects',
+    meta: [
+     { name: 'description', content: 'The collected fashion projects of Megan Rodgers, Kent State University MFA.' }
+    ]
   },
   computed: {
     rgb() {

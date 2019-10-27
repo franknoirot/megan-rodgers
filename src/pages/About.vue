@@ -26,7 +26,14 @@
 <script>
 export default {
   metaInfo: {
-    title: 'About'
+    title: 'About',
+    meta: [
+      { name: 'description', content: 'Megan Rodgers is an award-winning Fashion Designer studying for her MFA at Kent State University.' },
+      { property: "og:type", content:"article" },
+      { property: "og:title", content: "About | Megan Rodgers" },
+      { property: "og:description", content: `Megan Rodgers is an award-winning fashion designer studying at Kent State University for her MFA.` },
+      { property: "og:image", content: this.$page.data.images[0] }
+    ]
   }
 }
 </script>
