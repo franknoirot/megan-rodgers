@@ -74,14 +74,14 @@ export default {
   metaInfo() {
    return {
      title: this.$page.project.title,
-     meta: [
-       { key: 'description', name: 'description', content: `${this.$page.project.title}, a fashion design project by Megan Rodgers of Kent State University.` },
-       { property: "og:url", content: this.$el.baseURI },
-       { property: "og:type", content:"article" },
-       { property: "og:title", content: this.$page.project.title + "| Megan Rodgers" },
-       { property: "og:description", content: `${this.$page.project.title}, a fashion design project by Megan Rodgers of Kent State University.` },
-       { property: "og:image", content: this.$page.project.featuredImage.src }
-     ]
+    //  meta: [
+    //    { key: 'description', name: 'description', content: `${this.$page.project.title}, a fashion design project by Megan Rodgers of Kent State University.` },
+    //    { property: "og:url", content: this.$el.baseURI },
+    //    { property: "og:type", content:"article" },
+    //    { property: "og:title", content: this.$page.project.title + "| Megan Rodgers" },
+    //    { property: "og:description", content: `${this.$page.project.title}, a fashion design project by Megan Rodgers of Kent State University.` },
+    //    { property: "og:image", content: this.$page.project.featuredImage.src }
+    //  ]
    }
   },
   components: {

@@ -32,7 +32,6 @@ export default {
       { property: "og:type", content:"article" },
       { property: "og:title", content: "About | Megan Rodgers" },
       { property: "og:description", content: `Megan Rodgers is an award-winning fashion designer studying at Kent State University for her MFA.` },
-      { property: "og:image", content: this.$page.data.images[0] }
     ]
   }
 }
