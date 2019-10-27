@@ -15,7 +15,13 @@ collections:
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: Season, name: season, widget: string}
-      - {label: "Featured Image", name: "featuredImage", widget: "image"}
+      - label: Featured Image
+        name: featuredImage
+        widget: object
+        fields:
+          - {label: Image, name: img, widget: image}
+          - {label: Title, name: title, widget: string}
+          - {label: Alt Text, name: alt, widget: string}
       - {label: "Body", name: "body", widget: "markdown"}
       - label: Main Color
         name: color
@@ -50,7 +56,14 @@ collections:
           - label: Images
             name: images
             widget: list
-            field: {label: Image, name: image, widget: image}
+            field:
+              label: Image
+              name: image
+              widget: object
+              fields:
+                - {label: Image, name: img, widget: image}
+                - {label: Title, name: title, widget: string}
+                - {label: Alt Text, name: alt, widget: string}
   - label: "Pages"
     name: "pages"
     files:
@@ -66,6 +79,7 @@ collections:
             collection: "projects"
             searchFields: ["title"]
             valueField: "slug"
+            displayFields: ["title"]
             multiple: false
       - label: "About Page"
         name: "about"
