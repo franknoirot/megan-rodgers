@@ -426,6 +426,9 @@ export default {
     .carousel {
       grid-template-columns: 1fr;
     }
+    .carousel *:focus {
+      outline: none;
+    }
     .stage {
       min-height: 35vh;
       max-width: 100%;
