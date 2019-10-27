@@ -9,7 +9,8 @@
         <div class='stage' tabindex=0 @click="handleStageClick"
         @keydown.left="() => moveImg(-1)" @keydown.right="() => moveImg(1)"
         @touchstart="imgTouchStart" @touchend="imgTouchEnd">
-          <g-image :src="images[currImg].img"></g-image>
+          <g-image v-for="(image, i) in images" :key="i" :src="images[i].img"
+          :class="{ active: (i===currImg), left: isLeft(i), right: isRight(i) }"></g-image>
         </div>
         <button class="arrow left" v-on:click="() => moveImg(-1)" tabindex=-1></button>
         <button class="arrow right" v-on:click="() => moveImg(1)" tabindex=-1></button>
@@ -129,6 +130,14 @@ export default {
     }
   },
   methods: {
+    isLeft(index) {
+      if (this.currImg === 0 && index === this.images.length-1) return true
+      else return (index < this.currImg  && Math.abs(this.currImg - index) !== this.images.length-1)
+    },
+    isRight(index) {
+      if (this.currImg === this.images.length-1 && index === 0) return true
+      else return (index > this.currImg && Math.abs(this.currImg - index) !== this.images.length-1)
+    },
     activateStep(step) {
       this.currStep = step
       this.currImg = this.images.map(img => img.step).indexOf(this.processSteps[this.currStep].toLowerCase())
@@ -230,12 +239,11 @@ export default {
     justify-self: stretch;
     background: var(--bg);
     z-index: 5;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position: relative;
     box-shadow: var(--shadows);
     max-height: 100%;
     user-select: none;
+    overflow: hidden;
   }
   .stage, .stage img {
     border-radius: 3vmin;
@@ -244,6 +252,20 @@ export default {
     max-height: 100%;
     max-width: 100%;
     pointer-events: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .15s ease-in-out;
+  }
+  .stage .left {
+    transform: translate(-150%, -50%);
+  }
+  .stage .right {
+    transform: translate(50%, -50%);
+  }
+  .stage img:not(.active) {
+    opacity: 0;
   }
   .arrow {
     grid-row: 1 / 2;
