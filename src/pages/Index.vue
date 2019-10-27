@@ -1,7 +1,7 @@
 <template>
   <Layout navbar=false>
     <div class="grid">
-      <g-image class="main-logo" :src="$page.data.logo"></g-image>
+      <g-image class="main-logo" :src="$page.data.logo" alt="Megan Rodgers logo: 'MR' centered in an incomplete circle, with greenery growing out of the circle's broken ends, and a bee and butterfly visiting each."></g-image>
       <nav>
         <g-link to="/about">About</g-link>
         <g-link to="/projects">Projects</g-link>

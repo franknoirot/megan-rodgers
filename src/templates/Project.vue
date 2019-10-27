@@ -13,14 +13,14 @@
           :src="images[i].img.src" :alt="images[i].img.alt" :title="images[i].img.title"
           :class="{ active: (i===currImg), left: isLeft(i), right: isRight(i) }"></g-image>
         </div>
-        <button class="arrow left" v-on:click="() => moveImg(-1)" tabindex=-1></button>
-        <button class="arrow right" v-on:click="() => moveImg(1)" tabindex=-1></button>
+        <button class="arrow left" v-on:click="() => moveImg(-1)" tabindex=-1 title="Go to previous image"></button>
+        <button class="arrow right" v-on:click="() => moveImg(1)" tabindex=-1 title="Go to next image"></button>
         <div class="tabs">
           <button class="step" v-for="(step, j) in processSteps" :key="j"
             v-on:click="() => activateStep(j)"
             :class="{ 
               active: (currStep === j) ? true: false,
-              }" >
+              }" :title="stepTitle(step, j)">
             {{ step }}
           </button>
         </div>
@@ -29,7 +29,8 @@
               class="dot" :class="{[image.step]: image.step,
               stepActive: (processSteps[currStep].toLowerCase() === image.step) ? true : false,
               imgActive: (currImg === i) ? true : false}"
-              :data-to="image.img" v-on:click="() => setImg(i)"></button>
+              :data-to="image.img.src" v-on:click="() => setImg(i)"
+              :title="dotTitle(i)"></button>
         </div>
       </div>
       <section class="body" v-html="$page.project.content" itemprop="text"></section>
@@ -202,6 +203,12 @@ export default {
     isActiveMobileTab(t) {
       return this.mobileTabs.indexOf(t) > 0
     },
+    stepTitle(step, j) {
+      return `Go to design process step ${j}: ${step}`
+    },
+    dotTitle(i) {
+      return `Go to image ${i}`
+    }
   }
 }
 </script>

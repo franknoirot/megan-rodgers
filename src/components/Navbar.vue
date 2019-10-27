@@ -1,7 +1,7 @@
 <template>
   <header>
     <g-link class="site-logomark" to="/"> 
-      <g-image src="/uploads/final-logo.jpg"></g-image>
+      <g-image src="/uploads/final-logo.jpg" alt="Megan Rodgers logo: 'MR' centered in an incomplete circle, with greenery growing out of the circle's broken ends, and a bee and butterfly visiting each."></g-image>
       <span class="nav-title">Megan Rodgers</span>
     </g-link>
     <nav>
