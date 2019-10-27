@@ -2,6 +2,7 @@
   <div class="bee_container">
     <div ref="bee" class="bee" :class="{['bee__animation']: animating}"
       @click="startBee"></div>
+    <p class="bee__guide-text"><em>click to have the bee follow you.</em></p>
     <button class="drop-bee"
       @click="stopBee">DROP BEE</button>
   </div>
@@ -51,8 +52,8 @@ export default {
         this.mouse = {x: innerWidth / 2,
                       y: innerHeight / 2}
       }
-      this.mouseOld = {x: this.$refs.bee.getBoundingClientRect().left + this.$refs.bee.getBoundingClientRect().width*1.25,
-                       y: this.$refs.bee.getBoundingClientRect().top + this.$refs.bee.getBoundingClientRect().height*1.25}
+      this.mouseOld = {x: this.$refs.bee.getBoundingClientRect().left + this.$refs.bee.getBoundingClientRect().width/2,
+                       y: this.$refs.bee.getBoundingClientRect().top + this.$refs.bee.getBoundingClientRect().height/2}
       this.$bee.isAnimating = true
 
       if (!this.touches) {
@@ -91,8 +92,9 @@ export default {
         this.mouseOld.y += (this.mouse.y - this.mouseOld.y)*0.011
         // the Math.* stuff is added to make the bee move in a figure eight pattern
         // x = sin(t), y = cos(t)sin(t) 
-        styles.left = this.mouseOld.x - this.$refs.bee.getBoundingClientRect().width + Math.sin(3*this.t) * 80 + "px",
-        styles.top = this.mouseOld.y - this.$refs.bee.getBoundingClientRect().height - Math.sin(3*this.t)*Math.cos(3*this.t) * 80 + "px"  
+
+        styles.left = this.mouseOld.x + Math.sin(3*this.t) * 80 + "px",
+        styles.top = this.mouseOld.y - Math.sin(3*this.t)*Math.cos(3*this.t) * 80 + "px"  
   
         this.$refs.bee.style.left = styles.left
         this.$refs.bee.style.top = styles.top
@@ -127,10 +129,19 @@ export default {
 <style>
   .bee_container {
     position: fixed;
-    left: 3vw;
-    bottom: 3vh;
+    left: 0;
+    bottom: 0;
     width: 115px;
     height: 100px;
+  }
+
+  .bee__guide-text {
+    position: absolute;
+    left: 75%;
+    top: 50%;
+    width: 20ch;
+    transform: translate(0, -50%);
+    margin: 0;
   }
 
   .bee {
