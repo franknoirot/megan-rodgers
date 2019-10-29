@@ -1,9 +1,9 @@
 <template>
   <Layout>
-    <h1>Projects</h1>
+    <h1>Collections</h1>
     <div class="grid" itemscope itemtype="http://schema.org/ItemList">
-      <a class='project_item'
-      v-for="(proj, i) in $page.allProjects.edges" :key="i"
+      <a class='collection_item'
+      v-for="(proj, i) in $page.allCollections.edges" :key="i"
       :href="proj.node.path" :style="{ '--theme': cssProps[i] }"
       itemprop="itemListElement" itemscope itemtype="http://schema.org/CreativeWork">
         <h2 itemprop="name">{{proj.node.title}}</h2>
@@ -20,7 +20,7 @@
 
 <page-query>
  query ProjectConnection {
-  allProjects: allProject {
+  allCollections: allCollection {
     edges {
       node {
         path
@@ -45,14 +45,14 @@
 <script>
 export default {
   metaInfo: {
-    title: 'Projects',
+    title: 'Collections',
     meta: [
-     { name: 'description', content: 'The collected fashion projects of Megan Rodgers, Kent State University MFA.' }
+     { name: 'description', content: 'The fashion collections of Megan Rodgers, Kent State University MFA.' }
     ]
   },
   computed: {
     rgb() {
-      return this.$page.allProjects.edges.map(proj => proj.node.color)
+      return this.$page.allCollections.edges.map(proj => proj.node.color)
     },
     cssProps() {
       return this.rgb.map(color => `${color.r},${color.g},${color.b}`)
@@ -94,7 +94,7 @@ export default {
     pointer-events: none;
   }
 
-  .project_item {
+  .collection_item {
     width: 100%;
     height: 50vh;
     display: grid;
@@ -104,16 +104,16 @@ export default {
     text-decoration: none;
     transition: transform .08s ease-in-out;
   }
-  .project_item:hover,
-  .project_item:focus {
+  .collection_item:hover,
+  .collection_item:focus {
     transform: scale(1.04);
     outline: none;
   }
-  .project_item:last-of-type {
+  .collection_item:last-of-type {
     margin-bottom: 10vh;
   }
 
-  .project_item h2 {
+  .collection_item h2 {
     color: rgb(var(--theme));
     margin: 0;
     grid-row: 2 / 3;
@@ -124,7 +124,7 @@ export default {
     font-size: calc(1.25em + 1.25vh);
   }
 
-  .project_item > span {
+  .collection_item > span {
     color: rgb(var(--theme));
     text-align: right;
     transform-origin: bottom right;
@@ -136,7 +136,7 @@ export default {
     transform: rotate(-90deg) translate(1vh, 2vw);
   }
 
-  .project_item .img-wrap {
+  .collection_item .img-wrap {
     grid-row: 1 / 2;
     grid-column: 2 / 3;
     border-radius: 1vmax;
@@ -181,7 +181,7 @@ export default {
       display: flex;
       flex-direction: column;
     }
-    .project_item {
+    .collection_item {
       grid-template-rows: 1fr auto;
       margin-bottom: 4vh;
     }

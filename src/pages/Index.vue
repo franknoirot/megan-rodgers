@@ -4,15 +4,15 @@
       <g-image class="main-logo" :src="$page.data.logo" alt="Megan Rodgers logo: 'MR' centered in an incomplete circle, with greenery growing out of the circle's broken ends, and a bee and butterfly visiting each."></g-image>
       <nav>
         <g-link to="/about">About</g-link>
-        <g-link to="/projects">Projects</g-link>
-        <a class="link_contact" href="mailto:frank@franknoirot.co"
+        <g-link to="/collections">Collections</g-link>
+        <a class="link_contact" href="mailto:mrodge11@kent.edu"
           @mouseleave="setHover" @mouseenter="setHover" :style="hover">Contact</a>
       </nav>
-      <g-link class='featured_project' :to="featuredHref" :style="featuredStyle"
+      <g-link class='featured_collection' :to="featuredHref" :style="featuredStyle"
       itemscope itemtype="http://schema.org/CreativeWork">
-        <g-image :src="featuredProject.featuredImage.src" :alt="featuredProject.featuredImage.alt"
-          :title="featuredProject.featuredImage.title" itemprop="mainEntity"></g-image>
-        <p>featured project:<span itemprop="name">{{ featuredProject.title }}</span></p>
+        <g-image :src="featuredCollection.featuredImage.src" :alt="featuredCollection.featuredImage.alt"
+          :title="featuredCollection.featuredImage.title" itemprop="mainEntity"></g-image>
+        <p>featured collection:<span itemprop="name">{{ featuredCollection.title }}</span></p>
       </g-link>
     </div>
   </Layout>
@@ -22,7 +22,7 @@
   query NetlifyPage {
     data: netlifyPage(path: "/netlify-home") {
       title
-      featured: featuredProject
+      featured: featuredCollection
       logo
     }
   }
@@ -38,7 +38,7 @@ export default {
   },
   data() {
     return {
-      featuredProject: {
+      featuredCollection: {
         title: '',
         featuredImage: '',
         color: {
@@ -55,10 +55,10 @@ export default {
   },
   computed: {
     featuredHref() {
-      return '/projects/'+this.$page.data.featured
+      return '/collections/'+this.$page.data.featured
     },
     featuredStyle() {
-      return { '--theme': this.featuredProject.color.r+','+this.featuredProject.color.g+','+this.featuredProject.color.b }
+      return { '--theme': this.featuredCollection.color.r+','+this.featuredCollection.color.g+','+this.featuredCollection.color.b }
     },
     isMobile() {
       return window.innerWidth < 450
@@ -67,7 +67,7 @@ export default {
   async mounted () {
     try {
       const results = await this.$fetch(this.featuredHref)
-      this.featuredProject = results.data.project
+      this.featuredCollection = results.data.collection
     } catch (error) {
       console.error(error)
     }
@@ -166,7 +166,7 @@ export default {
     clip-path: circle(200% at var(--hov-x) var(--hov-y));
   }
 
-  .featured_project {
+  .featured_collection {
     display: inline-block;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
@@ -181,10 +181,10 @@ export default {
     transform: translate(0, 0) scale(1);
     transition: all .12s ease-in-out;
   }
-  .featured_project:hover {
+  .featured_collection:hover {
     transform: translate(0, -.4vh) scale(1.03);
   }
-  .featured_project::after {
+  .featured_collection::after {
     position: absolute;
     content: '';
     left: 0;
@@ -194,16 +194,16 @@ export default {
     background: rgba(var(--theme), .6);
     transition: all .15s ease-in-out;
   }
-  .featured_project:hover::after {
+  .featured_collection:hover::after {
     background: rgba(var(--theme), .3);
   }
-  .featured_project img {
+  .featured_collection img {
     width: 100%;
     max-height: 100%;
     object-fit: cover;
     overflow: hidden;
   }
-  .featured_project p {
+  .featured_collection p {
     margin: 0;
     position: absolute;
     bottom: 1em;
@@ -211,20 +211,20 @@ export default {
     color: var(--bg);
     z-index: 5;
   }
-  .featured_project p::before,
-  .featured_project p::after {
+  .featured_collection p::before,
+  .featured_collection p::after {
     position: absolute;
     content: '';
     background: var(--bg);
   }
-  .featured_project p::before {
+  .featured_collection p::before {
     width: 25%;
     height: .1vmax;
     top: 40%;
     left: calc(100% + 1vmax);
     transform: translate(0, -50%);
   }
-  .featured_project p::after {
+  .featured_collection p::after {
     width: .5vmax;
     height: .5vmax;
     clip-path: polygon(0 0, 100% 0, 0 100%);
@@ -263,18 +263,18 @@ export default {
       align-items: flex-end;
     }
 
-    .featured_project {
+    .featured_collection {
       grid-row: 2 / 3;
       grid-column: 2 / 3;
       align-self: center;
       height: 80%;
       transform: translate(50%);
     }
-    .featured_project img {
+    .featured_collection img {
       object-fit: cover;
       width: unset;
     }
-    .featured_project p {
+    .featured_collection p {
       font-size: calc(.5em + 1vmax);
       width: fit-content;
       height: fit-content;
@@ -286,9 +286,9 @@ export default {
       opacity: .9;
       text-align: right;
     }
-    .featured_project p::before,
-    .featured_project p::after,
-    .featured_project span {
+    .featured_collection p::before,
+    .featured_collection p::after,
+    .featured_collection span {
       display: none;
     }
   }

@@ -12,9 +12,9 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
-        path: './projects/**/*.md',
-        route: '/projects/:slug',
-        typeName: 'Project',
+        path: './collections/**/*.md',
+        route: '/collections/:slug',
+        typeName: 'Collection',
         remark: {
           plugins: [
             // ...local plugins

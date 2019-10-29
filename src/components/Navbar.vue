@@ -5,9 +5,9 @@
       <span class="nav-title">Megan Rodgers</span>
     </g-link>
     <nav>
-      <g-link :class="{ active: ($page == '/projects') ? true : false }" to="/projects">Projects</g-link>
+      <g-link :class="{ active: ($page == '/collections') ? true : false }" to="/collections">Collections</g-link>
       <g-link :class="{ active: ($page == '/about') ? true : false }" to="/about">About</g-link>
-      <a class="contact" href="mailto:frank@franknoirot.co">Contact</a>
+      <a class="contact" href="mailto:mrodge11@kent.edu">Contact</a>
     </nav>
   </header>
 </template>

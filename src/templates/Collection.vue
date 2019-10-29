@@ -2,8 +2,8 @@
   <Layout>
     <article class="grid" :style="cssProps" itemscope itemtype="http://schema.org/CreativeWork">    
       <section class='heading'>
-        <h1 itemprop="name">{{$page.project.title}}</h1>
-        <p class="season" itemprop="dateCreated">{{ $page.project.season }}</p>
+        <h1 itemprop="name">{{$page.collection.title}}</h1>
+        <p class="season" itemprop="dateCreated">{{ $page.collection.season }}</p>
       </section>
       <div class="carousel" itemprop="mainEntity">
         <div class='stage' tabindex=0 @click="handleStageClick"
@@ -25,22 +25,22 @@
           </button>
         </div>
         <div class="dots">
-            <button v-for="(image, i) in images" :key="i"
-              class="dot" :class="{[image.step]: image.step,
-              stepActive: (processSteps[currStep].toLowerCase() === image.step) ? true : false,
-              imgActive: (currImg === i) ? true : false}"
-              :data-to="image.img.src" v-on:click="() => setImg(i)"
-              :title="dotTitle(i)"></button>
+          <button v-for="(image, i) in images" :key="i"
+            class="dot" :class="{[image.step]: image.step,
+            stepActive: (processSteps[currStep].toLowerCase() === image.step) ? true : false,
+            imgActive: (currImg === i) ? true : false}"
+            :data-to="image.img.src" v-on:click="() => setImg(i)"
+            :title="dotTitle(i)"></button>
         </div>
       </div>
-      <section class="body" v-html="$page.project.content" itemprop="text"></section>
+      <section class="body" v-html="$page.collection.content" itemprop="text"></section>
     </article>
   </Layout>
 </template>
 
 <page-query>
- query Project ($path: String!) {
-   project: project (path: $path) {
+ query Collection ($path: String!) {
+   collection: collection (path: $path) {
       title
       season
       content
@@ -74,14 +74,14 @@ import Carousel from "../components/Carousel.vue"
 export default {
   metaInfo() {
    return {
-     title: this.$page.project.title,
+     title: this.$page.collection.title,
     //  meta: [
-    //    { key: 'description', name: 'description', content: `${this.$page.project.title}, a fashion design project by Megan Rodgers of Kent State University.` },
+    //    { key: 'description', name: 'description', content: `${this.$page.collection.title}, a fashion design collection by Megan Rodgers of Kent State University.` },
     //    { property: "og:url", content: this.$el.baseURI },
     //    { property: "og:type", content:"article" },
-    //    { property: "og:title", content: this.$page.project.title + "| Megan Rodgers" },
-    //    { property: "og:description", content: `${this.$page.project.title}, a fashion design project by Megan Rodgers of Kent State University.` },
-    //    { property: "og:image", content: this.$page.project.featuredImage.src }
+    //    { property: "og:title", content: this.$page.collection.title + "| Megan Rodgers" },
+    //    { property: "og:description", content: `${this.$page.collection.title}, a fashion design collection by Megan Rodgers of Kent State University.` },
+    //    { property: "og:image", content: this.$page.collection.featuredImage.src }
     //  ]
    }
   },
@@ -100,7 +100,7 @@ export default {
   },
   computed: {
     processSteps() {
-      return this.$page.project.processSteps.map(step => step.name)
+      return this.$page.collection.processSteps.map(step => step.name)
     },
     images() {
       let flatten = function(a, shallow, r){
@@ -118,7 +118,7 @@ export default {
           }
           return r;
         }
-      return flatten(this.$page.project.processSteps.map(step => 
+      return flatten(this.$page.collection.processSteps.map(step => 
         step.images.map(img => {
           return {
             img: img.image,
@@ -128,7 +128,7 @@ export default {
       )), false)
     },
     primaryRGB: function() {
-      return this.$page.project.color
+      return this.$page.collection.color
     },
     cssProps: function() {
       return {
