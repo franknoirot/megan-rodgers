@@ -52,18 +52,18 @@ collections:
         name: "processSteps"
         widget: "list"
         fields:
-          - {label: Name, name: name, widget: string}
-          - label: Images
-            name: images
-            widget: list
+          - {label: "Name", name: "name", widget: "string"}
+          - label: "Images"
+            name: "images"
+            widget: "list"
             field:
-              label: Image
-              name: image
-              widget: object
+              label: "Image"
+              name: "image"
+              widget: "object"
               fields:
-                - {label: Image, name: src, widget: image}
-                - {label: Title, name: title, widget: string}
-                - {label: Alt Text, name: alt, widget: string}
+                - {label: "Image File", name: "src", widget: "image"}
+                - {label: "Title", name: "title", widget: "string"}
+                - {label: "Alt Text", name: "alt", widget: "string"}
   - label: "Pages"
     name: "pages"
     files:
