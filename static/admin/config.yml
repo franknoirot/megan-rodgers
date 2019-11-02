@@ -6,10 +6,10 @@ media_folder: "static/uploads"
 public_folder: "/uploads"
 
 collections:
-  - name: "projects"
-    label: "Projects"
-    label_singular: "Project"
-    folder: "projects"
+  - name: "collections"
+    label: "Collections"
+    label_singular: "Collection"
+    folder: "collections"
     create: true
     slug: "{{slug}}"
     fields:
