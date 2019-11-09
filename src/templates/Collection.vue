@@ -13,8 +13,16 @@
           :src="images[i].img.src" :alt="images[i].img.alt" :title="images[i].img.title"
           :class="{ active: (i===currImg), left: isLeft(i), right: isRight(i) }"></g-image>
         </div>
-        <button class="arrow left" v-on:click="() => moveImg(-1)" tabindex=-1 title="Go to previous image"></button>
-        <button class="arrow right" v-on:click="() => moveImg(1)" tabindex=-1 title="Go to next image"></button>
+        <button class="arrow left" v-on:click="() => moveImg(-1)" tabindex=-1 title="Go to previous image">
+          <svg viewBox="0 0 20 10">
+            <path d="M 20 5, l -20 0, m 0 0, l 5 5, m -5 -5, l 5 -5"></path>
+          </svg>
+        </button>
+        <button class="arrow right" v-on:click="() => moveImg(1)" tabindex=-1 title="Go to next image">
+          <svg viewBox="0 0 20 10">
+            <path d="M 0 5, l 20 0, m 0 0, l -5 5, m 5 -5, l -5 -5"></path>
+          </svg>
+        </button>
         <div class="tabs">
           <button class="step" v-for="(step, j) in processSteps" :key="j"
             v-on:click="() => activateStep(j)"
@@ -296,51 +304,59 @@ export default {
   }
   .arrow {
     grid-row: 1 / 2;
-    width: 50%;
-    --thick: .5vmin;
+    width: 60%;
+    padding: 2% 0;
     align-self: center;
     justify-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
     border: none;
     position: relative;
     transform: scale(1);
     transition: transform .13s ease-in-out;
   }
+
   .arrow:hover {
     transform: scale(1.05);
   }
-  .arrow:focus {
+  .arrow:focus-within {
     outline: none;
+    /* I don't need the outline because the arrows are not tabindexed.
+       I removed these from the screenreader experience because there are three
+       other, faster ways to navigate through the images (left/right arrows with
+       stage focused, tabs, and individual image buttons) that these arrows are
+       simply not useful. */
+    animation: dip .2s ease-in-out forwards;
   }
-  .arrow, .arrow::before, .arrow::after {
-    height: var(--thick);
-    background: rgb(var(--primary-rgb));
-    border-radius: calc(.5 * var(--thick));
+
+  @keyframes dip {
+    0% {
+      transform: scale(1.05) translate(0, 0);
+    }
+    50% {
+      transform: scale(1, .95) translate(0, .2em);
+    }
+    100% {
+      transform: scale(1.05) translate(0, 0);
+    }
   }
-  .arrow::before, .arrow::after {
-    content: '';
-    position: absolute;
-    width: 40%;
-    top: 50%;
-    left: 0;
-    transform-origin: center left;
+
+  .arrow svg {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    overflow: visible;
   }
-  .arrow::before {
-    transform: translate(0, -50%) rotate(-45deg) translate(0, calc(.25 * var(--thick)));
+
+  .arrow path {
+    stroke: rgb(var(--primary-rgb));
+    stroke-width: 1.5;
+    fill: none;
+    stroke-linecap: round;
   }
-  .arrow::after {
-    transform: translate(0, -50%) rotate(45deg) translate(0, calc(-.25 * var(--thick)));
-  }
-  .right::after, .right::before {
-    left: initial;
-    right: 0;
-    transform-origin: center right;
-  }
-  .right::before {
-    transform: translate(0, -50%) rotate(-45deg) translate(0, calc(-.25 * var(--thick)));
-  }
-  .right::after {
-    transform: translate(0, -50%) rotate(45deg) translate(0, calc(.25 * var(--thick)));
-  }
+
   .tabs {
     grid-row: 2 / 3;
     grid-column: 2 / 3;
