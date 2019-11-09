@@ -78,8 +78,8 @@ collections:
             widget: "relation"
             collection: "collections"
             searchFields: ["title"]
-            valueField: "title"
-            displayFields: ["title"]
+            valueField: "slug"
+            displayField: "title"
             multiple: false
       - label: "About Page"
         name: "about"
