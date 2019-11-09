@@ -79,7 +79,7 @@ collections:
             collection: "collections"
             searchFields: ["title"]
             valueField: "slug"
-            displayField: "title"
+            displayFields: ["title"]
             multiple: false
       - label: "About Page"
         name: "about"

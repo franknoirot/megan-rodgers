@@ -1,6 +1,6 @@
 ---
 title: home
 logo: /uploads/final-logo.jpg
-featuredCollection: Black House
+featuredCollection: black-house
 ---
 
