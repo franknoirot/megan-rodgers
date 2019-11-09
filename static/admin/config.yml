@@ -53,7 +53,7 @@ collections:
         widget: "list"
         fields:
           - {label: "Name", name: "name", widget: "string"}
-          - label: "Images"
+          - label: "Process Images"
             name: "images"
             widget: "list"
             field:
@@ -76,7 +76,7 @@ collections:
           - label: "Featured Project"
             name: featuredProject
             widget: "relation"
-            collection: "projects"
+            collection: "collections"
             searchFields: ["title"]
             valueField: "slug"
             displayFields: ["title"]
