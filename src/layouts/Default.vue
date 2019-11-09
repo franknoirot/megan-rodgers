@@ -40,7 +40,7 @@ query {
 
 <style>
 :root {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Playfair Display', serif;
   --bg: #FCFEFF;
   --color: #1E1E2F;
   --color-rgb: 30,30,47;
@@ -54,19 +54,17 @@ query {
   --work-color: var(--primary);
 }
 h1,h2,h3,h4,h5,h6 {
-  font-family: "DM Serif Display", serif;
-}
-
-a, code {
-  font-family: "Overpass Mono", monospace;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
 }
 
 a {
+  font-family: "Noto Sans", sans-serif;
   color: inherit;
 }
 
 p {
-  line-height: 1.5;
+  line-height: 1.9;
 }
 
 body {

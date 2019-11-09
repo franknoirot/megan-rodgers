@@ -37,7 +37,8 @@ export default {
   }
 
   .nav-title {
-    font-family: 'DM Serif Display', serif;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
     font-size: calc(1.25em + .75vh);
     margin-left: 1em;
   }

@@ -118,6 +118,7 @@ export default {
   }
 
   nav a {
+    font-family: "Fredericka the Great", "Noto Sans", sans-serif;
     text-decoration: none;
     margin: .75em 0;
     padding: .2em .8em;

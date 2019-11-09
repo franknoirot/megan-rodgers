@@ -7,7 +7,7 @@ export default function (Vue, { router, head, isClient }) {
   //Google Fonts
   head.link.push({
     rel: 'stylesheet',
-    href: 'https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab'
+    href: 'https://fonts.googleapis.com/css?family=Fredericka+the+Great|Noto+Sans|Playfair+Display'
   })
 
   // Set default layout as a global component

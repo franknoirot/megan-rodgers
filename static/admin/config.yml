@@ -73,8 +73,8 @@ collections:
         fields:
           - {label: Title, name: title, widget: hidden, default: Home}
           - {label: Main Logo, name: logo, widget: image}
-          - label: "Featured Project"
-            name: featuredProject
+          - label: "Featured Collection"
+            name: featuredCollection
             widget: "relation"
             collection: "collections"
             searchFields: ["title"]
