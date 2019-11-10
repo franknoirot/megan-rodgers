@@ -12,7 +12,12 @@
       itemscope itemtype="http://schema.org/CreativeWork">
         <g-image :src="featuredCollection.featuredImage.src" :alt="featuredCollection.featuredImage.alt"
           :title="featuredCollection.featuredImage.title" itemprop="mainEntity"></g-image>
-        <p>featured collection:<span itemprop="name">{{ featuredCollection.title }}</span></p>
+        <p>
+          featured collection: <span itemprop="name">{{ featuredCollection.title }}</span>
+          <svg viewBox="0 0 20 10">
+            <path d="M 0 5, l 20 0, m 0 0, l -2.5 2.5, m 2.5 -2.5, l -2.5 -2.5"></path>
+          </svg>
+        </p>
       </g-link>
     </div>
   </Layout>
@@ -214,26 +219,16 @@ export default {
     color: var(--bg);
     z-index: 5;
   }
-  .featured_collection p::before,
-  .featured_collection p::after {
-    position: absolute;
-    content: '';
-    background: var(--bg);
+  .featured_collection svg {
+    display: inline-block;
+    transform: translate(0, 12.5%);
+    margin: 0 .5em;
+    width: 2em;
+    height: 1em;
   }
-  .featured_collection p::before {
-    width: 25%;
-    height: .1vmax;
-    top: 40%;
-    left: calc(100% + 1vmax);
-    transform: translate(0, -50%);
-  }
-  .featured_collection p::after {
-    width: .5vmax;
-    height: .5vmax;
-    clip-path: polygon(0 0, 100% 0, 0 100%);
-    left: calc(125% + .5vmax);
-    top: 50%;
-    transform: translate(0, -.69vh) rotate(135deg);
+  .featured_collection path {
+    stroke: var(--bg);
+    stroke-linecap: round;
   }
 
   @media(orientation: portrait) {
@@ -278,7 +273,7 @@ export default {
       width: unset;
     }
     .featured_collection p {
-      font-size: calc(.5em + 1vmax);
+      font-size: calc(.3em + .8vmax);
       width: fit-content;
       height: fit-content;
       left: unset;
@@ -289,10 +284,11 @@ export default {
       opacity: .9;
       text-align: right;
     }
-    .featured_collection p::before,
-    .featured_collection p::after,
-    .featured_collection span {
-      display: none;
+    .featured_collection svg {
+      position: absolute;
+      top: 3em;
+      right: -1em;
+      transform: rotate(90deg);
     }
   }
 
