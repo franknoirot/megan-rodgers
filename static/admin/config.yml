@@ -77,8 +77,8 @@ collections:
             name: featuredCollection
             widget: "relation"
             collection: "collections"
-            searchFields: ["slug", "title"]
-            valueField: "slug"
+            searchFields: ["{{slug}}", "title"]
+            valueField: "{{slug}}"
             displayFields: ["title"]
             multiple: false
       - label: "About Page"
