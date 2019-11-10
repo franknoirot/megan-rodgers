@@ -29,6 +29,8 @@
 </page-query>
 
 <script>
+import slugify from '../utils/slugify'
+
 export default {
   metaInfo: {
     title: 'Home',
@@ -55,7 +57,7 @@ export default {
   },
   computed: {
     featuredHref() {
-      return '/collections/'+this.$page.data.featured
+      return '/collections/'+slugify(this.$page.data.featured)
     },
     featuredStyle() {
       return { '--theme': this.featuredCollection.color.r+','+this.featuredCollection.color.g+','+this.featuredCollection.color.b }
