@@ -77,7 +77,7 @@ collections:
             name: featuredCollection
             widget: "relation"
             collection: "collections"
-            searchFields: ["title"]
+            searchFields: ["slug", "title"]
             valueField: "slug"
             displayFields: ["title"]
             multiple: false
