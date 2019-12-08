@@ -105,6 +105,10 @@ collections:
               - label: "Image File"
                 name: "src"
                 widget: "image"
+              - label: "Is the image vertical?"
+                name: isVert
+                widget: boolean
+                default: false
               - label: "Project"
                 name: "project"
                 widget: "string"
