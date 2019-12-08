@@ -114,8 +114,8 @@ collections:
                 name: isVert
                 widget: boolean
                 default: false
-              - label: "Project"
-                name: "project"
+              - label: "Collection"
+                name: "collection"
                 widget: "string"
               - label: "Caption"
                 name: "caption"

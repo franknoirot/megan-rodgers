@@ -2,11 +2,23 @@
   <Layout>
     <h1>Lookbook</h1>
     <div class="grid" itemscope itemtype="http://schema.org/ItemList">
+    <g-image v-for="(img, i) in $page.data.imageGallery" :key="i" :id="'img-'+i" :src="img.src"  />
     </div>
   </Layout>
 </template>
 
 <page-query>
+  query NetlifyPage {
+    data: netlifyPage(path: "/netlify-lookbook") {
+      title
+      imageGallery {
+        src
+        isVert
+        collection
+        caption
+      }
+    }
+  }
 </page-query>
 
 <script>
