@@ -1,9 +1,13 @@
 <template>
   <Layout>
     <h1>Lookbook</h1>
-    <div class="grid" itemscope itemtype="http://schema.org/ItemList">
-    <g-image v-for="(img, i) in $page.data.imageGallery" :key="i" :id="'img-'+i" :src="img.src"  />
-    </div>
+    <section class="grid" itemscope itemtype="http://schema.org/ItemList">
+      <div v-for="(img, i) in $page.data.imageGallery" :key="i" :id="'img-'+i" :class="{ collection_item: true, 'is-vertical':img.isVert }" >
+        <div class='img-wrap'>
+          <g-image :src="img.src" />
+        </div>
+      </div>
+    </section>
   </Layout>
 </template>
 
@@ -46,15 +50,15 @@ export default {
 
   .grid {
     margin: 3vh 0;
-    box-sizing: border-box;
     width: 100%;
     overflow-y: auto;
-    padding: 2vh 5vw;
+    padding: 2vh 5vw 10vh;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10vmin;
-    justify-content: stretch;
-    align-items: stretch;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 20vh;
+    grid-auto-rows: 20vh;
+    grid-auto-flow: dense;
+    grid-gap: 3vmin;
     position: relative;
   }
   .scroll-grad {
@@ -68,73 +72,41 @@ export default {
   }
 
   .collection_item {
-    width: 100%;
-    height: 50vh;
+    grid-column: span 1;
+    grid-row: span 1;
     display: grid;
-    grid-template-columns: 2vw 1fr;
-    grid-template-rows: 1fr 2rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
     position: relative;
-    text-decoration: none;
+    object-fit: cover;
     transition: transform .08s ease-in-out;
+  }
+
+  .collection_item.is-vertical {
+    grid-row: span 2;
   }
   .collection_item:hover,
   .collection_item:focus {
     transform: scale(1.04);
     outline: none;
   }
-  .collection_item:last-of-type {
-    margin-bottom: 10vh;
-  }
-
-  .collection_item h2 {
-    color: rgb(var(--theme));
-    margin: 0;
-    grid-row: 2 / 3;
-    grid-column: 1 / 3;
-    justify-self: flex-start;
-    margin-top: 1vh;
-    margin-left: 2vw;
-    font-size: calc(1.25em + 1.25vh);
-  }
-
-  .collection_item > span {
-    color: rgb(var(--theme));
-    text-align: right;
-    transform-origin: bottom right;
-    position: absolute;
-    top: 0;
-    right: 100%;
-    width: max-content;
-    height: fit-content;
-    transform: rotate(-90deg) translate(1vh, 2vw);
-  }
 
   .collection_item .img-wrap {
-    grid-row: 1 / 2;
-    grid-column: 2 / 3;
     border-radius: 1vmax;
     box-shadow: var(--shadows);
     overflow: hidden;
     position: relative;
   }
-  .img-wrap::after {
-    position: absolute;
-    content: '';
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    background-color: rgba(var(--theme), .3);
-    transition: background-color .3s ease-in-out;
-  }
-  .img-wrap:hover::after {
-    background-color: rgba(var(--theme), .1);
-  }
 
   .img-wrap img {
-    max-height: 100%;
+    max-width: 100%;
     object-fit: cover;
     object-position: center;
+  }
+
+  .is-vertical img {
+    max-width: unset;
+    max-height: 100%;
   }
 
   @media(max-width:960px) {
