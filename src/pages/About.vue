@@ -48,6 +48,7 @@ export default {
     padding: 0 5vw;
     overflow-y: auto;
     overflow-x: hidden;
+
   }
   
   section {
