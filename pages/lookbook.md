@@ -1,6 +1,6 @@
 ---
 title: Lookbook
-images:
+imageGallery:
   - caption: Some caption to show on click.
     isVert: false
     project: Beautiful Predator

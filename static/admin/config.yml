@@ -7,7 +7,7 @@ public_folder: "/uploads"
 
 site_url: https://meganrodgers.me
 display_url: https://meganrodgers.me
-logo_url: https://meganrodgers.me/static/uploads/final-logo.jpg
+logo_url: https://meganrodgers.me/uploads/final-logo.jpg
 
 collections:
   - name: "collections"
@@ -92,7 +92,7 @@ collections:
           - {label: Title, name: title, widget: hidden, default: About}
           - {label: "Body", name: "body", widget: "markdown"}
           - label: Images
-            name: images
+            name: imageGallery
             widget: list
             field: {label: Image, name: image, widget: image}
           - {label: Resume, name: resume, widget: file}
