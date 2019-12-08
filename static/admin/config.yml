@@ -102,8 +102,8 @@ collections:
         fields:
           - {label: Title, name: title, widget: hidden, default: Lookbook}
           - {label: "Body", name: "body", widget: "markdown"}
-          - label: "Images"
-            name: "images"
+          - label: "Image Gallery"
+            name: "imageGallery"
             widget: "list"
             identifier_field: src
             fields: 

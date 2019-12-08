@@ -1,6 +1,6 @@
 ---
 title: Lookbook
-images:
+imageGallery:
   - caption: A caption to show on click.
     collection: Beautiful Predator
     isVert: false

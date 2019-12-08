@@ -50,7 +50,7 @@ export default {
 
   .grid {
     margin: 3vh 0;
-    width: 100%;
+    max-width: 100%;
     overflow-y: auto;
     padding: 2vh 5vw 10vh;
     display: grid;
@@ -96,6 +96,7 @@ export default {
     box-shadow: var(--shadows);
     overflow: hidden;
     position: relative;
+    display: flex;
   }
 
   .img-wrap img {
@@ -114,7 +115,7 @@ export default {
       margin-top: 0;
     }
     .grid {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(3, 1fr);
     }
     .scroll-grad {
       display: none;
