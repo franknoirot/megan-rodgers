@@ -45,5 +45,17 @@ imageGallery:
     collection: Fortunate Son
     isVert: false
     src: /uploads/fortunate-son_collection_4.jpg
+  - caption: Another caption to show in the lightbox.
+    collection: Fortunate Son
+    isVert: false
+    src: /uploads/fortunate-son_garment_6.jpg
+  - caption: Another caption to show in the lightbox.
+    collection: Ghost Ranch
+    isVert: false
+    src: /uploads/ghost-ranch-1.jpg
+  - caption: Another caption to show in the lightbox.
+    collection: Fortunate Son
+    isVert: true
+    src: /uploads/fortunate-son_muslin_1.jpg
 ---
 Something you can use to describe the Lookbook overall.
