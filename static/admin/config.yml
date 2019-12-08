@@ -81,7 +81,7 @@ collections:
             valueField: "title"
             displayFields: ["title"]
             multiple: false
-      - label: "About Page"
+      - label: "About"
         name: "about"
         file: "pages/about.md"
         fields:
@@ -92,3 +92,21 @@ collections:
             widget: list
             field: {label: Image, name: image, widget: image}
           - {label: Resume, name: resume, widget: file}
+      - label: "Lookbook"
+        name: "lookbook"
+        file: "pages/lookbook.md"
+        fields:
+          - {label: Title, name: title, widget: hidden, default: About}
+          - {label: "Body", name: "body", widget: "markdown"}
+          - label: Images
+            name: images
+            widget: list
+            field: 
+              - label: Image
+                name: image
+                widget: object
+                fields:
+                  - {label: "Image File", name: src, widget: image}
+                  - {label: "Project", name: project, widget: string}
+                  - {label: "Caption", name: caption, widget: string}
+        
