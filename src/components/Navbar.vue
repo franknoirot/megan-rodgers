@@ -232,6 +232,7 @@
       justify-content: center;
       border-bottom: none;
       border-top: solid rgba(var(--color-rgb), 0.3) 1px;
+      background: white;
       box-shadow: 0 -.1vmin .4vmin rgba(var(--color-rgb), .08);
     }
     
@@ -258,13 +259,14 @@
       max-width: unset;
       min-width: unset;
       position: relative;
+      background: white;
       z-index: 2;
     }
 
     header nav::before {
       content:'';
       position: absolute;
-      background: var(--bg);
+      background: white;
       left: 0;
       width: 100%;
       height: 100%;
@@ -286,7 +288,7 @@
       justify-content: space-between;
       box-sizing: border-box;
       border-top: solid transparent 1px;
-      background: var(--bg);
+      background: white;
       transform: translateY(105%);
       z-index: -1;
       transition: transform .11s ease-in-out;
