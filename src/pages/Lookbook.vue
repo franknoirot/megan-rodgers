@@ -124,12 +124,8 @@ export default {
 
   @media (max-width: 450px) {
     .grid {
-      display: flex;
-      flex-direction: column;
-    }
-    .collection_item {
-      grid-template-rows: 1fr auto;
-      margin-bottom: 4vh;
+      grid-template-columns: 1fr 1fr;
+      grid-auto-rows: 30vh;
     }
   }
 </style>
