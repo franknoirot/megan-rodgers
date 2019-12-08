@@ -97,6 +97,7 @@ export default {
     overflow: hidden;
     position: relative;
     display: flex;
+    justify-content: center;
   }
 
   .img-wrap img {
@@ -106,7 +107,6 @@ export default {
   }
 
   .is-vertical img {
-    max-width: unset;
     max-height: 100%;
   }
 
