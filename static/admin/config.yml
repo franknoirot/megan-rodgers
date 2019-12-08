@@ -5,6 +5,10 @@ backend:
 media_folder: "static/uploads"
 public_folder: "/uploads"
 
+site_url: https://your-site.com
+display_url: https://your-site.com
+logo_url: https://your-site.com/static/uploads/final-logo.jpg
+
 collections:
   - name: "collections"
     label: "Collections"
@@ -101,6 +105,7 @@ collections:
           - label: "Images"
             name: "images"
             widget: "list"
+            identifier_field: src
             fields: 
               - label: "Image File"
                 name: "src"
