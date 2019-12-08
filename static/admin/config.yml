@@ -5,9 +5,9 @@ backend:
 media_folder: "static/uploads"
 public_folder: "/uploads"
 
-site_url: https://your-site.com
-display_url: https://your-site.com
-logo_url: https://your-site.com/static/uploads/final-logo.jpg
+site_url: https://meganrodgers.me
+display_url: https://meganrodgers.me
+logo_url: https://meganrodgers.me/static/uploads/final-logo.jpg
 
 collections:
   - name: "collections"
