@@ -9,8 +9,6 @@
   <body ${bodyAttrs}>
     ${app}
     ${scripts}
-
-    // Netlify CMS Identity
     <script>
       if (window.netlifyIdentity) {
         window.netlifyIdentity.on("init", user => {

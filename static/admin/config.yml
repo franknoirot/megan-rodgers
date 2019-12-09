@@ -121,26 +121,26 @@ collections:
                 name: "caption"
                 widget: "string"
       - label: "Textiles"
-              name: "textiles"
-              file: "pages/textiles.md"
-              fields:
-                - {label: Title, name: title, widget: hidden, default: Textiles}
-                - {label: "Body", name: "body", widget: "markdown"}
-                - label: "Images"
-                  name: "imageGallery"
-                  widget: "list"
-                  identifier_field: src
-                  fields: 
-                    - label: "Image File"
-                      name: "src"
-                      widget: "image"
-                    - label: "Is the image vertical?"
-                      name: isVert
-                      widget: boolean
-                      default: false
-                    - label: "Collection"
-                      name: "collection"
-                      widget: "string"
-                    - label: "Caption"
-                      name: "caption"
-                      widget: "string"
+        name: "textiles"
+        file: "pages/textiles.md"
+        fields:
+          - {label: Title, name: title, widget: hidden, default: Textiles}
+          - {label: "Body", name: "body", widget: "markdown"}
+          - label: "Images"
+            name: "imageGallery"
+            widget: "list"
+            identifier_field: src
+            fields: 
+              - label: "Image File"
+                name: "src"
+                widget: "image"
+              - label: "Is the image vertical?"
+                name: isVert
+                widget: boolean
+                default: false
+              - label: "Collection"
+                name: "collection"
+                widget: "string"
+              - label: "Caption"
+                name: "caption"
+                widget: "string"
