@@ -14,8 +14,8 @@
       <div :class="{ 'secondary-nav': true, open }">
         <g-link :class="{ active: ($page == '/collections') ? true : false }" to="/collections">Collections</g-link>
         <g-link :class="{ active: ($page == '/about') ? true : false }" to="/about">About</g-link>
-        <!-- <g-link :class="{ active: ($page == '/lookbook') ? true : false }" to="/lookbook">Lookbook</g-link>
-        <g-link :class="{ active: ($page == '/textiles') ? true : false }" to="/textiles">Textiles</g-link> -->
+        <g-link :class="{ active: ($page == '/lookbook') ? true : false }" to="/lookbook">Lookbook</g-link>
+        <g-link :class="{ active: ($page == '/textiles') ? true : false }" to="/textiles">Textiles</g-link>
         <a class="social-icon" href="https://www.instagram.com/megann.carsonn/" target="_blank" rel="noopener">
           <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g>
