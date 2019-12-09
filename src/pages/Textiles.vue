@@ -151,6 +151,7 @@ export default {
     grid-auto-flow: dense;
     grid-gap: 3vmin;
     position: relative;
+    user-select: none;
   }
   .scroll-grad {
     content: '';
@@ -205,6 +206,7 @@ export default {
   #lightbox {
     display: none;
     color: white;
+    user-select: none;
   }
 
   #lightbox.active {
