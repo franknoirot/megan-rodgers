@@ -1,9 +1,9 @@
 ---
 title: Beautiful Predator
-season: Fall 18
+season: Spring/Summer
 featuredImage:
   alt: alt text
-  src: /uploads/beautiful-predator_muslin_2.jpg
+  src: /uploads/project-3-final-draft_page_01.jpg
   title: title text
 color:
   b: 94
