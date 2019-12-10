@@ -92,9 +92,12 @@ collections:
           - {label: Title, name: title, widget: hidden, default: About}
           - {label: "Body", name: "body", widget: "markdown"}
           - label: Images
-            name: imageGallery
+            name: imgList
             widget: list
-            field: {label: Image, name: image, widget: image}
+            field:
+              - label: "Image File"
+                name: img
+                widget: image
           - {label: Resume, name: resume, widget: file}
       - label: "Lookbook"
         name: "lookbook"

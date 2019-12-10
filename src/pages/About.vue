@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <div class='grid'>
-      <g-image v-for="(img, i) in $page.data.images" :key="i" :id="'img-'+i" :src="img"  />
+      <g-image v-for="(img, i) in $page.data.imgList" :key="i" :id="'img-'+i" :src="img"  />
       <div id='color-bar-1' class='color-bar'></div>
       <section>
         <h1>{{ $page.data.title }}</h1>
@@ -17,7 +17,7 @@
     data: netlifyPage(path: "/netlify-about") {
       title
       content
-      images
+      imgList
       resume
     }
   }

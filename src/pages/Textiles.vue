@@ -41,7 +41,7 @@
 </template>
 
 <page-query>
-  query NetlifyPage {
+  query LookbookPage {
     data: netlifyPage(path: "/netlify-textiles") {
       title
       imageGallery {
