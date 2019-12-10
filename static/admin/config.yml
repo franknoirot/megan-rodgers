@@ -95,10 +95,7 @@ collections:
             name: imgList
             widget: list
             allow_add: false
-            field:
-              - label: "Image File"
-                name: img
-                widget: image
+            field: {label: "Image File", name: img, widget: image}
           - {label: Resume, name: resume, widget: file}
       - label: "Lookbook"
         name: "lookbook"
