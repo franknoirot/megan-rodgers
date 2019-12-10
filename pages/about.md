@@ -1,5 +1,6 @@
 ---
 title: About
+imageGallery: []
 resume: /uploads/megan-rodgers-2020-copy.pdf
 ---
 My name is Megan Rodgers and I am currently studying at Kent State University for Fashion Design and have a bachelor’s degree in Fashion Merchandising. I was chosen as one of the top 20 students in my Junior class to submit for CFDA and Joes Black Book.
