@@ -1,61 +1,45 @@
 ---
 title: Lookbook
 imageGallery:
-  - caption: A caption to show on click.
-    collection: Beautiful Predator
-    isVert: false
-    src: /uploads/beautiful-predator_collection_4.jpg
-  - caption: A caption to show on click.
-    collection: Beautiful Predator
+  - caption: Cleveland Botanical Gardens - Best Use of Inspiration
+    collection: Cultivated Diversity
     isVert: true
-    src: /uploads/beautiful-predator_garment_1.jpg
-  - caption: A caption to show on click.
-    collection: Beautiful Predator
-    isVert: false
-    src: /uploads/beautiful-predator_muslin_2.jpg
-  - caption: A caption to show on click.
-    collection: Black House
-    isVert: false
-    src: /uploads/black-house_inspo_1.jpg
-  - caption: A caption to show on click.
-    collection: Black House
-    isVert: false
-    src: /uploads/black-house_final_5.jpg
-  - caption: A caption to show on click.
-    collection: Black House
-    isVert: false
-    src: /uploads/black-house_muslin_1.jpg
-  - caption: A caption to show on click.
-    collection: Black House
-    isVert: false
-    src: /uploads/black-house_sketches_1.jpg
-  - caption: A caption to show on click.
+    src: /uploads/cultivated-diversity_final-garment_1.jpg
+  - caption: Cleveland Botanical Gardens - Best Use of Inspiration
+    collection: Cultivated Diversity
+    isVert: true
+    src: /uploads/cultivated-diversity_final-garment_2.jpg
+  - caption: Cleveland Botanical Gardens - Best Use of Inspiration
     collection: Cultivated Diversity
     isVert: true
     src: /uploads/cultivated-diversity_final-garment_3.jpg
-  - caption: A caption to show on click.
+  - caption: Cleveland Botanical Gardens - Best Use of Inspiration
     collection: Cultivated Diversity
     isVert: true
     src: /uploads/cultivated-diversity_final-garment_4.jpg
-  - caption: A caption to show on click.
-    collection: Cultivated Diversity
-    isVert: false
-    src: /uploads/cultivated-diversity_sketches_3.jpg
-  - caption: A caption to show on click.
-    collection: Fortunate Son
-    isVert: false
-    src: /uploads/fortunate-son_collection_4.jpg
-  - caption: Another caption to show in the lightbox.
-    collection: Fortunate Son
-    isVert: false
-    src: /uploads/fortunate-son_garment_6.jpg
-  - caption: Another caption to show in the lightbox.
-    collection: Ghost Ranch
-    isVert: false
-    src: /uploads/ghost-ranch-1.jpg
-  - caption: Another caption to show in the lightbox.
+  - caption: Wearing Justice Exhibit
     collection: Fortunate Son
     isVert: true
-    src: /uploads/fortunate-son_muslin_1.jpg
+    src: /uploads/fortunate-son_garment_6.jpg
+  - caption: Wearing Justice Exhibit
+    collection: Fortunate Son
+    isVert: true
+    src: /uploads/fortunate-son_garment_5.jpg
+  - caption: Wearing Justice Exhibit
+    collection: Fortunate Son
+    isVert: true
+    src: /uploads/fortunate-son_garment_4.jpg
+  - caption: Tarnish Collection
+    collection: Tarnish
+    isVert: true
+    src: /uploads/img_4134.jpg
+  - caption: Tarnish Collection
+    collection: Tarnish
+    isVert: true
+    src: /uploads/img_4137.jpg
+  - caption: Tarnish Collection
+    collection: Tarnish
+    isVert: true
+    src: /uploads/img_4138.jpg
 ---
-Something you can use to describe the Lookbook overall.
+Lookbook of all final garments in my collections.
