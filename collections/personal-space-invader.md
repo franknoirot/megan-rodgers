@@ -1,10 +1,10 @@
 ---
 title: Personal Space Invader
-season: Spring 18
+season: Fall/Winter
 featuredImage:
-  src: /uploads/personal-space_collection_4.jpg
-  title: title text
   alt: alt text
+  src: /uploads/project3studiofinal_page_21.jpg
+  title: title text
 color:
   b: 133
   g: 74
@@ -12,95 +12,95 @@ color:
 processSteps:
   - images:
       - image:
+          alt: alt text
           src: /uploads/personal-space_inspo_1.jpg
           title: title text
-          alt: alt text
       - image:
+          alt: alt text
           src: /uploads/personal-space_inspo_2.jpg
           title: title text
-          alt: alt text
       - image:
+          alt: alt text
           src: /uploads/personal-space_inspo_3.jpg
           title: title text
-          alt: alt text
       - image:
+          alt: alt text
           src: /uploads/personal-space_inspo_4.jpg
           title: title text
-          alt: alt text
     name: Inspiration
   - images:
       - image:
+          alt: alt text
           src: /uploads/personal-space_sketches_1.jpg
           title: title text
-          alt: alt text
       - image:
+          alt: alt text
           src: /uploads/personal-space_sketches_2.jpg
           title: title text
-          alt: alt text
       - image:
+          alt: alt text
           src: /uploads/personal-space_sketches_3.jpg
           title: title text
-          alt: alt text
       - image:
+          alt: alt text
           src: /uploads/personal-space_sketches_4.jpg
           title: title text
-          alt: alt text
       - image:
+          alt: alt text
           src: /uploads/personal-space_sketches_5.jpg
           title: title text
-          alt: alt text
       - image:
+          alt: alt text
           src: /uploads/personal-space_sketches_6.jpg
           title: title text
-          alt: alt text
       - image:
+          alt: alt text
           src: /uploads/personal-space_sketches_7.jpg
           title: title text
-          alt: alt text
       - image:
+          alt: alt text
           src: /uploads/personal-space_sketches_8.jpg
           title: title text
-          alt: alt text
       - image:
+          alt: alt text
           src: /uploads/personal-space_sketches_9.jpg
           title: title text
-          alt: alt text
     name: Sketches
   - images:
       - image:
+          alt: alt text
           src: /uploads/personal-space_muslin_1.jpg
           title: title text
-          alt: alt text
     name: Muslins
   - images:
       - image:
+          alt: alt text
           src: /uploads/personal-space_collection_3.jpg
           title: title text
-          alt: alt text
       - image:
+          alt: alt text
           src: /uploads/personal-space_collection_4.jpg
           title: title text
-          alt: alt text
       - image:
+          alt: alt text
           src: /uploads/personal-space_collection_5.jpg
           title: title text
-          alt: alt text
       - image:
+          alt: alt text
           src: /uploads/personal-space_collection_6.jpg
           title: title text
-          alt: alt text
       - image:
+          alt: alt text
           src: /uploads/personal-space_collection_7.jpg
           title: title text
-          alt: alt text
       - image:
+          alt: alt text
           src: /uploads/personal-space_collection_8.jpg
           title: title text
-          alt: alt text
       - image:
+          alt: alt text
           src: /uploads/personal-space_collection_9.jpg
           title: title text
-          alt: alt text
     name: Collection
 ---
 Womenswear collection inspired by public transportation and my
