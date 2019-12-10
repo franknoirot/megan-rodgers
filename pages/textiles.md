@@ -1,49 +1,25 @@
 ---
 title: Textiles
 imageGallery:
-  - caption: A caption to show on click.
-    collection: Beautiful Predator
-    isVert: false
-    src: /uploads/beautiful-predator_collection_4.jpg
-  - caption: A caption to show on click.
-    collection: Beautiful Predator
+  - caption: Wrapping Technique - Rust Dyeing
+    collection: Tarnish
     isVert: true
-    src: /uploads/beautiful-predator_garment_1.jpg
-  - caption: A caption to show on click.
-    collection: Beautiful Predator
-    isVert: false
-    src: /uploads/beautiful-predator_muslin_2.jpg
-  - caption: A caption to show on click.
-    collection: Black House
-    isVert: false
-    src: /uploads/black-house_inspo_1.jpg
-  - caption: A caption to show on click.
-    collection: Black House
-    isVert: false
-    src: /uploads/black-house_final_5.jpg
-  - caption: A caption to show on click.
-    collection: Black House
-    isVert: false
-    src: /uploads/black-house_muslin_1.jpg
-  - caption: A caption to show on click.
-    collection: Black House
-    isVert: false
-    src: /uploads/black-house_sketches_1.jpg
-  - caption: A caption to show on click.
-    collection: Cultivated Diversity
+    src: /uploads/wrapping.jpg
+  - caption: Butterfly - Rust Dyeing
+    collection: Tarnish
     isVert: true
-    src: /uploads/cultivated-diversity_final-garment_3.jpg
-  - caption: A caption to show on click.
-    collection: Cultivated Diversity
+    src: /uploads/img_7289.jpg
+  - caption: Fern - Rust Dyeing
+    collection: Tarnish
     isVert: true
-    src: /uploads/cultivated-diversity_final-garment_4.jpg
-  - caption: A caption to show on click.
-    collection: Cultivated Diversity
+    src: /uploads/img_6412.jpg
+  - caption: Natural Dyeing
+    collection: Natural Dyeing
     isVert: false
-    src: /uploads/cultivated-diversity_sketches_3.jpg
-  - caption: A caption to show on click.
-    collection: Fortunate Son
+    src: /uploads/img_0087.jpg
+  - caption: Natural Dyeing
+    collection: Natural Dyeing
     isVert: false
-    src: /uploads/fortunate-son_collection_4.jpg
+    src: /uploads/natural-dyes-1.jpg
 ---
-Something you can use to describe the Lookbook overall.
+Textiles from my collections.
