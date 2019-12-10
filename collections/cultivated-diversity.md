@@ -1,10 +1,10 @@
 ---
 title: Cultivated Diversity
-season: Fall 18
+season: Spring/Summer
 featuredImage:
-  src: /uploads/cultivated-diversity_final-garment_1.jpg
-  title: title text
   alt: alt text
+  src: /uploads/cover-page-updated.jpg
+  title: title text
 color:
   b: 85
   g: 158
@@ -12,91 +12,91 @@ color:
 processSteps:
   - images:
       - image:
+          alt: alt text
           src: /uploads/cultivated-diversity_inspiration_1.jpg
           title: title text
-          alt: alt text
       - image:
+          alt: alt text
           src: /uploads/cultivated-diversity_inspiration_2.jpg
           title: title text
-          alt: alt text
       - image:
+          alt: alt text
           src: /uploads/cultivated-diversity_inspiration_3.jpg
           title: title text
-          alt: alt text
       - image:
+          alt: alt text
           src: /uploads/cultivated-diversity_inspiration_4.jpg
           title: title text
-          alt: alt text
       - image:
+          alt: alt text
           src: /uploads/cultivated-diversity_inspiration_5.jpg
           title: title text
-          alt: alt text
     name: Inspiration
   - images:
       - image:
+          alt: alt text
           src: /uploads/cultivated-diversity_sketches_1.jpg
           title: title text
-          alt: alt text
       - image:
+          alt: alt text
           src: /uploads/cultivated-diversity_sketches_2.jpg
           title: title text
-          alt: alt text
       - image:
+          alt: alt text
           src: /uploads/cultivated-diversity_sketches_3.jpg
           title: title text
-          alt: alt text
       - image:
+          alt: alt text
           src: /uploads/cultivated-diversity_sketches_4.jpg
           title: title text
-          alt: alt text
       - image:
+          alt: alt text
           src: /uploads/cultivated-diversity_sketches_5.jpg
           title: title text
-          alt: alt text
     name: Sketches
   - images:
       - image:
+          alt: alt text
           src: /uploads/cultivated-diversity_muslins_1.jpg
           title: title text
-          alt: alt text
       - image:
+          alt: alt text
           src: /uploads/cultivated-diversity_muslins_2.jpg
           title: title text
-          alt: alt text
       - image:
+          alt: alt text
           src: /uploads/cultivated-diversity_muslins_3.jpg
           title: title text
-          alt: alt text
       - image:
+          alt: alt text
           src: /uploads/cultivated-diversity_muslins_4.jpg
           title: title text
-          alt: alt text
       - image:
+          alt: alt text
           src: /uploads/cultivated-diversity_muslins_5.jpg
           title: title text
-          alt: alt text
       - image:
+          alt: alt text
           src: /uploads/cultivated-diversity_muslins_6.jpg
           title: title text
-          alt: alt text
     name: Muslins
   - images:
       - image:
+          alt: alt text
           src: /uploads/cultivated-diversity_final-garment_1.jpg
           title: title text
-          alt: alt text
       - image:
+          alt: alt text
           src: /uploads/cultivated-diversity_final-garment_2.jpg
           title: title text
-          alt: alt text
       - image:
+          alt: alt text
           src: /uploads/cultivated-diversity_final-garment_3.jpg
           title: title text
-          alt: alt text
       - image:
+          alt: alt text
           src: /uploads/cultivated-diversity_final-garment_4.jpg
           title: title text
-          alt: alt text
     name: Final Garment
 ---
 When asked to create a womenswear collection based on diversity, I found
