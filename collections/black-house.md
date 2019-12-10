@@ -1,9 +1,9 @@
 ---
 title: Black House
-season: Fall 17
+season: Fall/Winter
 featuredImage:
   alt: alt text
-  src: /uploads/black-house_final_5.jpg
+  src: /uploads/black-house_final_1.jpg
   title: title text
 color:
   b: 45
