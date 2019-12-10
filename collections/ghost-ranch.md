@@ -1,9 +1,9 @@
 ---
 title: Ghost Ranch
-season: Spring 19
+season: Spring/Summer
 featuredImage:
   alt: 'Sketches from the Ghost Ranch collection, showing eight different tops.'
-  src: /uploads/ghost-ranch-1.jpg
+  src: /uploads/project-2-spring-2019-final_page_01.jpg
   title: 'Ghost Ranch, a menswear collection'
 color:
   b: 123
@@ -12,104 +12,150 @@ color:
 processSteps:
   - images:
       - image:
-          alt: alt text
-          src: /uploads/black-house_inspo_1.jpg
-          title: 'Ghost Ranch, Inspiration Board 1'
+          alt: Alt Text
+          src: /uploads/project-2-spring-2019-final_page_01.jpg
+          title: Title Text
       - image:
-          alt: alt text
-          src: /uploads/black-house_inspo_2.jpg
-          title: 'Ghost Ranch, Inspiration Board 2'
+          alt: Alt Text
+          src: /uploads/project-2-spring-2019-final_page_02.jpg
+          title: Title Text
       - image:
-          alt: alt text
-          src: /uploads/black-house_inspo_3.jpg
-          title: 'Ghost Ranch, Inspiration Board 3'
+          alt: Alt Text
+          src: /uploads/project-2-spring-2019-final_page_06.jpg
+          title: Title Text
+      - image:
+          alt: Alt Text
+          src: /uploads/project-2-spring-2019-final_page_07.jpg
+          title: Title Text
+      - image:
+          alt: Alt Text
+          src: /uploads/project-2-spring-2019-final_page_08.jpg
+          title: Title Text
+      - image:
+          alt: Alt Text
+          src: /uploads/project-2-spring-2019-final_page_09.jpg
+          title: Title Text
+      - image:
+          alt: Alt Text
+          src: /uploads/project-2-spring-2019-final_page_10.jpg
+          title: Title Text
+      - image:
+          alt: Alt Text
+          src: /uploads/project-2-spring-2019-final_page_03.jpg
+          title: Title Text
+      - image:
+          alt: Alt Text
+          src: /uploads/project-2-spring-2019-final_page_05.jpg
+          title: Title Text
+      - image:
+          alt: Alt Text
+          src: /uploads/project-2-spring-2019-final_page_04.jpg
+          title: Title Text
+      - image:
+          alt: Alt Text
+          src: /uploads/project-2-spring-2019-final_page_11.jpg
+          title: Title Text
+      - image:
+          alt: Alt Text
+          src: /uploads/project-2-spring-2019-final_page_12.jpg
+          title: Title Text
+      - image:
+          alt: Alt Text
+          src: /uploads/project-2-spring-2019-final_page_13.jpg
+          title: Title Text
+      - image:
+          alt: Alt Text
+          src: /uploads/project-2-spring-2019-final_page_15.jpg
+          title: Title Text
+      - image:
+          alt: Alt Text
+          src: /uploads/project-2-spring-2019-final_page_14.jpg
+          title: Title Text
+      - image:
+          alt: Alt Text
+          src: /uploads/project-2-spring-2019-final_page_19.jpg
+          title: Title Text
     name: Inspiration
   - images:
       - image:
-          alt: alt text
-          src: /uploads/black-house_muslin_1.jpg
-          title: 'Ghost Ranch, Muslins 1'
+          alt: Alt Text
+          src: /uploads/img_3166.jpg
+          title: Title Text
       - image:
-          alt: alt text
-          src: /uploads/black-house_muslin_2.jpg
-          title: 'Ghost Ranch, Muslins 2'
+          alt: Alt Text
+          src: /uploads/project-2-spring-2019-final_page_18.jpg
+          title: Title Text
       - image:
-          alt: alt text
-          src: /uploads/black-house_muslin_3.jpg
-          title: 'Ghost Ranch, Muslins 3'
+          alt: Alt Text
+          src: /uploads/project-2-spring-2019-final_page_17.jpg
+          title: Title Text
+      - image:
+          alt: Alt Text
+          src: /uploads/project-2-spring-2019-final_page_16.jpg
+          title: Title Text
     name: Muslin
   - images:
       - image:
-          alt: >-
-            Illustrations of a men's shirt, pants, and hoodie, front and
-            back.The shirt has a chest pocket and is made of three different
-            materials joined together. The pants are classic chinos. The hoodie
-            is a drawstring pullover with a graphic on the back. 
-          src: /uploads/black-house_sketches_1.jpg
-          title: Ghost Ranch Sketches 1
+          alt: Alt Text
+          src: /uploads/img_3161.jpg
+          title: Title Text
       - image:
-          alt: >-
-            Illustrations of a men's jacket, t-shirt, and pants from front and
-            back. The t-shirt has a large intricate graphic on the front, the
-            pants are a jean cut. and the jacket has a half-turtleneck collar
-            with chest panels of a fluffy material.
-          src: /uploads/black-house_sketches_2.jpg
-          title: Ghost Ranch Sketches 2
+          alt: Alt Text
+          src: /uploads/img_3163.jpg
+          title: Title Text
       - image:
-          alt: Alt text
-          src: /uploads/black-house_sketches_3.jpg
-          title: Ghost Ranch Sketches 3
+          alt: Alt Text
+          src: /uploads/img_3164.jpg
+          title: Title Text
       - image:
-          alt: Alt text
-          src: /uploads/black-house_sketches_4.jpg
-          title: Ghost Ranch Sketches 4
+          alt: Alt Text
+          src: /uploads/img_3165.jpg
+          title: Title Text
       - image:
-          alt: Alt text
-          src: /uploads/black-house_sketches_5.jpg
-          title: Ghost Ranch Sketches 5
+          alt: Alt Text
+          src: /uploads/img_3167.jpg
+          title: 'Title Text '
       - image:
-          alt: Alt text
-          src: /uploads/black-house_sketches_6.jpg
-          title: Ghost Ranch Sketches 6
+          alt: Alt Text
+          src: /uploads/img_3168.jpg
+          title: Title Text
     name: Sketches
   - images:
       - image:
-          alt: Alt text
-          src: /uploads/black-house_final_1.jpg
-          title: 'Black Ranch, Final Collection 1'
+          alt: Alt Text
+          src: /uploads/project-2-spring-2019-final_page_21.jpg
+          title: Title Text
       - image:
-          alt: Alt text
-          src: /uploads/black-house_final_2.jpg
-          title: 'Black Ranch, Final Collection 2'
+          alt: Alt Text
+          src: /uploads/img_3170.jpg
+          title: Title Text
       - image:
-          alt: Alt text
-          src: /uploads/black-house_final_3.jpg
-          title: 'Black Ranch, Final Collection 3'
+          alt: Alt Text
+          src: /uploads/project-2-spring-2019-final_page_20.jpg
+          title: Title Text
       - image:
-          alt: Alt text
-          src: /uploads/black-house_final_4.jpg
-          title: 'Black Ranch, Final Collection 4'
+          alt: Alt Text
+          src: /uploads/project-2-spring-2019-final_page_23.jpg
+          title: Title Text
       - image:
-          alt: Alt text
-          src: /uploads/black-house_final_5.jpg
-          title: 'Black Ranch, Final Collection 5'
+          alt: Alt Text
+          src: /uploads/project-2-spring-2019-final_page_22.jpg
+          title: Title Text
+    name: Final Collection
+  - images:
       - image:
-          alt: Alt text
-          src: /uploads/black-house_final_6.jpg
-          title: 'Black Ranch, Final Collection 6'
+          alt: Alt Text
+          src: /uploads/img_2492.jpg
+          title: Title Text
       - image:
-          alt: Alt text
-          src: /uploads/black-house_final_7.jpg
-          title: 'Black Ranch, Final Collection 7'
+          alt: Alt Text
+          src: /uploads/img_2485.jpg
+          title: Title Text
       - image:
-          alt: Alt text
-          src: /uploads/black-house_final_8.jpg
-          title: 'Black Ranch, Final Collection 8'
-      - image:
-          alt: Alt text
-          src: /uploads/black-house_final_9.jpg
-          title: 'Black Ranch, Final Collection 9'
-    name: Collection
+          alt: Alt Text
+          src: /uploads/img_2491.jpg
+          title: Title Text
+    name: Final Garment
 ---
 Womenswear collection inspired by the Georgia O’Keeffe: Living Modern
  exhibit at the Cleveland Museum of Art. O’Keefe was an accomplished
