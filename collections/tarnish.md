@@ -17,19 +17,23 @@ processSteps:
           title: Title Text
       - image:
           alt: Alt text
-          src: /uploads/tarnish-final-reduced_page_02.jpg
+          src: /uploads/moodboard-option.jpg
           title: Title Text
       - image:
           alt: Alt text
-          src: /uploads/tarnish-final-reduced_page_03.jpg
+          src: /uploads/colorama-color-palette-copy.jpg
+          title: Title Text
+      - image:
+          alt: Alt Text
+          src: /uploads/trend.jpg
           title: Title Text
       - image:
           alt: Alt text
-          src: /uploads/tarnish-final-reduced_page_04.jpg
+          src: /uploads/tarnish-final-reduced_page_09.jpg
           title: Title Text
       - image:
           alt: Alt text
-          src: /uploads/tarnish-final-reduced_page_05.jpg
+          src: /uploads/tarnish-description.jpg
           title: Title Text
       - image:
           alt: Alt text
@@ -37,11 +41,7 @@ processSteps:
           title: Title Text
       - image:
           alt: Alt text
-          src: /uploads/tarnish-final-reduced_page_07.jpg
-          title: Title Text
-      - image:
-          alt: Alt text
-          src: /uploads/tarnish-final-reduced_page_09.jpg
+          src: /uploads/tarnish-final-reduced_page_05.jpg
           title: Title Text
     name: Inspiration
   - images:
@@ -55,7 +55,7 @@ processSteps:
           title: Title Text
       - image:
           alt: Alt Text
-          src: /uploads/tarnish-final-reduced_page_11.jpg
+          src: /uploads/tarnish-final-reduced_page_13.jpg
           title: Title Text
       - image:
           alt: Alt Text
@@ -63,39 +63,27 @@ processSteps:
           title: Title Text
       - image:
           alt: Alt Text
-          src: /uploads/tarnish-final-reduced_page_13.jpg
+          src: /uploads/tarnish-final-reduced_page_11.jpg
           title: Title Text
     name: Samples
   - images:
       - image:
           alt: Alt Text
+          src: /uploads/sketched-updated.jpg
+          title: Title Text
+      - image:
+          alt: Alt Text
           src: /uploads/tarnish-final-reduced_page_14.jpg
-          title: Title Text
-      - image:
-          alt: Alt Text
-          src: /uploads/tarnish-final-reduced_page_15.jpg
-          title: Title Text
-      - image:
-          alt: Alt Text
-          src: /uploads/tarnish-final-reduced_page_16.jpg
-          title: Title Text
-      - image:
-          alt: Alt Text
-          src: /uploads/tarnish-final-reduced_page_17.jpg
-          title: Title Text
-      - image:
-          alt: Alt Text
-          src: /uploads/tarnish-final-reduced_page_18.jpg
           title: Title Text
     name: Sketches
   - images:
       - image:
           alt: Alt Text
-          src: /uploads/tarnish-final-reduced_page_20.jpg
+          src: /uploads/line-up-1.jpg
           title: Title Text
       - image:
           alt: Alt Text
-          src: /uploads/tarnish-final-reduced_page_21.jpg
+          src: /uploads/line-up-2.jpg
           title: Title Text
       - image:
           alt: Alt Text
@@ -115,25 +103,29 @@ processSteps:
           title: Title Text
       - image:
           alt: Alt Text
-          src: /uploads/tarnish-final-reduced_page_26.jpg
+          src: /uploads/figure-layout-6.jpg
           title: Title Text
       - image:
           alt: Alt Text
-          src: /uploads/tarnish-final-reduced_page_27.jpg
+          src: /uploads/figure-layout-5.jpg
           title: Title Text
     name: Final Collection
   - images:
       - image:
           alt: Alt Text
-          src: /uploads/img_4134.jpg
+          src: /uploads/final-garment.jpg
           title: Title Text
       - image:
           alt: Alt Text
-          src: /uploads/img_4137.jpg
+          src: /uploads/final-sweater-tech-pack_page_1.jpg
           title: Title Text
       - image:
           alt: Alt Text
-          src: /uploads/img_4138.jpg
+          src: /uploads/knit-swatches.jpg
+          title: Title Text
+      - image:
+          alt: Alt Text
+          src: /uploads/stitch-notations.jpg
           title: Title Text
     name: Final Garment
 ---
