@@ -1,6 +1,6 @@
 ---
 title: home
-logo: /uploads/final-logo.jpg
+logo: /uploads/megan-rodgers-logo.jpg
 featuredCollection: Tarnish
 ---
 
