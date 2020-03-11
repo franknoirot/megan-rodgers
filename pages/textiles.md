@@ -22,4 +22,4 @@ imageGallery:
     isVert: false
     src: /uploads/natural-dyes-1.jpg
 ---
-Textiles from my collections.
+Textiles from my collections. 
