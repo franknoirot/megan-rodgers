@@ -1,6 +1,6 @@
 ---
 title: home
 logo: /uploads/megan-rodgers-logo.jpg
-featuredCollection: Fortunate Son
+featuredCollection: United By Blue
 ---
 
