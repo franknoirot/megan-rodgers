@@ -5,6 +5,8 @@
       <nav>
         <g-link to="/about">About</g-link>
         <g-link to="/collections">Collections</g-link>
+        <g-link to="/lookbook">Lookbook</g-link>
+        <g-link to="/textiles">Textiles</g-link>
         <a class="link_contact" href="mailto:mrodge11@kent.edu"
           @mouseleave="setHover" @mouseenter="setHover" :style="hover">Contact</a>
       </nav>
@@ -118,7 +120,7 @@ export default {
     flex-direction: column;
     align-self: flex-end;
     width: max-content;
-    margin-bottom: 22vmin;
+    margin-bottom: 10vmin;
     margin-left: 20vmin;
     padding: 2.5em 0;
     border-left: solid .3vmin;
@@ -259,6 +261,9 @@ export default {
       justify-self: flex-end;
       align-self: center;
       align-items: flex-end;
+    }
+    nav a {
+      margin: .3em 0;
     }
 
     .featured_collection {
