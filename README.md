@@ -1,14 +1,13 @@
-# Default starter for Gridsome
+# MeganRodgers.me
 
-This is the project you get when you run `gridsome create new-project`.
+A small portfolio site for Megan Rodgers, a fashion designer earning her MFA from Kent State University.
 
-### 1. Install Gridsome CLI tool if you don't have
+## Key Features
+- Simple, flat-file content management using NetlifyCMS
+- Wicked fast, SEO-friendly pages using Gridsome
+- Robust custom image carousel component
+- Cute little bee companion 🐝
 
-`npm install --global @gridsome/cli`
-
-### 2. Create a Gridsome project
-
-1. `gridsome create my-gridsome-site` to install default starter
-2. `cd my-gridsome-site` to open the folder
-3. `gridsome develop` to start a local dev server at `http://localhost:8080`
-4. Happy coding 🎉🙌
+## TO-DOs
+- Get live previews within NetlifyCMS (don't believe there is support for Vue, seems silly to write the page preview in React when the site's in Vue, alas)
+- Automatic image resizing/compressing (might not be worth it, as I don't want the source files to be large either to save my GitHub account.)
