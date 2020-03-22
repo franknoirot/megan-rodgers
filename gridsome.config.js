@@ -13,7 +13,7 @@ module.exports = {
       use: '@gridsome/source-filesystem',
       options: {
         path: './collections/**/*.md',
-        route: '/collections/:slug',
+        route: '/collections/:title',
         typeName: 'Collection',
         remark: {
           plugins: [
@@ -26,7 +26,7 @@ module.exports = {
       use: '@gridsome/source-filesystem',
       options: {
         path: './pages/**/*.md',
-        route: '/netlify-:slug',
+        route: '/netlify-:title',
         typeName: 'NetlifyPage',
         remark: {
           plugins: [

@@ -4,16 +4,12 @@
     <main :class="{navbar: (navbar==='true')}">
       <slot/>
     </main>
-    <footer>
-      Site by&nbsp;<a href="https://franknoirot.co" rel="noopener" target="_blank">Frank Noirot</a>
-      <Bee />
-    </footer>
   </div>
 </template>
 
 <static-query>
 query {
-  metaData {
+  metadata {
     siteName
   }
 }
@@ -21,12 +17,10 @@ query {
 
 <script>
   import Navbar from "~/components/Navbar.vue"
-  import Bee from "~/components/Bee.vue"
 
   export default {
     components: {
       Navbar,
-      Bee
     },
     props: {
       navbar: {
