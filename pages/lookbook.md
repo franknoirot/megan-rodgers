@@ -105,5 +105,16 @@ imageGallery:
       pattern. Embedded with metal washers in the front and back checkerboard
       knit structure. Bat-wing sleeves with ribbon ties on the cuff.
     collection: Tarnish
+  - isVert: true
+    src: /uploads/dsc_0219.jpg
+    collection: Ghost Ranch & Tarnish
+    caption: Oversized double-bed machine knitted sweater & convertible knit cape
+  - isVert: true
+    src: /uploads/dsc_0025.jpg
+    collection: 'Ghost Ranch '
+    caption: >-
+      Top 1: Zero-waste, convertible (multi-wear) knit cape with waist ties and
+      shoulder snaps - Top 2: Fish-net stitch hand-knit top (Wool and the Gang -
+      Mixtape Yarn) - Bottom: A-line knit skirt with cable knit pattern
 ---
 Lookbook of all final garments in my collections.
