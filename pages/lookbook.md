@@ -1,18 +1,6 @@
 ---
 title: Lookbook
 imageGallery:
-  - caption: Wearing Justice Exhibit
-    collection: Fortunate Son
-    isVert: true
-    src: /uploads/fortunate-son_garment_6.jpg
-  - caption: Wearing Justice Exhibit
-    collection: Fortunate Son
-    isVert: true
-    src: /uploads/fortunate-son_garment_5.jpg
-  - caption: Wearing Justice Exhibit
-    collection: Fortunate Son
-    isVert: true
-    src: /uploads/fortunate-son_garment_4.jpg
   - isVert: true
     src: /uploads/dsc_0022.jpg
     caption: Asymmetrical silk/hemp wrap dress printed and painted with natural dyes
@@ -460,5 +448,17 @@ imageGallery:
     caption: >-
       8-gore flare dress with princess seams, in-seam pockets and open-back with
       sheer flower appliqués
+  - caption: Wearing Justice Exhibit
+    collection: Fortunate Son
+    isVert: true
+    src: /uploads/fortunate-son_garment_6.jpg
+  - caption: Wearing Justice Exhibit
+    collection: Fortunate Son
+    isVert: true
+    src: /uploads/fortunate-son_garment_5.jpg
+  - caption: Wearing Justice Exhibit
+    collection: Fortunate Son
+    isVert: true
+    src: /uploads/fortunate-son_garment_4.jpg
 ---
 Lookbook of all final garments in my collections.
