@@ -308,5 +308,33 @@ imageGallery:
       zipper closure
     collection: Beautiful Predator
     src: /uploads/dsc_0406-copy.jpg
+  - isVert: true
+    src: /uploads/dsc_0295.jpg
+    collection: Beautiful Predator
+    caption: >-
+      Top: Bell-sleeve crop top with cinched draw string front ties and
+      open-back Bottom: Bundle-dyed silk tiered skirt with white mini underlay
+      and invisible zipper back closure
+  - isVert: true
+    caption: >-
+      Top: Bell-sleeve crop top with cinched draw string front ties and
+      open-back Bottom: Bundle-dyed silk tiered skirt with white mini underlay
+      and invisible zipper back closure
+    collection: Beautiful Predator
+    src: /uploads/dsc_0114.jpg
+  - isVert: true
+    caption: >-
+      Top: Bell-sleeve crop top with cinched draw string front ties and
+      open-back Bottom: Bundle-dyed silk tiered skirt with white mini underlay
+      and invisible zipper back closure
+    collection: Beautiful Predator
+    src: /uploads/dsc_0272.jpg
+  - isVert: true
+    caption: >-
+      Top: Bell-sleeve crop top with cinched draw string front ties and
+      open-back Bottom: Bundle-dyed silk tiered skirt with white mini underlay
+      and invisible zipper back closure
+    collection: Beautiful Predator
+    src: /uploads/dsc_0195.jpg
 ---
 Lookbook of all final garments in my collections.
