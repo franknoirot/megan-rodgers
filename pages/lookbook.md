@@ -436,5 +436,29 @@ imageGallery:
     src: /uploads/dsc_0396.jpg
     caption: Draped gingham dress with flutter sleeves and open-back
     collection: Draping Project
+  - isVert: true
+    src: /uploads/dsc_0544.jpg
+    collection: Flat Pattern Project
+    caption: >-
+      8-gore flare dress with princess seams, in-seam pockets and open-back with
+      sheer flower appliqués
+  - isVert: true
+    caption: >-
+      8-gore flare dress with princess seams, in-seam pockets and open-back with
+      sheer flower appliqués
+    src: /uploads/dsc_0459.jpg
+    collection: Flat Pattern Project
+  - isVert: true
+    src: /uploads/dsc_0536.jpg
+    caption: >-
+      8-gore flare dress with princess seams, in-seam pockets and open-back with
+      sheer flower appliqués
+    collection: Flat Pattern Project
+  - isVert: true
+    src: /uploads/dsc_0539.jpg
+    collection: Flat Pattern Project
+    caption: >-
+      8-gore flare dress with princess seams, in-seam pockets and open-back with
+      sheer flower appliqués
 ---
 Lookbook of all final garments in my collections.
