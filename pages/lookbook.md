@@ -164,5 +164,61 @@ imageGallery:
       Top 1: Zero-waste, convertible (multi-wear) knit cape with waist ties and
       shoulder snaps - Top 2: Fish-net stitch hand-knit top (Wool and the Gang -
       Mixtape Yarn) - Bottom: A-line knit skirt with cable knit pattern
+  - isVert: true
+    src: /uploads/dsc_0088.jpg
+    collection: Anthropologie - Sila
+    caption: >-
+      Top: Hand-knit fair isle pattern sweater with 2x2 rib cuffs & hem (Wool
+      and the Gang - Alpachino Merino) Bottom: High-waisted, wide-leg pants with
+      side slit and in-seam pockets
+  - isVert: true
+    src: /uploads/dsc_0008.jpg
+    caption: >-
+      Top: Hand-knit fair isle pattern sweater with 2x2 rib cuffs & hem (Wool
+      and the Gang - Alpachino Merino) Bottom: High-waisted, wide-leg pants with
+      side slit and in-seam pockets
+    collection: Anthropologie - Sila
+  - isVert: true
+    src: /uploads/dsc_0116.jpg
+    collection: Anthropologie - Sila
+    caption: >-
+      Top: Hand-knit fair isle pattern sweater with 2x2 rib cuffs & hem (Wool
+      and the Gang - Alpachino Merino) Bottom: High-waisted, wide-leg pants with
+      side slit and in-seam pockets
+  - isVert: true
+    src: /uploads/dsc_0117.jpg
+    caption: >-
+      Top: Hand-knit fair isle pattern sweater with 2x2 rib cuffs & hem (Wool
+      and the Gang - Alpachino Merino) Bottom: High-waisted, wide-leg pants with
+      side slit and in-seam pockets
+    collection: Anthropologie - Sila
+  - isVert: true
+    src: /uploads/dsc_0104.jpg
+    collection: Anthropologie - Sila
+    caption: >-
+      Top: Hand-knit fair isle pattern sweater with 2x2 rib cuffs & hem (Wool
+      and the Gang - Alpachino Merino) Bottom: High-waisted, wide-leg pants with
+      side slit and in-seam pockets
+  - isVert: true
+    src: /uploads/dsc_0308.jpg
+    collection: 'Beautiful Predator '
+    caption: >-
+      Top: Bell-sleeve crop top with cinched draw string front ties and
+      open-back Bottom: High-waisted, wide-leg pants with side slit and in-seam
+      front pockets
+  - isVert: true
+    caption: >-
+      Top: Bell-sleeve crop top with cinched draw string front ties and
+      open-back Bottom: High-waisted, wide-leg pants with side slit and in-seam
+      front pockets
+    collection: 'Beautiful Predator '
+    src: /uploads/dsc_0301.jpg
+  - isVert: true
+    src: /uploads/dsc_0189.jpg
+    collection: 'Beautiful Predator '
+    caption: >-
+      Top: Bell-sleeve crop top with cinched draw string front ties and
+      open-back Bottom: High-waisted, wide-leg pants with side slit and in-seam
+      front pockets
 ---
 Lookbook of all final garments in my collections.
