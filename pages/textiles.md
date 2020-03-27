@@ -1,18 +1,6 @@
 ---
 title: Textiles
 imageGallery:
-  - caption: Fern - Rust Dyeing
-    collection: Tarnish
-    isVert: true
-    src: /uploads/img_6412.jpg
-  - caption: Natural Dyeing
-    collection: Natural Dyeing
-    isVert: false
-    src: /uploads/img_0087.jpg
-  - caption: Natural Dyeing
-    collection: Natural Dyeing
-    isVert: false
-    src: /uploads/natural-dyes-1.jpg
   - isVert: true
     src: /uploads/img_4840.jpg
     collection: Tarnish
@@ -137,5 +125,13 @@ imageGallery:
     src: /uploads/img_4781.jpg
     caption: Hand-knit swatch - Moss Stitch
     collection: United By Blue
+  - caption: Natural Dyeing
+    collection: Natural Dyeing
+    isVert: false
+    src: /uploads/natural-dyes-1.jpg
+  - caption: Natural Dyeing
+    collection: Natural Dyeing
+    isVert: false
+    src: /uploads/img_0087.jpg
 ---
 Textiles from my collections. 
