@@ -220,5 +220,58 @@ imageGallery:
       Top: Bell-sleeve crop top with cinched draw string front ties and
       open-back Bottom: High-waisted, wide-leg pants with side slit and in-seam
       front pockets
+  - isVert: true
+    src: /uploads/dsc_0841.jpg
+    collection: United By Blue
+    caption: >-
+      Top: Digitally knitted topography tubular jacquard sweater (reversible,
+      not pictured) Bottom: Knit dress with hand embroidered alpaca merino yarn
+      topography design (Wool and the Gang - Alpachino Merino)
+  - isVert: true
+    caption: >-
+      Top: Digitally knitted topography tubular jacquard sweater (reversible,
+      not pictured) Bottom: Knit dress with hand embroidered alpaca merino yarn
+      topography design (Wool and the Gang - Alpachino Merino)
+    collection: United By Blue
+    src: /uploads/dsc_0980.jpg
+  - isVert: true
+    caption: >-
+      Top: Digitally knitted topography tubular jacquard sweater (reversible,
+      not pictured) Bottom: Knit dress with hand embroidered alpaca merino yarn
+      topography design (Wool and the Gang - Alpachino Merino)
+    collection: United By Blue
+    src: /uploads/dsc_0932.jpg
+  - isVert: true
+    src: /uploads/dsc_0952.jpg
+    collection: United By Blue
+    caption: >-
+      Top: Digitally knitted topography tubular jacquard sweater (reversible,
+      not pictured) Bottom: Knit dress with hand embroidered alpaca merino yarn
+      topography design (Wool and the Gang - Alpachino Merino)
+  - isVert: true
+    src: /uploads/dsc_0963.jpg
+    collection: United By Blue
+    caption: >-
+      Top: Digitally knitted topography tubular jacquard sweater (reversible,
+      not pictured) Bottom: Knit dress with hand embroidered alpaca merino yarn
+      topography design (Wool and the Gang - Alpachino Merino)
+  - isVert: true
+    src: /uploads/dsc_0349.jpg
+    collection: Hand-knit
+    caption: >-
+      Hand-knit cardigan with cable knit sleeves/back and contrast color edge
+      (Wool and the Gang - Crazy Sexy Wool and Alpachino Merino)
+  - isVert: true
+    src: /uploads/dsc_0364.jpg
+    collection: Hand-Knit
+    caption: >-
+      Hand-knit cardigan with cable knit sleeves/back and contrast color edge
+      (Wool and the Gang - Crazy Sexy Wool and Alpachino Merino)
+  - isVert: true
+    caption: >-
+      Hand-knit cardigan with cable knit sleeves/back and contrast color edge
+      (Wool and the Gang - Crazy Sexy Wool and Alpachino Merino)
+    collection: Hand-Knit
+    src: /uploads/dsc_0374-2.jpg
 ---
 Lookbook of all final garments in my collections.
