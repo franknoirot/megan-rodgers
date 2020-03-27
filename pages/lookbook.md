@@ -384,5 +384,57 @@ imageGallery:
     src: /uploads/dsc_0805.jpg
     collection: Black House
     caption: Alternative seams color-block sweatshirt with snap-up front closures
+  - isVert: true
+    caption: >-
+      Smart Filtration Infused Knitwear: Adaptable knitwear with
+      interchangeable, biodegradable filters and air pollution detector to alert
+      wearer of surrounding air pollution levels with lights, sound and
+      bluetooth notifications.
+    collection: Fashion Tech Hackathon 2020
+    src: /uploads/dsc_0557.jpg
+  - isVert: true
+    src: /uploads/dsc_0491.jpg
+    collection: Fashion Tech Hackathon 2020
+    caption: >-
+      Smart Filtration Infused Knitwear: Adaptable knitwear with
+      interchangeable, biodegradable filters and air pollution detector to alert
+      wearer of surrounding air pollution levels with lights, sound and
+      bluetooth notifications.
+  - isVert: true
+    caption: >-
+      Smart Filtration Infused Knitwear: Adaptable knitwear with
+      interchangeable, biodegradable filters and air pollution detector to alert
+      wearer of surrounding air pollution levels with lights, sound and
+      bluetooth notifications.
+    collection: Fashion Tech Hackathon 2020
+    src: /uploads/dsc_0509.jpg
+  - isVert: true
+    src: /uploads/dsc_0488.jpg
+    collection: Fashion Tech Hackathon 2020
+    caption: >-
+      Smart Filtration Infused Knitwear: Adaptable knitwear with
+      interchangeable, biodegradable filters and air pollution detector to alert
+      wearer of surrounding air pollution levels with lights, sound and
+      bluetooth notifications.
+  - isVert: true
+    caption: >-
+      Smart Filtration Infused Knitwear: Adaptable knitwear with
+      interchangeable, biodegradable filters and air pollution detector to alert
+      wearer of surrounding air pollution levels with lights, sound and
+      bluetooth notifications.
+    collection: Fashion Tech Hackathon 2020
+    src: /uploads/dsc_0606.jpg
+  - isVert: true
+    src: /uploads/dsc_0483.jpg
+    caption: Draped gingham dress with flutter sleeves and open-back
+    collection: Draping Project
+  - isVert: true
+    caption: Draped gingham dress with flutter sleeves and open-back
+    collection: Draping Project
+    src: /uploads/dsc_0407.jpg
+  - isVert: true
+    src: /uploads/dsc_0396.jpg
+    caption: Draped gingham dress with flutter sleeves and open-back
+    collection: Draping Project
 ---
 Lookbook of all final garments in my collections.
