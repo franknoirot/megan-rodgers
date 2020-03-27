@@ -273,5 +273,40 @@ imageGallery:
       (Wool and the Gang - Crazy Sexy Wool and Alpachino Merino)
     collection: Hand-Knit
     src: /uploads/dsc_0374-2.jpg
+  - isVert: true
+    src: /uploads/dsc_0436.jpg
+    collection: Beautiful Predator
+    caption: >-
+      Top: Bell-sleeve crop top with cinched drawstring front ties and open-back
+      Bottom: Asymmetrical skirt with cinched drawstring front ties and back
+      zipper closure
+  - isVert: true
+    caption: >-
+      Top: Bell-sleeve crop top with cinched drawstring front ties and open-back
+      Bottom: Asymmetrical skirt with cinched drawstring front ties and back
+      zipper closure
+    collection: Beautiful Predator
+    src: /uploads/dsc_0761.jpg
+  - isVert: true
+    caption: >-
+      Top: Bell-sleeve crop top with cinched drawstring front ties and open-back
+      Bottom: Asymmetrical skirt with cinched drawstring front ties and back
+      zipper closure
+    collection: Beautiful Predator
+    src: /uploads/dsc_0800.jpg
+  - isVert: true
+    caption: >-
+      Top: Bell-sleeve crop top with cinched drawstring front ties and open-back
+      Bottom: Asymmetrical skirt with cinched drawstring front ties and back
+      zipper closure
+    collection: Beautiful Predator
+    src: /uploads/dsc_0553.jpg
+  - isVert: true
+    caption: >-
+      Top: Bell-sleeve crop top with cinched drawstring front ties and open-back
+      Bottom: Asymmetrical skirt with cinched drawstring front ties and back
+      zipper closure
+    collection: Beautiful Predator
+    src: /uploads/dsc_0406-copy.jpg
 ---
 Lookbook of all final garments in my collections.
