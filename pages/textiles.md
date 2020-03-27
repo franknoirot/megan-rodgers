@@ -45,5 +45,73 @@ imageGallery:
     src: /uploads/img_4831.jpg
     caption: 'Checkerboard knit pattern, alternating between double bed and jersey'
     collection: Tarnish
+  - isVert: true
+    src: /uploads/img_4761.jpg
+    caption: Hand-knit swatches for knitwear collection
+    collection: Anthropologie
+  - isVert: true
+    src: /uploads/img_4768.jpg
+    caption: Hand-knit swatches for knitwear collection
+    collection: Anthropologie
+  - isVert: true
+    src: /uploads/img_4769.jpg
+    caption: Hand-knit swatches for knitwear collection
+    collection: Anthropologie
+  - isVert: true
+    src: /uploads/img_4770.jpg
+    caption: Hand-knit swatches for knitwear collection
+    collection: Anthropologie
+  - isVert: false
+    src: /uploads/img_4735.jpg
+    caption: Hand-knit swatches for knitwear collection
+    collection: Anthropologie
+  - isVert: false
+    src: /uploads/img_4738.jpg
+    caption: Hand-knit swatches for knitwear collection
+    collection: Anthropologie
+  - isVert: true
+    src: /uploads/img_4724.jpg
+    caption: Hand-knit swatches for knitwear collection
+    collection: Anthropologie
+  - isVert: true
+    src: /uploads/img_4726.jpg
+    caption: Hand-knit swatches for knitwear collection
+    collection: Anthropologie
+  - isVert: true
+    src: /uploads/img_4722-1-.jpg
+    caption: Hand-knit swatches for knitwear collection
+    collection: Anthropologie
+  - isVert: true
+    src: /uploads/img_4719.jpg
+    caption: Hand-knit swatches for knitwear collection
+    collection: Anthropologie
+  - isVert: true
+    src: /uploads/img_4742.jpg
+    caption: Hand-knit swatches for knitwear collection
+    collection: Anthropologie
+  - isVert: true
+    src: /uploads/img_4744.jpg
+    caption: Hand-knit swatches for knitwear collection
+    collection: Anthropologie
+  - isVert: true
+    src: /uploads/img_4752.jpg
+    caption: Hand-knit swatches for knitwear collection
+    collection: Anthropologie
+  - isVert: true
+    src: /uploads/img_4733.jpg
+    caption: Hand-knit swatches for knitwear collection
+    collection: Anthropologie
+  - isVert: true
+    src: /uploads/img_4727.jpg
+    caption: Hand-knit swatches for knitwear collection
+    collection: Anthropologie
+  - isVert: false
+    src: /uploads/img_4776.jpg
+    caption: Hand-knit swatches for knitwear collection
+    collection: Anthropologie
+  - isVert: false
+    src: /uploads/img_4775.jpg
+    caption: Hand-knit swatches for knitwear collection
+    collection: Anthropologie
 ---
 Textiles from my collections. 
