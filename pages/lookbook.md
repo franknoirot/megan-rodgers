@@ -336,5 +336,53 @@ imageGallery:
       and invisible zipper back closure
     collection: Beautiful Predator
     src: /uploads/dsc_0195.jpg
+  - isVert: true
+    src: /uploads/dsc_0528.jpg
+    collection: Hand-knit
+    caption: >-
+      Top: Garter stitch hand-knit cardigan (Wool and the Gang - Crazy Sexy
+      Wool) Bottom: A-line knit skirt with cable knit pattern
+  - isVert: true
+    src: /uploads/dsc_1027.jpg
+    collection: Hand-knit
+    caption: >-
+      Top: Garter stitch hand-knit cardigan (Wool and the Gang - Crazy Sexy
+      Wool) Bottom: A-line knit skirt with cable knit pattern
+  - isVert: true
+    src: /uploads/dsc_1008.jpg
+    collection: Hand-knit
+    caption: >-
+      Top: Garter stitch hand-knit cardigan (Wool and the Gang - Crazy Sexy
+      Wool) Bottom: A-line knit skirt with cable knit pattern
+  - isVert: true
+    src: /uploads/dsc_1031.jpg
+    collection: Hand-knit
+    caption: >-
+      Top: Garter stitch hand-knit cardigan (Wool and the Gang - Crazy Sexy
+      Wool) Bottom: A-line knit skirt with cable knit pattern
+  - isVert: true
+    src: /uploads/dsc_0647.jpg
+    collection: Black House
+    caption: Alternative seams color-block sweatshirt with snap-up front closures
+  - isVert: false
+    src: /uploads/dsc_0756.jpg
+    collection: Black House
+    caption: Alternative seams color-block sweatshirt with snap-up front closures
+  - isVert: false
+    src: /uploads/dsc_0738.jpg
+    collection: Black House
+    caption: Alternative seams color-block sweatshirt with snap-up front closures
+  - isVert: false
+    src: /uploads/dsc_0755.jpg
+    collection: Black House
+    caption: Alternative seams color-block sweatshirt with snap-up front closures
+  - isVert: false
+    caption: Alternative seams color-block sweatshirt with snap-up front closures
+    src: /uploads/dsc_0770.jpg
+    collection: Black House
+  - isVert: true
+    src: /uploads/dsc_0805.jpg
+    collection: Black House
+    caption: Alternative seams color-block sweatshirt with snap-up front closures
 ---
 Lookbook of all final garments in my collections.
