@@ -20,7 +20,7 @@
 
 <page-query>
  query ProjectConnection {
-  allCollections: allCollection {
+  allCollections: allCollection(sortBy: "order", order: ASC) {
     edges {
       node {
         path

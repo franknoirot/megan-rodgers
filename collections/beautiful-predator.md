@@ -1,5 +1,6 @@
 ---
 title: Beautiful Predator
+order: 3
 season: Spring/Summer
 featuredImage:
   alt: alt text

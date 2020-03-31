@@ -1,5 +1,6 @@
 ---
 title: United By Blue
+order: 1
 season: Fall/Winter
 featuredImage:
   alt: United By Blue

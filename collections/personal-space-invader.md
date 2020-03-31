@@ -1,5 +1,6 @@
 ---
 title: Personal Space Invader
+order: 7
 season: Fall/Winter
 featuredImage:
   alt: alt text
