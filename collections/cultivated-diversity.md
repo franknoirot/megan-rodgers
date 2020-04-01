@@ -1,6 +1,6 @@
 ---
 title: Cultivated Diversity
-order: 4
+order: 8
 season: Spring/Summer
 featuredImage:
   alt: alt text
