@@ -1,6 +1,6 @@
 ---
 title: Black House
-order: 8
+order: 6
 season: Fall/Winter
 featuredImage:
   alt: alt text
