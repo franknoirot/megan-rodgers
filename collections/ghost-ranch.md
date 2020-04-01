@@ -1,6 +1,6 @@
 ---
 title: Ghost Ranch
-order: 6
+order: 4
 season: Spring/Summer
 featuredImage:
   alt: 'Sketches from the Ghost Ranch collection, showing eight different tops.'
