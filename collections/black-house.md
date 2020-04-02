@@ -7,9 +7,9 @@ featuredImage:
   src: /uploads/black-house_final_1.jpg
   title: title text
 color:
-  b: 45
-  g: 35
-  r: 20
+  b: 51
+  g: 67
+  r: 226
 processSteps:
   - images:
       - image:
