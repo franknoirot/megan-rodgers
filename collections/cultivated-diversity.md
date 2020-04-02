@@ -7,9 +7,9 @@ featuredImage:
   src: /uploads/cover-page-updated.jpg
   title: title text
 color:
-  b: 85
-  g: 158
-  r: 200
+  b: 77
+  g: 84
+  r: 46
 processSteps:
   - images:
       - image:
