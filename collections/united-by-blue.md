@@ -152,16 +152,20 @@ processSteps:
   - images:
       - image:
           alt: Alt Text
-          src: /uploads/img_4459.jpg
+          src: /uploads/dsc_0932.jpg
           title: Title Text
       - image:
           alt: Alt Text
-          src: /uploads/img_4440.jpg
+          src: /uploads/dsc_0952.jpg
           title: Title Text
       - image:
           alt: Alt Text
-          src: /uploads/img_4442.jpg
+          src: /uploads/dsc_0963.jpg
           title: Title Text
+      - image:
+          src: /uploads/dsc_0841.jpg
+          title: Title Text
+          alt: Alt Text
     name: Final Garment
 ---
 United By Blue brand project, to update and diversify product selection.
