@@ -103,6 +103,32 @@ processSteps:
           src: /uploads/black-house_final_9.jpg
           title: title text
     name: Final Collection
+  - name: Final Garment
+    images:
+      - image:
+          src: /uploads/dsc_0647.jpg
+          title: Title Text
+          alt: Alt Text
+      - image:
+          src: /uploads/dsc_0755.jpg
+          title: Title Text
+          alt: Alt Text
+      - image:
+          src: /uploads/dsc_0738.jpg
+          title: Title Text
+          alt: Alt Text
+      - image:
+          src: /uploads/dsc_0756.jpg
+          title: Title Text
+          alt: Alt Text
+      - image:
+          src: /uploads/dsc_0805.jpg
+          title: Title Text
+          alt: Alt Text
+      - image:
+          src: /uploads/dsc_0770.jpg
+          title: Title Text
+          alt: Alt Text
 ---
 Menswear collection inspired by my trip to Chiang Rai, Thailand and visiting the
  Black House and White Temple. The Black House was designed by the artist
