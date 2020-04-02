@@ -7,9 +7,9 @@ featuredImage:
   src: /uploads/united-by-blue-final-project_reduced_page_21.jpg
   title: United By Blue
 color:
-  b: 125
-  g: 125
-  r: 125
+  b: 168
+  g: 63
+  r: 52
 processSteps:
   - images:
       - image:
