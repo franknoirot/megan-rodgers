@@ -7,9 +7,9 @@ featuredImage:
   src: /uploads/rough-draft-project-1_page_01.jpg
   title: title text
 color:
-  b: 76
-  g: 76
-  r: 155
+  b: 50
+  g: 88
+  r: 53
 processSteps:
   - images:
       - image:
