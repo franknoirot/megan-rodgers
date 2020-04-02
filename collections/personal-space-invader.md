@@ -7,9 +7,9 @@ featuredImage:
   src: /uploads/project3studiofinal_page_21.jpg
   title: title text
 color:
-  b: 133
-  g: 74
-  r: 103
+  b: 62
+  g: 192
+  r: 224
 processSteps:
   - images:
       - image:
