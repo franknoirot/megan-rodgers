@@ -113,9 +113,13 @@ processSteps:
     name: Final Collection
   - images:
       - image:
-          alt: Alt Text
-          src: /uploads/final-garment.jpg
+          src: /uploads/final-garment-copy.jpg
           title: Title Text
+          alt: Alt Text
+      - image:
+          src: /uploads/final-garment-2.jpg
+          title: Title Text
+          alt: Alt Text
       - image:
           alt: Alt Text
           src: /uploads/final-sweater-tech-pack_page_1.jpg
