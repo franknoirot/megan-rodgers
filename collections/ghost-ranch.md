@@ -7,9 +7,9 @@ featuredImage:
   src: /uploads/project-2-spring-2019-final_page_01.jpg
   title: 'Ghost Ranch, a menswear collection'
 color:
-  b: 123
-  g: 60
-  r: 61
+  b: 89
+  g: 50
+  r: 77
 processSteps:
   - images:
       - image:
