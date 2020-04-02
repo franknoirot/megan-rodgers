@@ -83,21 +83,33 @@ processSteps:
     name: Muslins
   - images:
       - image:
-          alt: alt text
-          src: /uploads/cultivated-diversity_final-garment_1.jpg
-          title: title text
+          src: /uploads/dsc_0022.jpg
+          title: Title Text
+          alt: Alt text
       - image:
-          alt: alt text
-          src: /uploads/cultivated-diversity_final-garment_2.jpg
-          title: title text
+          src: /uploads/dsc_0041.jpg
+          title: Title Text
+          alt: Alt text
       - image:
-          alt: alt text
-          src: /uploads/cultivated-diversity_final-garment_3.jpg
-          title: title text
+          src: /uploads/dsc_0014.jpg
+          title: Title Text
+          alt: Alt text
       - image:
-          alt: alt text
-          src: /uploads/cultivated-diversity_final-garment_4.jpg
-          title: title text
+          src: /uploads/dsc_0061.jpg
+          title: Title Text
+          alt: Alt text
+      - image:
+          src: /uploads/dsc_0060.jpg
+          title: Title Text
+          alt: Alt text
+      - image:
+          src: /uploads/dsc_0004.jpg
+          title: Title Text
+          alt: Alt text
+      - image:
+          src: /uploads/side-view.jpg
+          title: Title Text
+          alt: Alt text
     name: Final Garment
 ---
 When asked to create a womenswear collection based on diversity, I found
