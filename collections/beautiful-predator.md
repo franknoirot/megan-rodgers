@@ -7,9 +7,9 @@ featuredImage:
   src: /uploads/project-3-final-draft_page_01.jpg
   title: title text
 color:
-  b: 94
-  g: 125
-  r: 77
+  b: 242
+  g: 172
+  r: 243
 processSteps:
   - images:
       - image:
