@@ -113,10 +113,22 @@ processSteps:
     name: Collection
   - images:
       - image:
-          alt: alt text
-          src: /uploads/beautiful-predator_garment_1.jpg
-          title: title text
-    name: Garments
+          src: /uploads/dsc_0436.jpg
+          title: Title Text
+          alt: Alt Text
+      - image:
+          src: /uploads/dsc_0800.jpg
+          title: Title Text
+          alt: Alt Text
+      - image:
+          src: /uploads/dsc_0761.jpg
+          title: Title Text
+          alt: Alt Text
+      - image:
+          src: /uploads/dsc_0553.jpg
+          title: Title Text
+          alt: Alt Text
+    name: Final Garment
 ---
 Womenswear collections inspired by the orchid mantis, mantids that use orchid
  camouflage to ambush prey. Their disguise is so effective that flying insects are
