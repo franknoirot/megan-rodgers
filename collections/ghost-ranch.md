@@ -145,17 +145,29 @@ processSteps:
     name: Final Collection
   - images:
       - image:
-          alt: Alt Text
-          src: /uploads/img_2492.jpg
+          src: /uploads/dsc_0025.jpg
           title: Title Text
+          alt: Alt Text
       - image:
-          alt: Alt Text
-          src: /uploads/img_2485.jpg
+          src: /uploads/dsc_0219.jpg
           title: Title Text
+          alt: Alt Text
       - image:
-          alt: Alt Text
-          src: /uploads/img_2491.jpg
+          src: /uploads/dsc_0018.jpg
           title: Title Text
+          alt: Alt Text
+      - image:
+          src: /uploads/dsc_0093.jpg
+          title: Title Text
+          alt: Alt Text
+      - image:
+          src: /uploads/dsc_0180.jpg
+          title: Title Text
+          alt: Alt Text
+      - image:
+          src: /uploads/dsc_0112.jpg
+          title: Title Text
+          alt: Alt Text
     name: Final Garment
 ---
 Womenswear collection inspired by the Georgia O’Keeffe: Living Modern
