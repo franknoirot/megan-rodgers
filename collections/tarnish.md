@@ -1,6 +1,6 @@
 ---
 title: Tarnish
-order: 2
+order: 3
 season: Spring/Summer
 featuredImage:
   alt: Tarnish
