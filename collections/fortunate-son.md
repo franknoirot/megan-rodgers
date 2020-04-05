@@ -1,6 +1,6 @@
 ---
 title: Fortunate Son
-order: 5
+order: 6
 season: Spring/Summer
 featuredImage:
   alt: alt text
