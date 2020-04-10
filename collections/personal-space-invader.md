@@ -43,41 +43,53 @@ processSteps:
     name: Inspiration
   - images:
       - image:
-          alt: alt text
-          src: /uploads/personal-space_sketches_1.jpg
-          title: title text
+          src: /uploads/project3studiofinal_page_09.jpg
+          title: Title Text
+          alt: Alt Text
       - image:
-          alt: alt text
-          src: /uploads/personal-space_sketches_2.jpg
-          title: title text
+          src: /uploads/project3studiofinal_page_10.jpg
+          title: Title Text
+          alt: Alt Text
       - image:
-          alt: alt text
-          src: /uploads/personal-space_sketches_3.jpg
-          title: title text
+          src: /uploads/project3studiofinal_page_11.jpg
+          title: Title Text
+          alt: Alt Text
       - image:
-          alt: alt text
-          src: /uploads/personal-space_sketches_4.jpg
-          title: title text
+          src: /uploads/project3studiofinal_page_12.jpg
+          title: Title Text
+          alt: Alt Text
       - image:
-          alt: alt text
-          src: /uploads/personal-space_sketches_5.jpg
-          title: title text
+          src: /uploads/project3studiofinal_page_13.jpg
+          title: Title Text
+          alt: Alt Text
       - image:
-          alt: alt text
-          src: /uploads/personal-space_sketches_6.jpg
-          title: title text
+          src: /uploads/project3studiofinal_page_14.jpg
+          title: Title Text
+          alt: Alt Text
       - image:
-          alt: alt text
-          src: /uploads/personal-space_sketches_7.jpg
-          title: title text
+          src: /uploads/project3studiofinal_page_15.jpg
+          title: Title Text
+          alt: Alt Text
       - image:
-          alt: alt text
-          src: /uploads/personal-space_sketches_8.jpg
-          title: title text
+          src: /uploads/project3studiofinal_page_16.jpg
+          title: Title Text
+          alt: Alt Text
       - image:
-          alt: alt text
-          src: /uploads/personal-space_sketches_9.jpg
-          title: title text
+          src: /uploads/project3studiofinal_page_17.jpg
+          title: Title Text
+          alt: Alt Text
+      - image:
+          src: /uploads/project3studiofinal_page_18.jpg
+          title: Title Text
+          alt: Alt Text
+      - image:
+          src: /uploads/project3studiofinal_page_19.jpg
+          title: Title Text
+          alt: Alt Text
+      - image:
+          src: /uploads/project3studiofinal_page_20.jpg
+          title: Title Text
+          alt: Alt Text
     name: Sketches
   - images:
       - image:
