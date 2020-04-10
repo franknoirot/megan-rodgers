@@ -13,17 +13,57 @@ color:
 processSteps:
   - images:
       - image:
-          alt: A collage of images showing men's styles.
-          src: /uploads/beautiful-predator_collection_5.jpg
-          title: Inspiration Board 1
+          src: /uploads/project-2-studio_page_01.jpg
+          title: Title text
+          alt: Alt text
       - image:
-          alt: alt text
-          src: /uploads/black-house_inspo_2.jpg
-          title: title text
+          src: /uploads/project-2-studio_page_02.jpg
+          title: Title text
+          alt: Alt text
       - image:
-          alt: alt text
-          src: /uploads/black-house_inspo_3.jpg
-          title: title text
+          src: /uploads/project-2-studio_page_03.jpg
+          title: Title text
+          alt: Alt text
+      - image:
+          src: /uploads/project-2-studio_page_04.jpg
+          title: Title text
+          alt: Alt text
+      - image:
+          src: /uploads/project-2-studio_page_05.jpg
+          title: Title text
+          alt: Alt text
+      - image:
+          src: /uploads/project-2-studio_page_06.jpg
+          title: Title text
+          alt: Alt text
+      - image:
+          src: /uploads/project-2-studio_page_07.jpg
+          title: Title text
+          alt: Alt text
+      - image:
+          src: /uploads/project-2-studio_page_08.jpg
+          title: Title text
+          alt: Alt text
+      - image:
+          src: /uploads/project-2-studio_page_09.jpg
+          title: Title text
+          alt: Alt text
+      - image:
+          src: /uploads/project-2-studio_page_12.jpg
+          title: Title text
+          alt: Alt text
+      - image:
+          src: /uploads/project-2-studio_page_13.jpg
+          title: Title text
+          alt: Alt text
+      - image:
+          src: /uploads/project-2-studio_page_14.jpg
+          title: Title text
+          alt: Alt text
+      - image:
+          src: /uploads/project-2-studio_page_15.jpg
+          title: Title text
+          alt: Alt text
     name: Inspiration
   - images:
       - image:
