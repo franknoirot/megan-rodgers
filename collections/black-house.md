@@ -135,41 +135,57 @@ processSteps:
     name: Muslins
   - images:
       - image:
-          alt: alt text
-          src: /uploads/black-house_final_1.jpg
-          title: title text
+          src: /uploads/project-2-studio_page_34.jpg
+          title: Title Text
+          alt: Alt Text
       - image:
-          alt: alt text
-          src: /uploads/black-house_final_2.jpg
-          title: title text
+          src: /uploads/project-2-studio_page_17.jpg
+          title: Title Text
+          alt: Alt Text
       - image:
-          alt: alt text
-          src: /uploads/black-house_final_3.jpg
-          title: title text
+          src: /uploads/project-2-studio_page_18.jpg
+          title: Title Text
+          alt: Alt Text
       - image:
-          alt: alt text
-          src: /uploads/black-house_final_4.jpg
-          title: title text
+          src: /uploads/project-2-studio_page_35.jpg
+          title: Title Text
+          alt: Alt Text
       - image:
-          alt: alt text
-          src: /uploads/black-house_final_5.jpg
-          title: title text
+          src: /uploads/project-2-studio_page_36.jpg
+          title: Title Text
+          alt: Alt Text
       - image:
-          alt: alt text
-          src: /uploads/black-house_final_6.jpg
-          title: title text
+          src: /uploads/project-2-studio_page_37.jpg
+          title: Title Text
+          alt: Alt Text
       - image:
-          alt: alt text
-          src: /uploads/black-house_final_7.jpg
-          title: title text
+          src: /uploads/project-2-studio_page_38.jpg
+          title: Title Text
+          alt: Alt Text
       - image:
-          alt: alt text
-          src: /uploads/black-house_final_8.jpg
-          title: title text
+          src: /uploads/project-2-studio_page_39.jpg
+          title: Title Text
+          alt: Alt Text
       - image:
-          alt: alt text
-          src: /uploads/black-house_final_9.jpg
-          title: title text
+          src: /uploads/project-2-studio_page_40.jpg
+          title: Title Text
+          alt: Alt Text
+      - image:
+          src: /uploads/project-2-studio_page_41.jpg
+          title: Title Text
+          alt: Alt Text
+      - image:
+          src: /uploads/project-2-studio_page_42.jpg
+          title: Title Text
+          alt: Alt Text
+      - image:
+          src: /uploads/project-2-studio_page_43.jpg
+          title: Title Text
+          alt: Alt Text
+      - image:
+          src: /uploads/project-2-studio_page_44.jpg
+          title: Title Text
+          alt: Alt Text
     name: Final Collection
   - name: Final Garment
     images:
