@@ -67,29 +67,61 @@ processSteps:
     name: Inspiration
   - images:
       - image:
-          alt: alt text
-          src: /uploads/black-house_sketches_1.jpg
-          title: title text
+          src: /uploads/project-2-studio_page_20.jpg
+          title: Title Text
+          alt: Alt Text
       - image:
-          alt: alt text
-          src: /uploads/black-house_sketches_2.jpg
-          title: title text
+          src: /uploads/project-2-studio_page_21.jpg
+          title: Title Text
+          alt: Alt Text
       - image:
-          alt: alt text
-          src: /uploads/black-house_sketches_3.jpg
-          title: title text
+          src: /uploads/project-2-studio_page_22.jpg
+          title: Title Text
+          alt: Alt Text
       - image:
-          alt: alt text
-          src: /uploads/black-house_sketches_4.jpg
-          title: title text
+          src: /uploads/project-2-studio_page_23.jpg
+          title: Title Text
+          alt: Alt Text
       - image:
-          alt: alt text
-          src: /uploads/black-house_sketches_5.jpg
-          title: title text
+          src: /uploads/project-2-studio_page_24.jpg
+          title: Title Text
+          alt: Alt Text
       - image:
-          alt: alt text
-          src: /uploads/black-house_sketches_6.jpg
-          title: title text
+          src: /uploads/project-2-studio_page_25.jpg
+          title: Title Text
+          alt: Alt Text
+      - image:
+          src: /uploads/project-2-studio_page_26.jpg
+          title: Title Text
+          alt: Alt Text
+      - image:
+          src: /uploads/project-2-studio_page_27.jpg
+          title: Title Text
+          alt: Alt Text
+      - image:
+          src: /uploads/project-2-studio_page_28.jpg
+          title: Title Text
+          alt: Alt Text
+      - image:
+          src: /uploads/project-2-studio_page_29.jpg
+          title: Title Text
+          alt: Alt Text
+      - image:
+          src: /uploads/project-2-studio_page_30.jpg
+          title: Title Text
+          alt: Alt Text
+      - image:
+          src: /uploads/project-2-studio_page_31.jpg
+          title: Title Text
+          alt: Alt Text
+      - image:
+          src: /uploads/project-2-studio_page_32.jpg
+          title: Title Text
+          alt: Alt Text
+      - image:
+          src: /uploads/project-2-studio_page_33.jpg
+          title: Title Text
+          alt: Alt Text
     name: Sketches
   - images:
       - image:
