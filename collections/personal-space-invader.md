@@ -96,36 +96,76 @@ processSteps:
           alt: alt text
           src: /uploads/personal-space_muslin_1.jpg
           title: title text
-    name: Muslins
+    name: Muslin
   - images:
       - image:
-          alt: alt text
-          src: /uploads/personal-space_collection_3.jpg
-          title: title text
+          src: /uploads/project3studiofinal_page_21.jpg
+          title: Title Text
+          alt: Alt Text
       - image:
-          alt: alt text
-          src: /uploads/personal-space_collection_4.jpg
-          title: title text
+          src: /uploads/screen-shot-2020-04-10-at-1.47.23-pm.png
+          title: Title Text
+          alt: Alt Text
       - image:
-          alt: alt text
-          src: /uploads/personal-space_collection_5.jpg
-          title: title text
+          src: /uploads/project3studiofinal_page_23.jpg
+          title: Title Text
+          alt: Alt Text
       - image:
-          alt: alt text
-          src: /uploads/personal-space_collection_6.jpg
-          title: title text
+          src: /uploads/project3studiofinal_page_24.jpg
+          title: Title Text
+          alt: Alt Text
       - image:
-          alt: alt text
-          src: /uploads/personal-space_collection_7.jpg
-          title: title text
+          src: /uploads/project3studiofinal_page_25.jpg
+          title: Title Text
+          alt: Alt Text
       - image:
-          alt: alt text
-          src: /uploads/personal-space_collection_8.jpg
-          title: title text
+          src: /uploads/project3studiofinal_page_26.jpg
+          title: Title Text
+          alt: Alt Text
       - image:
-          alt: alt text
-          src: /uploads/personal-space_collection_9.jpg
-          title: title text
+          src: /uploads/project3studiofinal_page_27.jpg
+          title: Title Text
+          alt: Alt Text
+      - image:
+          src: /uploads/project3studiofinal_page_28.jpg
+          title: Title Text
+          alt: Alt Text
+      - image:
+          src: /uploads/project3studiofinal_page_29.jpg
+          title: Title Text
+          alt: Alt Text
+      - image:
+          src: /uploads/project3studiofinal_page_30.jpg
+          title: Title Text
+          alt: Alt Text
+      - image:
+          src: /uploads/project3studiofinal_page_31.jpg
+          title: Title Text
+          alt: Alt Text
+      - image:
+          src: /uploads/project3studiofinal_page_32.jpg
+          title: Title Text
+          alt: Alt Text
+      - image:
+          src: /uploads/project3studiofinal_page_33.jpg
+          title: Title Text
+          alt: Alt Text
+      - image:
+          src: /uploads/project3studiofinal_page_34.jpg
+          title: Title Text
+          alt: Alt Text
+      - image:
+          src: /uploads/project3studiofinal_page_35.jpg
+          title: Title Text
+          alt: Alt Text
+      - image:
+          src: /uploads/project3studiofinal_page_36.jpg
+          title: Title Text
+          alt: Alt Text
+      - image:
+          src: /uploads/project3studiofinal_page_37.jpg
+          title: Title Text
+          alt: Alt Text
     name: Collection
 ---
 Womenswear collection inspired by public transportation and my
