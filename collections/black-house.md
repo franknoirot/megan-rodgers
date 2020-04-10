@@ -4,7 +4,7 @@ order: 7
 season: Fall/Winter
 featuredImage:
   alt: alt text
-  src: /uploads/black-house_final_1.jpg
+  src: /uploads/project-2-studio_page_34.jpg
   title: title text
 color:
   b: 51
@@ -64,6 +64,10 @@ processSteps:
           src: /uploads/project-2-studio_page_15.jpg
           title: Title text
           alt: Alt text
+      - image:
+          src: /uploads/project-2-studio_page_19.jpg
+          title: Title Text
+          alt: Alt Text
     name: Inspiration
   - images:
       - image:
@@ -124,14 +128,6 @@ processSteps:
           alt: Alt Text
     name: Sketches
   - images:
-      - image:
-          alt: alt text
-          src: /uploads/black-house_muslin_1.jpg
-          title: title text
-      - image:
-          alt: alt text
-          src: /uploads/black-house_muslin_2.jpg
-          title: title text
       - image:
           alt: alt text
           src: /uploads/black-house_muslin_3.jpg
