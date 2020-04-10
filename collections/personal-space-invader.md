@@ -15,19 +15,31 @@ processSteps:
       - image:
           alt: alt text
           src: /uploads/personal-space_inspo_1.jpg
-          title: title text
+          title: Title Text
       - image:
+          src: /uploads/project3studiofinal_page_02.jpg
+          title: Title Text
           alt: alt text
-          src: /uploads/personal-space_inspo_2.jpg
-          title: title text
       - image:
+          src: /uploads/project3studiofinal_page_03.jpg
+          title: Title Text
           alt: alt text
-          src: /uploads/personal-space_inspo_3.jpg
-          title: title text
       - image:
+          src: /uploads/project3studiofinal_page_04.jpg
+          title: Title Text
           alt: alt text
-          src: /uploads/personal-space_inspo_4.jpg
-          title: title text
+      - image:
+          src: /uploads/project3studiofinal_page_05.jpg
+          title: Title Text
+          alt: alt text
+      - image:
+          src: /uploads/project3studiofinal_page_06.jpg
+          title: Title Text
+          alt: alt text
+      - image:
+          src: /uploads/project3studiofinal_page_07.jpg
+          title: Title Text
+          alt: alt text
     name: Inspiration
   - images:
       - image:
