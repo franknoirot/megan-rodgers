@@ -4,7 +4,7 @@ order: 7
 season: Fall/Winter
 featuredImage:
   alt: alt text
-  src: /uploads/project-2-studio_page_34.jpg
+  src: /uploads/black-house_final_1.jpg
   title: title text
 color:
   b: 51
