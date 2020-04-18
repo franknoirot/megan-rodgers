@@ -36,7 +36,7 @@ processSteps:
           title: Title Text
           alt: Alt Text
       - image:
-          src: /uploads/updated-anthropologie-project_page_06.jpg
+          src: /uploads/process-2.jpg
           title: Title Text
           alt: Alt Text
       - image:
@@ -44,15 +44,15 @@ processSteps:
           title: Title Text
           alt: Alt Text
       - image:
-          src: /uploads/updated-anthropologie-project_page_08.jpg
+          src: /uploads/looks-1.jpg
           title: Title Text
           alt: Alt Text
       - image:
-          src: /uploads/updated-anthropologie-project_page_09.jpg
+          src: /uploads/looks-2.jpg
           title: Title Text
           alt: Alt Text
       - image:
-          src: /uploads/updated-anthropologie-project_page_10.jpg
+          src: /uploads/look-5.jpg
           title: Title Text
           alt: Alt Text
   - name: Sila
