@@ -104,7 +104,7 @@ processSteps:
           title: Title Text
           alt: Alt Text
       - image:
-          src: /uploads/updated-anthropologie-project_page_22.jpg
+          src: /uploads/process-1.jpg
           title: Title Text
           alt: Alt Text
       - image:
@@ -112,15 +112,15 @@ processSteps:
           title: Title Text
           alt: Alt Text
       - image:
-          src: /uploads/updated-anthropologie-project_page_24.jpg
+          src: /uploads/looks-2.jpg
           title: Title Text
           alt: Alt Text
       - image:
-          src: /uploads/updated-anthropologie-project_page_25.jpg
+          src: /uploads/looks-1.jpg
           title: Title Text
           alt: Alt Text
       - image:
-          src: /uploads/updated-anthropologie-project_page_26.jpg
+          src: /uploads/look-5.jpg
           title: Title Text
           alt: Alt Text
 ---
