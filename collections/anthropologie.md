@@ -112,15 +112,15 @@ processSteps:
           title: Title Text
           alt: Alt Text
       - image:
-          src: /uploads/looks-2.jpg
+          src: /uploads/inspiration-3-1.jpg
           title: Title Text
           alt: Alt Text
       - image:
-          src: /uploads/looks-1.jpg
+          src: /uploads/inspiration-3-3.jpg
           title: Title Text
           alt: Alt Text
       - image:
-          src: /uploads/look-5.jpg
+          src: /uploads/inspiration-3-2.jpg
           title: Title Text
           alt: Alt Text
 ---
