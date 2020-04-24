@@ -118,7 +118,7 @@ processSteps:
           title: Title Text
           alt: Alt Text
       - image:
-          src: /uploads/updated-anthropologie-project_page_23.jpg
+          src: /uploads/process-2.jpg
           title: Title Text
           alt: Alt Text
       - image:
