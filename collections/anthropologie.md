@@ -25,6 +25,16 @@ processSteps:
           src: /uploads/updated-anthropologie-project_page_03.jpg
           title: Title Text
           alt: Alt Text
+  - name: Final Lineup
+    images:
+      - image:
+          src: /uploads/anthropologie-project-2020_page_04.jpg
+          title: Title Text
+          alt: Alt Text
+      - image:
+          src: /uploads/anthropologie-project-2020_page_05.jpg
+          title: Title Text
+          alt: Alt Text
   - name: Flower Hmong
     images:
       - image:
