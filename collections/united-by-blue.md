@@ -35,7 +35,7 @@ processSteps:
       - image:
           alt: Alt text
           src: /uploads/united-by-blue-final-project_reduced_page_06.jpg
-          title: 'Title Text '
+          title: "Title Text "
       - image:
           alt: Alt Text
           src: /uploads/united-by-blue-final-project_reduced_page_07.jpg
@@ -67,6 +67,14 @@ processSteps:
       - image:
           alt: Alt Text
           src: /uploads/united-by-blue-final-project_reduced_page_13.jpg
+          title: Title Text
+      - image:
+          alt: Alt Text
+          src: /uploads/united-by-blue-final-project_reduced_page_32.jpg
+          title: Title Text
+      - image:
+          alt: Alt Text
+          src: /uploads/united-by-blue-final-project_reduced_page_33.jpg
           title: Title Text
       - image:
           alt: Alt Text
@@ -139,14 +147,6 @@ processSteps:
       - image:
           alt: Alt Text
           src: /uploads/united-by-blue-final-project_reduced_page_31.jpg
-          title: Title Text
-      - image:
-          alt: Alt Text
-          src: /uploads/united-by-blue-final-project_reduced_page_32.jpg
-          title: Title Text
-      - image:
-          alt: Alt Text
-          src: /uploads/united-by-blue-final-project_reduced_page_33.jpg
           title: Title Text
     name: Final Collection
   - images:
