@@ -6,7 +6,7 @@ imgList:
   - /uploads/img_4796.jpg
   - /uploads/dsc_0116.jpg
   - /uploads/dsc_0355.jpg
-resume: /uploads/megan-rodgers-2020.pdf
+resume: /uploads/meganrodgersresume_2020.pdf
 ---
 My name is Megan Rodgers and I am currently studying at Kent State University for Fashion Design and have a bachelor’s degree in Fashion Merchandising. I was chosen as one of the top 30 students in my Senior class to participate in the Portfolio Showcase.
 
