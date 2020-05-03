@@ -49,5 +49,39 @@ processSteps:
           src: /uploads/meganrodgers_final-project_page_09.jpg
           title: Title Text
           alt: Alt Text
+  - name: Collection
+    images:
+      - image:
+          src: /uploads/meganrodgers_final-project_page_10.jpg
+          title: Title Text
+          alt: Alt Text
+      - image:
+          src: /uploads/meganrodgers_final-project_page_11.jpg
+          title: Title Text
+          alt: Alt Text
+      - image:
+          src: /uploads/meganrodgers_final-project_page_12.jpg
+          title: Title Text
+          alt: Alt Text
+      - image:
+          src: /uploads/meganrodgers_final-project_page_13.jpg
+          title: Title Text
+          alt: Alt Text
+      - image:
+          src: /uploads/meganrodgers_final-project_page_14.jpg
+          title: Title Text
+          alt: Alt Text
+      - image:
+          src: /uploads/meganrodgers_final-project_page_15.jpg
+          title: Title Text
+          alt: Alt Text
+      - image:
+          src: /uploads/meganrodgers_final-project_page_16.jpg
+          title: Title Text
+          alt: Alt Text
+      - image:
+          src: /uploads/meganrodgers_final-project_page_17.jpg
+          title: Title Text
+          alt: Alt Text
 ---
 Yoga activewear collection inspired by at-home workouts and co-crafting.
