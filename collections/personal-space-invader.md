@@ -118,54 +118,6 @@ processSteps:
           src: /uploads/project3studiofinal_page_25.jpg
           title: Title Text
           alt: Alt Text
-      - image:
-          src: /uploads/project3studiofinal_page_26.jpg
-          title: Title Text
-          alt: Alt Text
-      - image:
-          src: /uploads/project3studiofinal_page_27.jpg
-          title: Title Text
-          alt: Alt Text
-      - image:
-          src: /uploads/project3studiofinal_page_28.jpg
-          title: Title Text
-          alt: Alt Text
-      - image:
-          src: /uploads/project3studiofinal_page_29.jpg
-          title: Title Text
-          alt: Alt Text
-      - image:
-          src: /uploads/project3studiofinal_page_30.jpg
-          title: Title Text
-          alt: Alt Text
-      - image:
-          src: /uploads/project3studiofinal_page_31.jpg
-          title: Title Text
-          alt: Alt Text
-      - image:
-          src: /uploads/project3studiofinal_page_32.jpg
-          title: Title Text
-          alt: Alt Text
-      - image:
-          src: /uploads/project3studiofinal_page_33.jpg
-          title: Title Text
-          alt: Alt Text
-      - image:
-          src: /uploads/project3studiofinal_page_34.jpg
-          title: Title Text
-          alt: Alt Text
-      - image:
-          src: /uploads/project3studiofinal_page_35.jpg
-          title: Title Text
-          alt: Alt Text
-      - image:
-          src: /uploads/project3studiofinal_page_36.jpg
-          title: Title Text
-          alt: Alt Text
-      - image:
-          src: /uploads/project3studiofinal_page_37.jpg
-          title: Title Text
-          alt: Alt Text
     name: Collection
 ---
 Womenswear collection inspired by public transportation and my
