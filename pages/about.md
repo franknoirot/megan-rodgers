@@ -1,7 +1,7 @@
 ---
 title: About
 imgList:
-  - /uploads/img_5078.jpg
+  - /uploads/meganrodgers_headshot.jpg
   - /uploads/img_4768.jpg
   - /uploads/img_4796.jpg
   - /uploads/dsc_0116.jpg
