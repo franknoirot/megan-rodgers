@@ -8,7 +8,7 @@ imgList:
   - /uploads/dsc_0355.jpg
 resume: /uploads/meganrodgersresume_2020.pdf
 ---
-My name is Megan Rodgers and I am currently studying at Kent State University for Fashion Design and have a bachelor’s degree in Fashion Merchandising. I was chosen as one of the top 30 students in my Senior class to participate in the Portfolio Showcase.
+My name is Megan Rodgers and I have recently graduated from Kent State University for Fashion Design and have a bachelor’s degree in Fashion Merchandising. I was chosen as one of the top 30 students in my Senior class to participate in the Portfolio Showcase.
 
 With my education and experience, I would be an asset to your company in the Assistant Designer position. As a Design Assistant at Ellery Homestyles, I was described as having an “insane work ethic.” I demonstrated that I had an eye for color and design and could be trusted to get the job done.
 
