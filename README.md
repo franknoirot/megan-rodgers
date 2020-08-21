@@ -1,6 +1,6 @@
 # MeganRodgers.me
 
-A small portfolio site for Megan Rodgers, a fashion designer earning her MFA from Kent State University.
+A small portfolio site for Megan Rodgers, a fashion designer who recently earned her MFA from Kent State University.
 
 ## Key Features
 - Simple, flat-file content management using NetlifyCMS
