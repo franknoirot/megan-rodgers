@@ -5,7 +5,7 @@
       <div v-for="(img, i) in $page.data.imageGallery" :key="i" :id="'img-'+i" :class="{ collection_item: true, 'is-vertical':img.isVert }"
         @click="() => openLightbox(i)">
         <div class='img-wrap'>
-          <g-image :src="img.src" />
+          <g-image :src="img.src" width="600" />
         </div>
       </div>
     </section>

@@ -93,7 +93,7 @@ imageGallery:
       knit structure. Bat-wing sleeves with ribbon ties on the cuff.
     collection: Tarnish
   - isVert: true
-    src: /uploads/dsc_0287-2.jpg
+    src: /uploads/lookbook-garment-1.jpg
     caption: >-
       Oversized double-bed machine knitted sweater with checkerboard knit
       pattern. Embedded with metal washers in the front and back checkerboard
