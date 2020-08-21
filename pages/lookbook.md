@@ -78,7 +78,7 @@ imageGallery:
       knit structure. Bat-wing sleeves with ribbon ties on the cuff.
     collection: Tarnish
   - isVert: true
-    src: /uploads/dsc_0219.jpg
+    src: /uploads/lookbook-garment-1.jpg
     collection: Ghost Ranch & Tarnish
     caption: Oversized double-bed machine knitted sweater & convertible knit cape
   - isVert: true
