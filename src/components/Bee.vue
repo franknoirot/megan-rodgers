@@ -151,7 +151,7 @@ export default {
     width: 115px;
     height: 100px;
     opacity: .5;
-    background: url(https://franknoirot.co/assets/img/img_bee-frames.png);
+    background: url(https://franknoirot.github.io/assets/img/img_bee-frames.png);
     background-repeat: no-repeat;
     background-size: 960px 94px;
     --bg-left: -10px; /* This is the variable that updates to move the background for the animation */
