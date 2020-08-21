@@ -3,9 +3,9 @@ title: Black House
 order: 7
 season: Fall/Winter
 featuredImage:
-  alt: alt text
+  alt: Front page of project with color swatches
   src: /uploads/black-house_final_1.jpg
-  title: title text
+  title: front page
 color:
   b: 51
   g: 67
